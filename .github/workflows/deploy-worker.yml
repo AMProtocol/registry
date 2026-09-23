@@ -44,9 +44,10 @@ jobs:
         env:
           AMP_VALIDATOR_PATH: ${{ github.workspace }}/amp/validator
         run: |
-          npm run build
+          node scripts/build-index.mjs
+          node scripts/sync-validator.mjs
           cd worker
-          npm install
+          npm install --legacy-peer-deps
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
