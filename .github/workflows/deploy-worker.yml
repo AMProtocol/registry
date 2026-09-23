@@ -32,13 +32,13 @@ jobs:
 
       - name: Build validator
         run: |
-          cd amp/agentmanifest/validator
+          cd amp/validator
           npm ci
           npm run build
 
       - name: Build worker bundle
         env:
-          AMP_VALIDATOR_PATH: ${{ github.workspace }}/amp/agentmanifest/validator
+          AMP_VALIDATOR_PATH: ${{ github.workspace }}/amp/validator
         run: |
           npm run build
           cd worker
