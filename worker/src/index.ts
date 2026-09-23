@@ -5,7 +5,7 @@
 import indexData from '../data/index.json';
 import { handleValidatorRequest } from './validatorRoutes';
 import { REGISTRY_AGENTS, REGISTRY_LLMS_TXT } from './registryAgents';
-import { validateManifest } from '@agentmanifest/validator';
+import { proxyValidateUrl } from './validateProxy';
 
 const ISSUE_URL = 'https://github.com/AMProtocol/registry/issues/new?template=add-api.yml';
 
@@ -236,7 +236,7 @@ async function handleApiRequest(request: Request, path: string, url: URL): Promi
         created_at: new Date().toISOString(),
       });
 
-      const validation = await validateManifest(body.url);
+      const validation = await proxyValidateUrl(body.url);
       const sub = submissions.get(submissionId)!;
       if (!validation.passed) {
         sub.status = 'failed';

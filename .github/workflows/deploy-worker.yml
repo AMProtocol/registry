@@ -17,35 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/checkout@v4
-        with:
-          repository: AMProtocol/AMP
-          ref: main
-          path: amp
-          sparse-checkout: |
-            validator
-          sparse-checkout-cone-mode: true
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Install registry deps
-        run: npm install
-
-      - name: Build validator
-        run: |
-          cd amp/validator
-          npm install --legacy-peer-deps
-          npm run build
-
       - name: Build worker bundle
-        env:
-          AMP_VALIDATOR_PATH: ${{ github.workspace }}/amp/validator
         run: |
           node scripts/build-index.mjs
-          node scripts/sync-validator.mjs
           cd worker
           npm install --legacy-peer-deps
 
