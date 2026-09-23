@@ -8,6 +8,7 @@ on:
       - 'worker/**'
       - 'scripts/build-index.mjs'
       - 'scripts/sync-validator.mjs'
+      - '.github/workflows/deploy-worker.yml'
   workflow_dispatch:
 
 jobs:
@@ -33,7 +34,7 @@ jobs:
       - name: Build validator
         run: |
           cd amp/validator
-          npm ci
+          npm install
           npm run build
 
       - name: Build worker bundle

@@ -13,7 +13,14 @@ async function main() {
   try {
     await cp(landing, join(pub, 'index.html'));
   } catch {
-    console.warn('Landing page not found; skipping index.html copy');
+    console.warn('Landing page not found; writing minimal index.html');
+    await writeFile(
+      join(pub, 'index.html'),
+      `<!DOCTYPE html><html><head><meta charset="utf-8"/><title>Agent Manifest Protocol Registry</title></head><body>
+<h1>AMP Registry</h1>
+<p><a href="/registry/index.json">Browse listings (JSON)</a> · <a href="https://api.agent-manifest.com/listings">API</a> · <a href="https://agent-manifest.com">Protocol</a></p>
+</body></html>`
+    );
   }
 
   const index = JSON.parse(await readFile(join(pub, 'registry', 'index.json'), 'utf8'));
@@ -44,16 +51,13 @@ ${record.status === 'unverified' ? `<p><em>Auto-generated from public docs, not 
     await writeFile(join(pageDir, 'index.html'), html);
   }
 
-  const schemaRoot = join(root, '..', 'agentmanifest', 'spec', 'schemas');
+  const schemaRoot = join(root, 'schemas');
   for (const ver of ['v0.2', 'v0.3']) {
     const dest = join(pub, 'schemas', ver);
     await mkdir(dest, { recursive: true });
     await cp(join(schemaRoot, ver, 'manifest.json'), join(dest, 'manifest.json'));
   }
-  await cp(
-    join(root, '..', 'agentmanifest', 'spec', 'registry-record.schema.json'),
-    join(pub, 'schemas', 'registry-record.json')
-  );
+  await cp(join(schemaRoot, 'registry-record.json'), join(pub, 'schemas', 'registry-record.json'));
 
   await writeFile(
     join(pub, 'changelog.md'),

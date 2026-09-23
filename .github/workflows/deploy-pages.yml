@@ -7,6 +7,7 @@ on:
       - 'entries/**'
       - 'scripts/**'
       - 'schemas/**'
+      - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
 jobs:
