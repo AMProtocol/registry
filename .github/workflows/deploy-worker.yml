@@ -33,9 +33,9 @@ jobs:
 
       - name: Build validator
         run: |
-          cd amp/validator
+          cd amp
           npm install
-          npm run build
+          npm run build --workspace=validator
 
       - name: Build worker bundle
         env:
