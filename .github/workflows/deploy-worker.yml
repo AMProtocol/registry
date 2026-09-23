@@ -36,9 +36,9 @@ jobs:
 
       - name: Build validator
         run: |
-          cd amp
-          npm install
-          npm run build --workspace=validator
+          cd amp/validator
+          npm install --legacy-peer-deps
+          npm run build
 
       - name: Build worker bundle
         env:
