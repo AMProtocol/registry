@@ -1,0 +1,240 @@
+{
+  "id": "cmpve5xcq000ipjtc1gxp19y1",
+  "legacy_id": "cmpve5xcq000ipjtc1gxp19y1",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-freight-readiness-atlas.vercel.app/",
+  "manifest_url": "https://packrift-freight-readiness-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-freight-readiness-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-freight-readiness-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T15:56:51.098Z",
+  "verified_at": "2026-06-01T15:56:51.097Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T15:56:51.097Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T15:55:42Z",
+    "snapshot": {
+      "name": "Packrift Freight Readiness Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-freight-readiness-atlas.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read the compact agent-facing overview and safety boundaries.",
+          "response_description": "Plain text overview of public freight-readiness routes and sidecars."
+        },
+        {
+          "path": "/openapi.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch OpenAPI metadata for data sidecars.",
+          "response_description": "OpenAPI 3.1 document for read-only freight-readiness sidecars."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable atlas pages and sidecars.",
+          "response_description": "XML sitemap of public pages."
+        },
+        {
+          "path": "/data/freight-readiness-observations.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download public-safe freight-readiness observations.",
+          "response_description": "JSONL rows using bands and route classes only."
+        },
+        {
+          "path": "/data/freight-readiness-skus.csv",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download SKU rollups.",
+          "response_description": "CSV with SKU, canonical product URL, and public-safe readiness counts."
+        },
+        {
+          "path": "/data/freight-readiness-zones.csv",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download destination-zone rollups.",
+          "response_description": "CSV with zone-level readiness counts."
+        },
+        {
+          "path": "/sku/1066-freight-readiness",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative SKU readiness page.",
+          "response_description": "HTML page with public-safe freight bands and route classes."
+        },
+        {
+          "path": "/zones/zone-0",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative destination-zone page.",
+          "response_description": "HTML page with zone-level public-safe readiness rows."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "This atlas is a read-only public freight-readiness reference. No account, login, API key, token, payment, or password is required to read the public files listed here. It uses bands and route classes only. Do not treat it as a live quote, carrier commitment, checkout promise, order approval, supplier-cost disclosure, margin disclosure, customer record, or address-level shipping estimate. Use Packrift.com checkout and approved Packrift carrier services for live price, inventory, freight, delivery, cart, and order decisions.",
+      "description": "Public-safe Packrift shipping-readiness reference that summarizes SKU, zone, origin, and carrier coverage using freight bands and route classes instead of raw freight cost, margin, order, or customer data.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-06-01T15:55:42Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-freight-readiness-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "This atlas is a read-only public freight-readiness reference. No account, login, API key, token, payment, or password is required to read the public files listed here. It uses bands and route classes only. Do not treat it as a live quote, carrier commitment, checkout promise, order approval, supplier-cost disclosure, margin disclosure, customer record, or address-level shipping estimate. Use Packrift.com checkout and approved Packrift carrier services for live price, inventory, freight, delivery, cart, and order decisions.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Public-safe Packrift shipping-readiness reference that summarizes SKU, zone, origin, and carrier coverage using freight bands and route classes instead of raw freight cost, margin, order, or customer data.",
+    "documentation": "https://packrift-freight-readiness-atlas.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Read the compact agent-facing overview and safety boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/llms.txt",
+        "response_description": "Plain text overview of public freight-readiness routes and sidecars."
+      },
+      {
+        "description": "Fetch OpenAPI metadata for data sidecars.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/openapi.json",
+        "response_description": "OpenAPI 3.1 document for read-only freight-readiness sidecars."
+      },
+      {
+        "description": "Enumerate crawlable atlas pages and sidecars.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap of public pages."
+      },
+      {
+        "description": "Download public-safe freight-readiness observations.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/freight-readiness-observations.jsonl",
+        "response_description": "JSONL rows using bands and route classes only."
+      },
+      {
+        "description": "Download SKU rollups.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/freight-readiness-skus.csv",
+        "response_description": "CSV with SKU, canonical product URL, and public-safe readiness counts."
+      },
+      {
+        "description": "Download destination-zone rollups.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/freight-readiness-zones.csv",
+        "response_description": "CSV with zone-level readiness counts."
+      },
+      {
+        "description": "Read a representative SKU readiness page.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sku/1066-freight-readiness",
+        "response_description": "HTML page with public-safe freight bands and route classes."
+      },
+      {
+        "description": "Read a representative destination-zone page.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/zones/zone-0",
+        "response_description": "HTML page with zone-level public-safe readiness rows."
+      }
+    ],
+    "homepage": "https://packrift-freight-readiness-atlas.vercel.app/",
+    "last_updated": "2026-06-01T15:55:42Z",
+    "listing_requested": true,
+    "name": "Packrift Freight Readiness Atlas",
+    "payment": null,
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "rate_limits": {
+      "requests_per_day": null,
+      "requests_per_minute": null
+    },
+    "reliability": {
+      "expected_uptime_pct": null,
+      "maintained_by": "organization",
+      "status_url": null
+    },
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

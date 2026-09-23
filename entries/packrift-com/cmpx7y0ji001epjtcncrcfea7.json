@@ -1,0 +1,156 @@
+{
+  "id": "cmpx7y0ji001epjtcncrcfea7",
+  "legacy_id": "cmpx7y0ji001epjtcncrcfea7",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-shipping-dimensional-profile-gateway.vercel.app/",
+  "manifest_url": "https://packrift-shipping-dimensional-profile-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-shipping-dimensional-profile-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-shipping-dimensional-profile-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T22:38:16.639Z",
+  "verified_at": "2026-06-02T22:38:16.638Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T22:38:16.638Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T22:36:01Z",
+    "snapshot": {
+      "name": "Packrift Shipping Dimensional Profile Agent Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-shipping-dimensional-profile-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch dimensional-profile gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for profile bands, weight bands, cube volume bands, dimension sources, catalog families, product types, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-shipping-dimensional-profile.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift dimensional-profile rows.",
+          "response_description": "Public-safe sample SKUs with dimensions, shipping weight, cube volume, DIM weight reference, profile band, product URL, and category/image status fields."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Shipping Dimensional Profile Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full SKU pages live at the linked Packrift Shipping Dimensional Profile Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout rate, delivery promise, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for static public shipping dimensional-profile signals mapped to public-safe catalog records.",
+      "last_updated": "2026-06-02T22:36:01Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-shipping-dimensional-profile-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full SKU pages live at the linked Packrift Shipping Dimensional Profile Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout rate, delivery promise, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for static public shipping dimensional-profile signals mapped to public-safe catalog records.",
+    "documentation": "https://packrift-shipping-dimensional-profile-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch dimensional-profile gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for profile bands, weight bands, cube volume bands, dimension sources, catalog families, product types, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift dimensional-profile rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-shipping-dimensional-profile.jsonl",
+        "response_description": "Public-safe sample SKUs with dimensions, shipping weight, cube volume, DIM weight reference, profile band, product URL, and category/image status fields."
+      },
+      {
+        "description": "Enumerate Shipping Dimensional Profile Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-shipping-dimensional-profile-gateway.vercel.app/",
+    "last_updated": "2026-06-02T22:36:01Z",
+    "name": "Packrift Shipping Dimensional Profile Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

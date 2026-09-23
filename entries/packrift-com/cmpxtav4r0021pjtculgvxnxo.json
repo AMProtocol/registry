@@ -1,0 +1,184 @@
+{
+  "id": "cmpxtav4r0021pjtculgvxnxo",
+  "legacy_id": "cmpxtav4r0021pjtculgvxnxo",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-procurement-readiness-gate.vercel.app/",
+  "manifest_url": "https://packrift-procurement-readiness-gate.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-procurement-readiness-gate.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-procurement-readiness-gate.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T08:36:08.091Z",
+  "verified_at": "2026-06-03T08:36:08.090Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T08:36:08.090Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T08:35:24Z",
+    "snapshot": {
+      "name": "Packrift Procurement Readiness Gateway",
+      "tags": [
+        "packaging",
+        "procurement",
+        "catalog",
+        "dataset",
+        "readiness"
+      ],
+      "contact": {
+        "url": "https://packrift.com/pages/contact",
+        "email": "farhan@packrift.com"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-procurement-readiness-gate.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Open the Packrift Procurement Readiness Gateway homepage.",
+          "response_description": "HTML overview of the compact gateway and source Procurement Readiness Index."
+        },
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch aggregate Packrift procurement-readiness stats.",
+          "response_description": "Public JSON stats for source counts, snapshot field distributions, and count-treatment boundaries."
+        },
+        {
+          "path": "/data/sample-readiness.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift readiness rows.",
+          "response_description": "Public-safe sample rows with SKU, product URL, product type, readiness-score snapshot, GTIN snapshot, price-band snapshot, and weight-band snapshot."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Procurement Readiness Gateway crawlable URLs.",
+          "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact support URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. Authentication is not required; no account, login, private access material, or 2FA is required. Pricing for this reference corpus is free. Readiness score, availability, price-band, GTIN, and shipping-weight values are static public snapshot signals from the source Procurement Readiness Index, while Packrift.com remains the source of truth for buying, pricing, availability, shipping, and delivery. This is not a purchase-record, carrier-pricing, supplier-economics, profitability-math, private-source-path, or private-access-material source.",
+      "description": "Packrift Procurement Readiness Gateway exposes a compact public API and dataset surface for static Packrift procurement-readiness snapshot signals from the already published Procurement Readiness Index. It is a reference surface for agents and crawlers, not a buying, fulfillment, carrier-pricing, supplier-economics, profitability-math, purchase-record, or live-availability source.",
+      "last_updated": "2026-06-03T08:35:24Z",
+      "spec_version": "agentmanifest-0.3",
+      "maintained_by": "organization",
+      "authentication": {
+        "type": "none",
+        "required": false
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "x_packrift_count_boundary": "Static public reference data only. Packrift.com remains source of truth for buying, live pricing, availability, shipping, and delivery."
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Authentication is not required; no account, login, private access material, or 2FA is required. Pricing for this reference corpus is free. Readiness score, availability, price-band, GTIN, and shipping-weight values are static public snapshot signals from the source Procurement Readiness Index, while Packrift.com remains the source of truth for buying, pricing, availability, shipping, and delivery. This is not a purchase-record, carrier-pricing, supplier-economics, profitability-math, private-source-path, or private-access-material source.",
+    "authentication": {
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "url": "https://packrift.com/pages/contact"
+    },
+    "description": "Packrift Procurement Readiness Gateway exposes a compact public API and dataset surface for static Packrift procurement-readiness snapshot signals from the already published Procurement Readiness Index. It is a reference surface for agents and crawlers, not a buying, fulfillment, carrier-pricing, supplier-economics, profitability-math, purchase-record, or live-availability source.",
+    "endpoints": [
+      {
+        "description": "Open the Packrift Procurement Readiness Gateway homepage.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/",
+        "response_description": "HTML overview of the compact gateway and source Procurement Readiness Index."
+      },
+      {
+        "description": "Fetch aggregate Packrift procurement-readiness stats.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for source counts, snapshot field distributions, and count-treatment boundaries."
+      },
+      {
+        "description": "Fetch sample public Packrift readiness rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-readiness.jsonl",
+        "response_description": "Public-safe sample rows with SKU, product URL, product type, readiness-score snapshot, GTIN snapshot, price-band snapshot, and weight-band snapshot."
+      },
+      {
+        "description": "Enumerate Procurement Readiness Gateway crawlable URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact support URLs."
+      }
+    ],
+    "homepage": "https://packrift-procurement-readiness-gate.vercel.app/",
+    "last_updated": "2026-06-03T08:35:24Z",
+    "maintained_by": "organization",
+    "name": "Packrift Procurement Readiness Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packaging",
+      "procurement",
+      "catalog",
+      "dataset",
+      "readiness"
+    ],
+    "version": "1.0.0",
+    "x_packrift_count_boundary": "Static public reference data only. Packrift.com remains source of truth for buying, live pricing, availability, shipping, and delivery."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "cmpx2dz7f0018pjtc9ihwv447",
+  "legacy_id": "cmpx2dz7f0018pjtc9ihwv447",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-vocabulary-agent-gateway.vercel.app/",
+  "manifest_url": "https://packrift-vocabulary-agent-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-vocabulary-agent-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-vocabulary-agent-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T20:02:43.707Z",
+  "verified_at": "2026-06-02T20:02:43.706Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T20:02:43.706Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T20:02:06Z",
+    "snapshot": {
+      "name": "Packrift Search Vocabulary Agent Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-vocabulary-agent-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch vocabulary gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for terms, mapped products, families, product types, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-search-vocabulary.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift search-vocabulary term mappings.",
+          "response_description": "Public-safe sample terms with product counts, family coverage, type coverage, representative SKUs, and source term URLs."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Vocabulary Agent Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full term pages live at the linked Packrift Packaging Search Vocabulary Crosswalk. This is not a live checkout, ranking promise, third-party endorsement, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for public packaging buyer-search vocabulary mapped to approved in-stock catalog records.",
+      "last_updated": "2026-06-02T20:02:06Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-vocabulary-agent-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full term pages live at the linked Packrift Packaging Search Vocabulary Crosswalk. This is not a live checkout, ranking promise, third-party endorsement, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public packaging buyer-search vocabulary mapped to approved in-stock catalog records.",
+    "documentation": "https://packrift-vocabulary-agent-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch vocabulary gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for terms, mapped products, families, product types, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift search-vocabulary term mappings.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-search-vocabulary.jsonl",
+        "response_description": "Public-safe sample terms with product counts, family coverage, type coverage, representative SKUs, and source term URLs."
+      },
+      {
+        "description": "Enumerate Vocabulary Agent Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-vocabulary-agent-gateway.vercel.app/",
+    "last_updated": "2026-06-02T20:02:06Z",
+    "name": "Packrift Search Vocabulary Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

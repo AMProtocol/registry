@@ -1,0 +1,200 @@
+{
+  "id": "cmpxh9z49001spjtcwuri82e3",
+  "legacy_id": "cmpxh9z49001spjtcwuri82e3",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-guide-to-sku-evidence-gateway.vercel.app/",
+  "manifest_url": "https://packrift-guide-to-sku-evidence-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-guide-to-sku-evidence-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-guide-to-sku-evidence-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T02:59:31.209Z",
+  "verified_at": "2026-06-03T02:59:31.209Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T02:59:31.209Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T02:56:42Z",
+    "snapshot": {
+      "name": "Packrift Guide-to-SKU Evidence Agent Gateway",
+      "tags": [
+        "packaging",
+        "ecommerce",
+        "catalog",
+        "guides",
+        "agent-commerce"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-guide-to-sku-evidence-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch guide-to-SKU gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for represented guides, represented SKUs, edge counts, guide coverage bands, product-family rollups, product-type rollups, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-guide-sku-edges.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift guide-to-SKU rows.",
+          "response_description": "Public-safe sample rows with guide title, guide URL, SKU, product URL, family, product type, and full-atlas evidence URL."
+        },
+        {
+          "path": "/data/top-guides.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch top public Packrift guide coverage rollups.",
+          "response_description": "Public guide rollups with guide handles, guide URLs, represented SKU counts, and gateway guide URLs."
+        },
+        {
+          "path": "/data/top-skus.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch top public Packrift SKU guide coverage rollups.",
+          "response_description": "Public SKU rollups with SKU, product URL, guide coverage counts, and gateway SKU URLs."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Guide-to-SKU Evidence Gateway crawlable URLs.",
+          "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, guide rollup, SKU rollup, guide, and SKU URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Public guide coverage evidence only; check the live Packrift guide or product page before purchase. This is not guide-body republication, live checkout, shipping quote, delivery promise, inventory promise, endorsement claim, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for guide-to-SKU evidence, guide coverage, and SKU coverage rollups.",
+      "last_updated": "2026-06-03T02:56:42Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-guide-to-sku-evidence-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Public guide coverage evidence only; check the live Packrift guide or product page before purchase. This is not guide-body republication, live checkout, shipping quote, delivery promise, inventory promise, endorsement claim, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for guide-to-SKU evidence, guide coverage, and SKU coverage rollups.",
+    "documentation": "https://packrift-guide-to-sku-evidence-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch guide-to-SKU gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for represented guides, represented SKUs, edge counts, guide coverage bands, product-family rollups, product-type rollups, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift guide-to-SKU rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-guide-sku-edges.jsonl",
+        "response_description": "Public-safe sample rows with guide title, guide URL, SKU, product URL, family, product type, and full-atlas evidence URL."
+      },
+      {
+        "description": "Fetch top public Packrift guide coverage rollups.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/top-guides.json",
+        "response_description": "Public guide rollups with guide handles, guide URLs, represented SKU counts, and gateway guide URLs."
+      },
+      {
+        "description": "Fetch top public Packrift SKU guide coverage rollups.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/top-skus.json",
+        "response_description": "Public SKU rollups with SKU, product URL, guide coverage counts, and gateway SKU URLs."
+      },
+      {
+        "description": "Enumerate Guide-to-SKU Evidence Gateway crawlable URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, guide rollup, SKU rollup, guide, and SKU URLs."
+      }
+    ],
+    "homepage": "https://packrift-guide-to-sku-evidence-gateway.vercel.app/",
+    "last_updated": "2026-06-03T02:56:42Z",
+    "name": "Packrift Guide-to-SKU Evidence Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packaging",
+      "ecommerce",
+      "catalog",
+      "guides",
+      "agent-commerce"
+    ],
+    "version": "1.0.0"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "cmpx1y1200017pjtcjkda6o5p",
+  "legacy_id": "cmpx1y1200017pjtcjkda6o5p",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-weight-density-gateway.vercel.app/",
+  "manifest_url": "https://packrift-weight-density-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-weight-density-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-weight-density-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T19:50:19.608Z",
+  "verified_at": "2026-06-02T19:50:19.607Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T19:50:19.607Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T19:49:33Z",
+    "snapshot": {
+      "name": "Packrift Weight Density Agent Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-weight-density-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch Weight Density Gateway release counts and band summaries.",
+          "response_description": "Public JSON stats for density bands, DIM-pressure bands, families, and record counts."
+        },
+        {
+          "path": "/data/sample-weight-density.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift weight-density records.",
+          "response_description": "Public-safe sample SKU, product URL, dimensions, weight, density, DIM-pressure, and band fields."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Weight Density Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full records live at the linked Packrift Weight Density Atlas. DIM-pressure values are static reference calculations using divisor 139 and are not live carrier quotes, checkout rates, delivery promises, supplier-cost, margin, customer, order, cart, private freight, or payment claims.",
+      "description": "A compact no-auth Packrift gateway for public SKU weight-density, cube, DIM-pressure, and price-density reference data from the verified Weight Density Atlas.",
+      "last_updated": "2026-06-02T19:49:33Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-weight-density-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full records live at the linked Packrift Weight Density Atlas. DIM-pressure values are static reference calculations using divisor 139 and are not live carrier quotes, checkout rates, delivery promises, supplier-cost, margin, customer, order, cart, private freight, or payment claims.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public SKU weight-density, cube, DIM-pressure, and price-density reference data from the verified Weight Density Atlas.",
+    "documentation": "https://packrift-weight-density-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch Weight Density Gateway release counts and band summaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for density bands, DIM-pressure bands, families, and record counts."
+      },
+      {
+        "description": "Fetch sample public Packrift weight-density records.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-weight-density.jsonl",
+        "response_description": "Public-safe sample SKU, product URL, dimensions, weight, density, DIM-pressure, and band fields."
+      },
+      {
+        "description": "Enumerate Weight Density Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-weight-density-gateway.vercel.app/",
+    "last_updated": "2026-06-02T19:49:33Z",
+    "name": "Packrift Weight Density Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

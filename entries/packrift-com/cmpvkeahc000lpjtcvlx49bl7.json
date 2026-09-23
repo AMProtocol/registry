@@ -1,0 +1,212 @@
+{
+  "id": "cmpvkeahc000lpjtcvlx49bl7",
+  "legacy_id": "cmpvkeahc000lpjtcvlx49bl7",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-packaging-strength-atlas.vercel.app/",
+  "manifest_url": "https://packrift-packaging-strength-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-packaging-strength-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-packaging-strength-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T18:51:19.056Z",
+  "verified_at": "2026-06-01T18:51:19.055Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T18:51:19.055Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T18:50:23Z",
+    "snapshot": {
+      "name": "Packrift Packaging Strength Evidence Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-packaging-strength-atlas.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable guide to the packaging-strength atlas, source boundaries, and key public routes.",
+          "response_description": "Plain-text guide covering canonical URLs, data files, safe-use notes, and source boundaries."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable packaging-strength pages and machine-readable sidecars.",
+          "response_description": "XML sitemap with signal pages, board-family pages, material pages, format pages, SKU pages, and public sidecars."
+        },
+        {
+          "path": "/data/box-strength-records.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download public Packrift packaging-strength evidence rows.",
+          "response_description": "JSON rows containing public SKU, product URL, extracted strength signals, dimensions, cube, weight, price snapshot, and availability snapshot fields."
+        },
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch release counts for records, strength signals, signal edges, board families, materials, and formats.",
+          "response_description": "JSON release statistics for the Packaging Strength Evidence Atlas."
+        },
+        {
+          "path": "/signals/ect-32/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative signal page for ECT-32 packaging records.",
+          "response_description": "HTML signal page listing Packrift public records with extracted ECT-32 evidence."
+        },
+        {
+          "path": "/signals/2-5-mil-film/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative signal page for 2.5 mil film evidence records.",
+          "response_description": "HTML signal page listing Packrift public records with extracted 2.5 mil film evidence."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "This atlas is a read-only public packaging-strength evidence reference. No account, login, API key, token, payment, or password is required to read the public files. It is not a live quote, inventory promise, checkout total, supplier-cost disclosure, margin disclosure, customer record, or substitute recommendation. Use Packrift.com checkout and Packrift MCP for live price, inventory, shipping, cart, and order decisions.",
+      "description": "Public Packrift packaging-strength evidence reference that normalizes ECT ratings, wall construction, film thickness, gauge, and durability signals for procurement agents, crawlers, and buyer review.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-06-01T18:50:23Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-packaging-strength-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "This atlas is a read-only public packaging-strength evidence reference. No account, login, API key, token, payment, or password is required to read the public files. It is not a live quote, inventory promise, checkout total, supplier-cost disclosure, margin disclosure, customer record, or substitute recommendation. Use Packrift.com checkout and Packrift MCP for live price, inventory, shipping, cart, and order decisions.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Public Packrift packaging-strength evidence reference that normalizes ECT ratings, wall construction, film thickness, gauge, and durability signals for procurement agents, crawlers, and buyer review.",
+    "documentation": "https://packrift-packaging-strength-atlas.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch the compact agent-readable guide to the packaging-strength atlas, source boundaries, and key public routes.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/llms.txt",
+        "response_description": "Plain-text guide covering canonical URLs, data files, safe-use notes, and source boundaries."
+      },
+      {
+        "description": "Enumerate crawlable packaging-strength pages and machine-readable sidecars.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap with signal pages, board-family pages, material pages, format pages, SKU pages, and public sidecars."
+      },
+      {
+        "description": "Download public Packrift packaging-strength evidence rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/box-strength-records.json",
+        "response_description": "JSON rows containing public SKU, product URL, extracted strength signals, dimensions, cube, weight, price snapshot, and availability snapshot fields."
+      },
+      {
+        "description": "Fetch release counts for records, strength signals, signal edges, board families, materials, and formats.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "JSON release statistics for the Packaging Strength Evidence Atlas."
+      },
+      {
+        "description": "Read a representative signal page for ECT-32 packaging records.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/signals/ect-32/",
+        "response_description": "HTML signal page listing Packrift public records with extracted ECT-32 evidence."
+      },
+      {
+        "description": "Read a representative signal page for 2.5 mil film evidence records.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/signals/2-5-mil-film/",
+        "response_description": "HTML signal page listing Packrift public records with extracted 2.5 mil film evidence."
+      }
+    ],
+    "homepage": "https://packrift-packaging-strength-atlas.vercel.app/",
+    "last_updated": "2026-06-01T18:50:23Z",
+    "listing_requested": true,
+    "name": "Packrift Packaging Strength Evidence Atlas",
+    "payment": null,
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "rate_limits": {
+      "requests_per_day": null,
+      "requests_per_minute": null
+    },
+    "reliability": {
+      "expected_uptime_pct": null,
+      "maintained_by": "organization",
+      "status_url": null
+    },
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

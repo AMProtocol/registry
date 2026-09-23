@@ -1,0 +1,16 @@
+id: stripe
+openapi_url: https://raw.githubusercontent.com/stripe/openapi/master/openapi/spec3.json
+name: Stripe
+description: Stripe is a payment processing platform. This import covers payment links, products, and prices — a focused subset of the full Stripe API for agent discovery.
+categories: [finance, commerce]
+primary_category: transactional
+pricing:
+  model: usage_based
+endpoint_allowlist:
+  - /v1/payment_links
+  - /v1/products
+  - /v1/prices
+representative_queries:
+  - create stripe payment link
+  - list stripe products
+  - stripe price lookup

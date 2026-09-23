@@ -1,0 +1,146 @@
+{
+  "id": "cmpwrypwi000wpjtclkofx0re",
+  "legacy_id": "cmpwrypwi000wpjtclkofx0re",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-agent-query-target-atlas.vercel.app/",
+  "manifest_url": "https://packrift-agent-query-target-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-agent-query-target-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-agent-query-target-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T15:10:55.650Z",
+  "verified_at": "2026-06-02T15:10:55.649Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T15:10:55.649Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T15:07:30Z",
+    "snapshot": {
+      "name": "Packrift Agent Query Target Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-agent-query-target-atlas.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/query-targets.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public Packrift agent query target records.",
+          "response_description": "Query IDs, prompts, target SKU or collection, target URL, buyer intent, expected answer type, and required public product facts."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Agent Query Target Atlas URLs.",
+          "response_description": "XML sitemap containing all public Agent Query Target Atlas URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public reference. No account, API key, token, payment, password, supplier cost, margin, customer, order, cart, private freight, or source risk-note data is exposed.",
+      "description": "A public Packrift reference corpus for agent and search query testing, mapping source-backed packaging prompts to target Packrift products, collections, expected answer types, and required public product facts.",
+      "last_updated": "2026-06-02T15:07:30Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-agent-query-target-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public reference. No account, API key, token, payment, password, supplier cost, margin, customer, order, cart, private freight, or source risk-note data is exposed.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A public Packrift reference corpus for agent and search query testing, mapping source-backed packaging prompts to target Packrift products, collections, expected answer types, and required public product facts.",
+    "documentation": "https://packrift-agent-query-target-atlas.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch public Packrift agent query target records.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/query-targets.json",
+        "response_description": "Query IDs, prompts, target SKU or collection, target URL, buyer intent, expected answer type, and required public product facts."
+      },
+      {
+        "description": "Enumerate Agent Query Target Atlas URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing all public Agent Query Target Atlas URLs."
+      }
+    ],
+    "homepage": "https://packrift-agent-query-target-atlas.vercel.app/",
+    "last_updated": "2026-06-02T15:07:30Z",
+    "listing_requested": true,
+    "name": "Packrift Agent Query Target Atlas",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

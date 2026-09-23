@@ -1,0 +1,12 @@
+name = "agentmanifest-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Attach as Custom Domains in Cloudflare dashboard:
+#   api.agent-manifest.com
+#   validator.agent-manifest.com
+# Staging: api-next.agent-manifest.com
+
+[vars]
+REGISTRY_ORIGIN = "https://agent-manifest.com"

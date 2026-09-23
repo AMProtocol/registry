@@ -1,0 +1,216 @@
+{
+  "id": "cmpv4dlqs000fpjtcgfks61xi",
+  "legacy_id": "cmpv4dlqs000fpjtcgfks61xi",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-product-media-evidence-atlas.vercel.app/",
+  "manifest_url": "https://packrift-product-media-evidence-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-product-media-evidence-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "support@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-product-media-evidence-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T11:22:53.141Z",
+  "verified_at": "2026-06-01T11:22:53.140Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T11:22:53.140Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T11:21:33Z",
+    "snapshot": {
+      "url": "https://packrift-product-media-evidence-atlas.vercel.app",
+      "name": "Packrift Product Media Evidence Atlas",
+      "tags": [
+        "packaging",
+        "product-media",
+        "catalog",
+        "images",
+        "commerce"
+      ],
+      "contact": {
+        "url": "https://packrift.com/pages/contact",
+        "email": "support@packrift.com",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "details": "Public reference pages and data files are free to access.",
+        "currency": "USD",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-product-media-evidence-atlas.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "url": "https://packrift-product-media-evidence-atlas.vercel.app/",
+          "name": "Homepage",
+          "path": "/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Human-readable media evidence atlas homepage.",
+          "response_description": "HTML overview with media counts and browse routes."
+        },
+        {
+          "url": "https://packrift-product-media-evidence-atlas.vercel.app/data/stats.json",
+          "name": "Stats JSON",
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Machine-readable atlas counts.",
+          "response_description": "JSON object with generated timestamp, media counts, source policy, and claim boundaries."
+        },
+        {
+          "url": "https://packrift-product-media-evidence-atlas.vercel.app/data/product-media-evidence.json",
+          "name": "Media JSON",
+          "path": "/data/product-media-evidence.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Complete public media evidence records.",
+          "response_description": "JSON dataset containing public SKU, product URL, image URL, image host, image status, family, product type, price, inventory, and weight fields."
+        },
+        {
+          "url": "https://packrift-product-media-evidence-atlas.vercel.app/sitemap.xml",
+          "name": "Sitemap",
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Crawlable XML sitemap.",
+          "response_description": "XML sitemap listing all public atlas URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "No account, authentication, API key, api_key, or credentials are required to read this public Packrift product media evidence atlas. Use it for public product-image coverage and visual discovery. Do not infer live checkout availability, negotiated pricing, freight promises, supplier cost, margin, customer/order data, account-specific terms, or third-party endorsement from this reference asset.",
+      "description": "Public Packrift product media evidence atlas for packaging catalog visual discovery, SKU image coverage checks, and agent-commerce media reference workflows.",
+      "last_updated": "2026-06-01T11:21:33Z",
+      "spec_version": "agentmanifest-0.3",
+      "maintained_by": {
+        "url": "https://packrift.com",
+        "name": "Packrift LLC",
+        "type": "organization"
+      },
+      "authentication": {
+        "type": "none",
+        "required": false
+      },
+      "schema_version": "https://agentmanifest.org/schemas/v0.3.json",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "schema_version": "https://agentmanifest.org/schemas/v0.3.json",
+    "name": "Packrift Product Media Evidence Atlas",
+    "description": "Public Packrift product media evidence atlas for packaging catalog visual discovery, SKU image coverage checks, and agent-commerce media reference workflows.",
+    "url": "https://packrift-product-media-evidence-atlas.vercel.app",
+    "homepage": "https://packrift-product-media-evidence-atlas.vercel.app/",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com"
+    },
+    "maintained_by": {
+      "type": "organization",
+      "name": "Packrift LLC",
+      "url": "https://packrift.com"
+    },
+    "version": "1.0.0",
+    "last_updated": "2026-06-01T11:21:33Z",
+    "primary_category": "reference",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "tags": [
+      "packaging",
+      "product-media",
+      "catalog",
+      "images",
+      "commerce"
+    ],
+    "pricing": {
+      "model": "free",
+      "currency": "USD",
+      "details": "Public reference pages and data files are free to access.",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "authentication": {
+      "type": "none",
+      "required": false
+    },
+    "contact": {
+      "email": "support@packrift.com",
+      "url": "https://packrift.com/pages/contact",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "endpoints": [
+      {
+        "name": "Homepage",
+        "path": "/",
+        "url": "https://packrift-product-media-evidence-atlas.vercel.app/",
+        "method": "GET",
+        "parameters": [],
+        "description": "Human-readable media evidence atlas homepage.",
+        "response_description": "HTML overview with media counts and browse routes."
+      },
+      {
+        "name": "Stats JSON",
+        "path": "/data/stats.json",
+        "url": "https://packrift-product-media-evidence-atlas.vercel.app/data/stats.json",
+        "method": "GET",
+        "parameters": [],
+        "description": "Machine-readable atlas counts.",
+        "response_description": "JSON object with generated timestamp, media counts, source policy, and claim boundaries."
+      },
+      {
+        "name": "Media JSON",
+        "path": "/data/product-media-evidence.json",
+        "url": "https://packrift-product-media-evidence-atlas.vercel.app/data/product-media-evidence.json",
+        "method": "GET",
+        "parameters": [],
+        "description": "Complete public media evidence records.",
+        "response_description": "JSON dataset containing public SKU, product URL, image URL, image host, image status, family, product type, price, inventory, and weight fields."
+      },
+      {
+        "name": "Sitemap",
+        "path": "/sitemap.xml",
+        "url": "https://packrift-product-media-evidence-atlas.vercel.app/sitemap.xml",
+        "method": "GET",
+        "parameters": [],
+        "description": "Crawlable XML sitemap.",
+        "response_description": "XML sitemap listing all public atlas URLs."
+      }
+    ],
+    "agent_notes": "No account, authentication, API key, api_key, or credentials are required to read this public Packrift product media evidence atlas. Use it for public product-image coverage and visual discovery. Do not infer live checkout availability, negotiated pricing, freight promises, supplier cost, margin, customer/order data, account-specific terms, or third-party endorsement from this reference asset."
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "id": "cmptkd5ar0000pjtcortjriyj",
+  "legacy_id": "cmptkd5ar0000pjtcortjriyj",
+  "status": "lapsed",
+  "submitted_via": "migration",
+  "url": "https://packrift-benchmark-navigator.vercel.app",
+  "manifest_url": "https://packrift-benchmark-navigator.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-benchmark-navigator.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-benchmark-navigator.vercel.app",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-05-31T09:14:53.328Z",
+  "verified_at": "2026-05-31T09:14:53.323Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 2,
+  "last_valid": {
+    "validated_at": "2026-05-31T09:14:53.323Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-05-31T09:14:06Z",
+    "snapshot": {
+      "name": "Packrift Benchmark Navigator Static Data",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-benchmark-navigator.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable overview and canonical link map.",
+          "response_description": "Plain text summary with important Packrift Benchmark Navigator links and use boundaries."
+        },
+        {
+          "path": "/llms-full.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the full agent context for the navigator and fixture pack.",
+          "response_description": "Plain text context covering human pages, machine-readable files, fixture indexes, and safe-use notes."
+        },
+        {
+          "path": "/openapi.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the OpenAPI map for the public static navigator resources.",
+          "response_description": "OpenAPI 3.1 description of read-only GET routes for navigator pages, metadata, and fixture files."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable public URLs on the Benchmark Navigator site.",
+          "response_description": "XML sitemap containing public HTML pages, metadata sidecars, fixture indexes, and generated packingsolver input files."
+        },
+        {
+          "path": "/data/source-register.csv",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the compact register of public source and metadata artifacts.",
+          "response_description": "CSV rows describing artifact name, purpose, format, public URL, Packrift ownership, and notes."
+        },
+        {
+          "path": "/data/packingsolver-fixtures/manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the manifest for Packrift packingsolver-compatible fixture files.",
+          "response_description": "JSON manifest with fixture pack counts, file lists, source ledger, versioning, and conservative claim boundaries."
+        },
+        {
+          "path": "/data/packingsolver-fixtures/instance-index.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the machine-readable index of generated packingsolver scenario file sets.",
+          "response_description": "JSON index mapping each generated scenario to bins, items, and parameters CSV files with family counts."
+        },
+        {
+          "path": "/data/packingsolver-fixtures/instance-index.csv",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the CSV index of generated packingsolver scenario file sets.",
+          "response_description": "CSV index mapping generated scenario identifiers to public bins, items, and parameters CSV URLs."
+        },
+        {
+          "path": "/data/packingsolver-fixtures/packingsolver-format-map.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch field-level conversion rules for Packrift fixture files.",
+          "response_description": "JSON map explaining how public Packrift carton and scenario fields map into packingsolver bins, items, and parameters files."
+        },
+        {
+          "path": "/ai/dataset.jsonld",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch Schema.org dataset metadata for crawler and catalog discovery.",
+          "response_description": "JSON-LD Dataset and DataDownload metadata for Packrift public benchmark resources."
+        }
+      ],
+      "categories": [
+        "engineering",
+        "commerce",
+        "logistics",
+        "computing"
+      ],
+      "agent_notes": "Use this manifest as a read-only entry point for Packrift benchmark metadata and fixture inspection. No account, authentication flow, API key, token, secret, or credentials are required for the public files listed here; pricing is free with no autonomous payment flow or usage cost declared. Agents should not attempt credential entry, checkout, ordering, or authenticated Packrift account actions from this manifest. Do not treat any generated fixture as a real customer order, optimal packing solution, live inventory promise, freight approval, carrier-rate approval, checkout completion, or third-party endorsement. Prefer the sitemap for exhaustive URL enumeration, the instance index for generated packingsolver input files, and the source register for artifact-level citation review.",
+      "description": "Packrift Benchmark Navigator exposes crawlable, read-only packaging benchmark metadata, packingsolver fixture indexes, source registers, citation files, and dataset sidecars for agents that need ecommerce packaging reference data without authentication.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-05-31T09:14:06Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-benchmark-navigator.vercel.app/sources.html",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [
+    "schema_validity: Schema validation failed: /endpoints/27 must have required property 'parameters'; /endpoints/27 must have required property 'response_description'; /endpoints/28 must have required property 'parameters'; /endpoints/28 must have required property 'response_description'"
+  ],
+  "manifest": {
+    "name": "Packrift Benchmark Navigator Static Data",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/"
+    },
+    "payment": null,
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/"
+    },
+    "version": "1.0.0",
+    "homepage": "https://packrift-benchmark-navigator.vercel.app/",
+    "endpoints": [
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "parameters": [],
+        "description": "Fetch the compact agent-readable overview and canonical link map.",
+        "response_description": "Plain text summary with important Packrift Benchmark Navigator links and use boundaries."
+      },
+      {
+        "path": "/llms-full.txt",
+        "method": "GET",
+        "parameters": [],
+        "description": "Fetch the full agent context for the navigator and fixture pack.",
+        "response_description": "Plain text context covering human pages, machine-readable files, fixture indexes, and safe-use notes."
+      },
+      {
+        "path": "/openapi.json",
+        "method": "GET",
+        "parameters": [],
+        "description": "Fetch the OpenAPI map for the public static navigator resources.",
+        "response_description": "OpenAPI 3.1 description of read-only GET routes for navigator pages, metadata, and fixture files."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "parameters": [],
+        "description": "Enumerate crawlable public URLs on the Benchmark Navigator site.",
+        "response_description": "XML sitemap containing public HTML pages, metadata sidecars, fixture indexes, and generated packingsolver input files."
+      },
+      {
+        "path": "/data/source-register.csv",
+        "method": "GET",
+        "parameters": [],
+        "description": "Download the compact register of public source and metadata artifacts.",
+        "response_description": "CSV rows describing artifact name, purpose, format, public URL, Packrift ownership, and notes."
+      },
+      {
+        "path": "/data/packingsolver-fixtures/manifest.json",
+        "method": "GET",
+        "parameters": [],
+        "description": "Fetch the manifest for Packrift packingsolver-compatible fixture files.",
+        "response_description": "JSON manifest with fixture pack counts, file lists, source ledger, versioning, and conservative claim boundaries."
+      },
+      {
+        "path": "/data/packingsolver-fixtures/instance-index.json",
+        "method": "GET",
+        "parameters": [],
+        "description": "Fetch the machine-readable index of generated packingsolver scenario file sets.",
+        "response_description": "JSON index mapping each generated scenario to bins, items, and parameters CSV files with family counts."
+      },
+      {
+        "path": "/data/packingsolver-fixtures/instance-index.csv",
+        "method": "GET",
+        "parameters": [],
+        "description": "Download the CSV index of generated packingsolver scenario file sets.",
+        "response_description": "CSV index mapping generated scenario identifiers to public bins, items, and parameters CSV URLs."
+      },
+      {
+        "path": "/data/packingsolver-fixtures/packingsolver-format-map.json",
+        "method": "GET",
+        "parameters": [],
+        "description": "Fetch field-level conversion rules for Packrift fixture files.",
+        "response_description": "JSON map explaining how public Packrift carton and scenario fields map into packingsolver bins, items, and parameters files."
+      },
+      {
+        "path": "/ai/dataset.jsonld",
+        "method": "GET",
+        "parameters": [],
+        "description": "Fetch Schema.org dataset metadata for crawler and catalog discovery.",
+        "response_description": "JSON-LD Dataset and DataDownload metadata for Packrift public benchmark resources."
+      }
+    ],
+    "categories": [
+      "engineering",
+      "commerce",
+      "logistics",
+      "computing"
+    ],
+    "agent_notes": "Use this manifest as a read-only entry point for Packrift benchmark metadata and fixture inspection. No account, authentication flow, API key, token, secret, or credentials are required for the public files listed here; pricing is free with no autonomous payment flow or usage cost declared. Agents should not attempt credential entry, checkout, ordering, or authenticated Packrift account actions from this manifest. Do not treat any generated fixture as a real customer order, optimal packing solution, live inventory promise, freight approval, carrier-rate approval, checkout completion, or third-party endorsement. Prefer the sitemap for exhaustive URL enumeration, the instance index for generated packingsolver input files, and the source register for artifact-level citation review.",
+    "description": "Packrift Benchmark Navigator exposes crawlable, read-only packaging benchmark metadata, packingsolver fixture indexes, source registers, citation files, and dataset sidecars for agents that need ecommerce packaging reference data without authentication.",
+    "rate_limits": {
+      "requests_per_day": null,
+      "requests_per_minute": null
+    },
+    "reliability": {
+      "status_url": null,
+      "maintained_by": "organization",
+      "expected_uptime_pct": null
+    },
+    "last_updated": "2026-05-31T09:14:06Z",
+    "spec_version": "agentmanifest-0.3",
+    "documentation": "https://packrift-benchmark-navigator.vercel.app/sources.html",
+    "authentication": {
+      "type": "none",
+      "required": false,
+      "instructions": null
+    },
+    "primary_category": "reference",
+    "listing_requested": true
+  }
+}

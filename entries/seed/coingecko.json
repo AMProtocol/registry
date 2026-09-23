@@ -1,0 +1,80 @@
+{
+  "id": "coingecko",
+  "legacy_id": null,
+  "status": "unverified",
+  "submitted_via": "import",
+  "url": "https://api.coingecko.com",
+  "manifest_url": null,
+  "publisher": {
+    "domain": "api.coingecko.com",
+    "group": "seed",
+    "contact": "https://api.coingecko.com"
+  },
+  "source": {
+    "type": "openapi",
+    "url": "https://api.coingecko.com/api/v3/swagger.json",
+    "retrieved_at": "2026-09-23T20:42:04.509Z"
+  },
+  "representative_queries": [
+    "bitcoin price today",
+    "ethereum market cap",
+    "crypto coin list"
+  ],
+  "badges": [],
+  "created_at": "2026-09-23T20:42:04.509Z",
+  "verified_at": null,
+  "last_checked_at": "2026-09-23T20:42:04.509Z",
+  "consecutive_failures": 0,
+  "last_valid": null,
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "CoinGecko API",
+    "version": "3.0.0",
+    "description": "CoinGecko provides cryptocurrency prices, market cap, volume, and historical data for thousands of coins. Free demo API key available; rate limits apply.",
+    "homepage": "https://api.coingecko.com",
+    "categories": [
+      "finance"
+    ],
+    "primary_category": "live",
+    "endpoints": [
+      {
+        "path": "/api/v3/simple/price",
+        "method": "GET",
+        "description": "Get current price of one or more coins in a fiat currency.",
+        "parameters": [
+          {
+            "name": "ids",
+            "type": "string",
+            "required": true,
+            "description": "Comma-separated coin ids"
+          },
+          {
+            "name": "vs_currencies",
+            "type": "string",
+            "required": true,
+            "description": "e.g. usd"
+          }
+        ],
+        "response_description": "JSON map of coin id to fiat prices."
+      }
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": {
+        "queries_per_month": 10000
+      },
+      "paid_tier": null
+    },
+    "payment": null,
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": "Optional x-cg-demo-api-key header for higher limits."
+    },
+    "agent_notes": "No account required for basic use; optional demo API key improves rate limits. Pricing is freemium. Use coin ids like bitcoin, ethereum. Respect rate limits and cache responses.",
+    "contact": "https://www.coingecko.com/en/api",
+    "listing_requested": false,
+    "last_updated": "2026-09-23T20:42:04.509Z"
+  }
+}

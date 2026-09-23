@@ -1,0 +1,182 @@
+{
+  "id": "cmpxwfrmr0027pjtcnpf74o60",
+  "legacy_id": "cmpxwfrmr0027pjtcnpf74o60",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-catalog-trust-ledger-gateway.vercel.app/",
+  "manifest_url": "https://packrift-catalog-trust-ledger-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-catalog-trust-ledger-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-catalog-trust-ledger-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T10:03:55.684Z",
+  "verified_at": "2026-06-03T10:03:55.683Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T10:03:55.683Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T10:03:01Z",
+    "snapshot": {
+      "api": {
+        "url": "https://packrift-catalog-trust-ledger-gateway.vercel.app/openapi.json",
+        "type": "openapi"
+      },
+      "name": "Packrift Catalog Trust Ledger Gateway",
+      "tags": [
+        "Packrift",
+        "catalog trust",
+        "catalog evidence",
+        "public catalog",
+        "agent metadata"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-catalog-trust-ledger-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch gateway and source trust-ledger coverage statistics.",
+          "response_description": "JSON stats for the compact gateway and source trust-ledger coverage."
+        },
+        {
+          "path": "/data/sample-catalog-trust-ledger-rows.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch bounded sample trust-ledger rows.",
+          "response_description": "JSONL rows with public source trust links, product URLs, families, product types, trust bands, and static status bands."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate gateway URLs.",
+          "response_description": "XML sitemap listing compact gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. Authentication is not required; no API key, credential, payment, account login, or access credential is needed. Pricing is free for this static reference gateway. Use these files for discovery and metadata only, and verify live product fit, price, stock, shipping, and checkout on Packrift.com before purchase decisions.",
+      "description": "Compact public Packrift gateway for catalog trust-ledger source coverage, trust bands, confidence bands, sample trust rows, and agent-readable metadata.",
+      "last_updated": "2026-06-03T10:03:01Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-catalog-trust-ledger-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Authentication is not required; no API key, credential, payment, account login, or access credential is needed. Pricing is free for this static reference gateway. Use these files for discovery and metadata only, and verify live product fit, price, stock, shipping, and checkout on Packrift.com before purchase decisions.",
+    "api": {
+      "type": "openapi",
+      "url": "https://packrift-catalog-trust-ledger-gateway.vercel.app/openapi.json"
+    },
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Compact public Packrift gateway for catalog trust-ledger source coverage, trust bands, confidence bands, sample trust rows, and agent-readable metadata.",
+    "documentation": "https://packrift-catalog-trust-ledger-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch gateway and source trust-ledger coverage statistics.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "JSON stats for the compact gateway and source trust-ledger coverage."
+      },
+      {
+        "description": "Fetch bounded sample trust-ledger rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-catalog-trust-ledger-rows.jsonl",
+        "response_description": "JSONL rows with public source trust links, product URLs, families, product types, trust bands, and static status bands."
+      },
+      {
+        "description": "Enumerate gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap listing compact gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-catalog-trust-ledger-gateway.vercel.app/",
+    "last_updated": "2026-06-03T10:03:01Z",
+    "listing_requested": true,
+    "name": "Packrift Catalog Trust Ledger Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "Packrift",
+      "catalog trust",
+      "catalog evidence",
+      "public catalog",
+      "agent metadata"
+    ],
+    "version": "1.0.0"
+  }
+}

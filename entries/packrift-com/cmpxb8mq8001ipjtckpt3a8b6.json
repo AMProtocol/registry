@@ -1,0 +1,156 @@
+{
+  "id": "cmpxb8mq8001ipjtckpt3a8b6",
+  "legacy_id": "cmpxb8mq8001ipjtckpt3a8b6",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-agent-query-target-gateway.vercel.app/",
+  "manifest_url": "https://packrift-agent-query-target-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-agent-query-target-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-agent-query-target-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T00:10:30.800Z",
+  "verified_at": "2026-06-03T00:10:30.799Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T00:10:30.799Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T00:09:42Z",
+    "snapshot": {
+      "name": "Packrift Agent Query Target Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-agent-query-target-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch agent query target gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for buyer intents, scopes, difficulties, collection groups, priority categories, target SKUs, and source boundaries."
+        },
+        {
+          "path": "/data/sample-agent-query-targets.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift agent query target rows.",
+          "response_description": "Public-safe sample buyer prompts with target SKU/product references and required public product facts."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Agent Query Target Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full query target pages live at the linked Packrift Agent Query Target Atlas. This is not a ChatGPT/Gemini placement claim, search ranking claim, third-party endorsement, AI answer guarantee, live checkout rate, delivery promise, real-time inventory source, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for public agent query targets, buyer intent rollups, target SKUs, and required public product facts.",
+      "last_updated": "2026-06-03T00:09:42Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-agent-query-target-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full query target pages live at the linked Packrift Agent Query Target Atlas. This is not a ChatGPT/Gemini placement claim, search ranking claim, third-party endorsement, AI answer guarantee, live checkout rate, delivery promise, real-time inventory source, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public agent query targets, buyer intent rollups, target SKUs, and required public product facts.",
+    "documentation": "https://packrift-agent-query-target-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch agent query target gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for buyer intents, scopes, difficulties, collection groups, priority categories, target SKUs, and source boundaries."
+      },
+      {
+        "description": "Fetch sample public Packrift agent query target rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-agent-query-targets.jsonl",
+        "response_description": "Public-safe sample buyer prompts with target SKU/product references and required public product facts."
+      },
+      {
+        "description": "Enumerate Agent Query Target Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-agent-query-target-gateway.vercel.app/",
+    "last_updated": "2026-06-03T00:09:42Z",
+    "name": "Packrift Agent Query Target Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

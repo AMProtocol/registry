@@ -1,0 +1,80 @@
+{
+  "id": "openweathermap",
+  "legacy_id": null,
+  "status": "unverified",
+  "submitted_via": "import",
+  "url": "https://api.openweathermap.org",
+  "manifest_url": null,
+  "publisher": {
+    "domain": "api.openweathermap.org",
+    "group": "seed",
+    "contact": "https://api.openweathermap.org"
+  },
+  "source": {
+    "type": "openapi",
+    "url": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/openweathermap.org/2.5/openapi.yaml",
+    "retrieved_at": "2026-09-23T20:42:04.509Z"
+  },
+  "representative_queries": [
+    "weather in san francisco",
+    "5 day forecast london",
+    "current temperature by city"
+  ],
+  "badges": [],
+  "created_at": "2026-09-23T20:42:04.509Z",
+  "verified_at": null,
+  "last_checked_at": "2026-09-23T20:42:04.509Z",
+  "consecutive_failures": 0,
+  "last_valid": null,
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "OpenWeatherMap",
+    "version": "2.5.0",
+    "description": "OpenWeatherMap provides current weather, forecasts, and historical data worldwide. Free tier with API key; one-call endpoint for current + forecast.",
+    "homepage": "https://api.openweathermap.org",
+    "categories": [
+      "weather"
+    ],
+    "primary_category": "live",
+    "endpoints": [
+      {
+        "path": "/data/2.5/weather",
+        "method": "GET",
+        "description": "Current weather for a city name or lat/lon.",
+        "parameters": [
+          {
+            "name": "q",
+            "type": "string",
+            "required": false,
+            "description": "City name"
+          },
+          {
+            "name": "appid",
+            "type": "string",
+            "required": true,
+            "description": "API key"
+          }
+        ],
+        "response_description": "Current conditions JSON including temp, humidity, and description."
+      }
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": {
+        "queries_per_day": 1000
+      },
+      "paid_tier": null
+    },
+    "payment": null,
+    "authentication": {
+      "required": true,
+      "type": "api_key",
+      "instructions": "Sign up at openweathermap.org; pass appid query parameter."
+    },
+    "agent_notes": "Create a free account at openweathermap.org for an API key (appid). Authentication is via the appid query parameter. Pricing is freemium with daily call limits on the free tier.",
+    "contact": "https://openweathermap.org/api",
+    "listing_requested": false,
+    "last_updated": "2026-09-23T20:42:04.509Z"
+  }
+}

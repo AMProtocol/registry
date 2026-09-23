@@ -1,0 +1,12 @@
+id: pinecone
+openapi_url: https://raw.githubusercontent.com/pinecone-io/pinecone-api/main/2024-10/oas/2024-10.yaml
+name: Pinecone
+description: Pinecone is a vector database for AI applications. Upsert, query, and manage vector embeddings for semantic search and retrieval-augmented generation workloads.
+categories: [computing]
+primary_category: computational
+pricing:
+  model: freemium
+representative_queries:
+  - vector database semantic search
+  - pinecone embedding query
+  - rag vector store api

@@ -1,0 +1,22 @@
+{
+  "name": "@agentmanifest/registry-data",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public AMP registry — single source of truth for verified and imported API listings",
+  "type": "module",
+  "scripts": {
+    "migrate": "node scripts/migrate-from-backup.mjs",
+    "import-seeds": "node scripts/write-seed-entries.mjs",
+    "build": "node scripts/build-index.mjs && node scripts/build-site.mjs",
+    "verify": "node scripts/verify-entries.mjs",
+    "rules:test": "node --test rules/rules.test.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "yaml": "^2.8.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

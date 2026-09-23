@@ -1,0 +1,158 @@
+{
+  "id": "cmpxutvg30024pjtcp3x4zdz6",
+  "legacy_id": "cmpxutvg30024pjtcp3x4zdz6",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-benchmark-navigator-gateway.vercel.app/",
+  "manifest_url": "https://packrift-benchmark-navigator-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-benchmark-navigator-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-benchmark-navigator-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T09:18:54.580Z",
+  "verified_at": "2026-06-03T09:18:54.579Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T09:18:54.579Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T09:16:24Z",
+    "snapshot": {
+      "name": "Packrift Benchmark Navigator Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-benchmark-navigator-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch Benchmark Navigator Gateway counts and boundaries.",
+          "response_description": "Public JSON stats for source sitemap counts, source-register rows, fixture counts, scenario family counts, publication-kit counts, and quality checks."
+        },
+        {
+          "path": "/data/sample-navigator-artifacts.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Benchmark Navigator source-register rows.",
+          "response_description": "Public-safe artifact, purpose, format, URL, and ownership sample rows."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Benchmark Navigator Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required. The source navigator and benchmark corpus are linked but not recounted. This is not an open-data license grant, solver-optimum claim, solver-performance claim, live commerce source, checkout-rate source, delivery promise, customer transaction dataset, carrier-rate compliance claim, third-party endorsement, search-ranking claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, substitute approval, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for the Benchmark Navigator source register, verification ledger, packingsolver fixture package, and machine-readable public metadata.",
+      "last_updated": "2026-06-03T09:16:24Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-benchmark-navigator-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required. The source navigator and benchmark corpus are linked but not recounted. This is not an open-data license grant, solver-optimum claim, solver-performance claim, live commerce source, checkout-rate source, delivery promise, customer transaction dataset, carrier-rate compliance claim, third-party endorsement, search-ranking claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, substitute approval, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for the Benchmark Navigator source register, verification ledger, packingsolver fixture package, and machine-readable public metadata.",
+    "documentation": "https://packrift-benchmark-navigator-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch Benchmark Navigator Gateway counts and boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for source sitemap counts, source-register rows, fixture counts, scenario family counts, publication-kit counts, and quality checks."
+      },
+      {
+        "description": "Fetch sample public Benchmark Navigator source-register rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-navigator-artifacts.jsonl",
+        "response_description": "Public-safe artifact, purpose, format, URL, and ownership sample rows."
+      },
+      {
+        "description": "Enumerate Benchmark Navigator Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-benchmark-navigator-gateway.vercel.app/",
+    "last_updated": "2026-06-03T09:16:24Z",
+    "name": "Packrift Benchmark Navigator Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

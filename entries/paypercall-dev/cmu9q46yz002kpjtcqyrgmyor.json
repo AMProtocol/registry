@@ -1,0 +1,446 @@
+{
+  "id": "cmu9q46yz002kpjtcqyrgmyor",
+  "legacy_id": "cmu9q46yz002kpjtcqyrgmyor",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://extract.paypercall.dev",
+  "manifest_url": "https://extract.paypercall.dev/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "extract.paypercall.dev",
+    "group": "paypercall-dev",
+    "contact": "vend@paypercall.dev"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://extract.paypercall.dev",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [
+    "payment-ready"
+  ],
+  "created_at": "2026-09-20T11:19:01.450Z",
+  "verified_at": "2026-09-20T11:19:01.434Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-09-20T11:19:01.434Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-09-20T11:19:01Z",
+    "snapshot": {
+      "name": "Vend API Merchant",
+      "$schema": "https://raw.githubusercontent.com/AMProtocol/AMP/refs/heads/main/validator/spec/v0.3.md",
+      "contact": "vend@paypercall.dev",
+      "payment": {
+        "model": "per_request",
+        "rates": [
+          {
+            "cap": null,
+            "tier": "standard",
+            "unit": "request",
+            "price": "0.0001",
+            "threshold": 0,
+            "description": "Standard endpoints: extract, check-link, web-search, geoip, status"
+          },
+          {
+            "cap": null,
+            "tier": "premium",
+            "unit": "request",
+            "price": "0.0005",
+            "threshold": 0,
+            "description": "Premium endpoints: domain-info, nano-info, youtube-transcript"
+          }
+        ],
+        "currency": "x-XNO",
+        "onboarding": {
+          "url": "https://extract.paypercall.dev/amp/onboard",
+          "method": "POST",
+          "accepts": [
+            "platform_token"
+          ],
+          "returns": {
+            "instructions": "No API key needed. Call any endpoint without authentication; the server returns HTTP 402 with the Nano amount and payTo account. Settle on-chain and retry with X-PAYMENT header set to the block hash.",
+            "credential_type": "api_key",
+            "credential_field": "x402_instructions"
+          }
+        },
+        "settlement": {
+          "type": "real_time",
+          "provider_url": "https://nano.org",
+          "provider_name": "Nano (XNO)"
+        },
+        "refund_policy": {
+          "type": "none",
+          "terms_url": null
+        },
+        "budget_controls": {
+          "supports_alerting": false,
+          "supports_spend_cap": false,
+          "supports_rate_limit": true,
+          "supports_per_request_limit": false
+        }
+      },
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": {
+          "notes": "5 free calls per IP per day across all endpoints.",
+          "queries_per_day": 5
+        },
+        "paid_tier": {
+          "unit": "request",
+          "amount_usd": 0.0001,
+          "description": "0.0001 XNO per request for standard endpoints; 0.0005 XNO for domain-info, nano-info, youtube-transcript."
+        }
+      },
+      "version": "0.1.0",
+      "homepage": "https://extract.paypercall.dev",
+      "endpoints": [
+        {
+          "path": "/api/v1/extract",
+          "method": "GET",
+          "parameters": [
+            {
+              "name": "url",
+              "type": "string",
+              "required": true,
+              "description": "The web page URL to extract text from."
+            }
+          ],
+          "description": "Extract clean text/markdown from a web page URL.",
+          "response_description": "JSON with title, text_content, markdown, and metadata."
+        },
+        {
+          "path": "/api/v1/check-link",
+          "method": "GET",
+          "parameters": [
+            {
+              "name": "url",
+              "type": "string",
+              "required": true,
+              "description": "The URL to check."
+            }
+          ],
+          "description": "Check HTTP status, redirect chain, TLS validity, and response time.",
+          "response_description": "JSON with final HTTP status, redirect chain, TLS days-to-expiry, response time."
+        },
+        {
+          "path": "/api/v1/domain-info",
+          "method": "GET",
+          "parameters": [
+            {
+              "name": "domain",
+              "type": "string",
+              "required": true,
+              "description": "The domain to analyze (e.g., example.com)."
+            }
+          ],
+          "description": "Full domain intelligence: DNS, WHOIS, TLS certificate, HTTP headers.",
+          "response_description": "JSON with DNS records, WHOIS data, TLS cert info, HTTP headers."
+        },
+        {
+          "path": "/api/v1/web-search",
+          "method": "GET",
+          "parameters": [
+            {
+              "name": "q",
+              "type": "string",
+              "required": true,
+              "description": "Search query string."
+            }
+          ],
+          "description": "Web search returning result titles, URLs, and snippets.",
+          "response_description": "JSON array of search results with title, URL, and snippet."
+        },
+        {
+          "path": "/api/v1/geoip",
+          "method": "GET",
+          "parameters": [
+            {
+              "name": "ip",
+              "type": "string",
+              "required": true,
+              "description": "IP address to locate."
+            }
+          ],
+          "description": "IP geolocation: country, city, coordinates, ISP, ASN.",
+          "response_description": "JSON with country, city, lat/lon, ISP, ASN, timezone."
+        },
+        {
+          "path": "/api/v1/nano-info",
+          "method": "GET",
+          "parameters": [
+            {
+              "name": "account",
+              "type": "string",
+              "required": true,
+              "description": "Nano account address (nano_... or xrb_...)."
+            }
+          ],
+          "description": "Nano account info: balance, representative, weight, frontier, pending.",
+          "response_description": "JSON with Nano account balance, representative, weight, frontier, pending."
+        }
+      ],
+      "categories": [
+        "computing",
+        "other"
+      ],
+      "agent_notes": "Pay-per-call API merchant settled in Nano (XNO) via x402 v2 protocol. Call any endpoint without an API key: the server returns HTTP 402 with X-402-Price, X-402-PayTo, and X-402-Network headers. Send the exact XNO amount to the payTo account, then present the block hash in X-PAYMENT on the same request to receive the result. Five free trial calls per IP per day. Prepaid balance also supported via X-BALANCE header after top-up. All endpoints return application/json.",
+      "description": "Pay-per-call API merchant settled in Nano (XNO): web page extraction, link status checks, domain intelligence, web search, IP geolocation, and Nano account info. No signup, no API key — an unpaid HTTP call returns 402 with the exact Nano amount and payout address.",
+      "rate_limits": {
+        "requests_per_day": 1000,
+        "requests_per_minute": 60
+      },
+      "reliability": {
+        "uptime_percentage": 99.5,
+        "avg_response_time_ms": 1500
+      },
+      "last_updated": "2026-09-20T11:19:01Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://extract.paypercall.dev/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "$schema": "https://raw.githubusercontent.com/AMProtocol/AMP/refs/heads/main/validator/spec/v0.3.md",
+    "spec_version": "agentmanifest-0.3",
+    "name": "Vend API Merchant",
+    "version": "0.1.0",
+    "description": "Pay-per-call API merchant settled in Nano (XNO): web page extraction, link status checks, domain intelligence, web search, IP geolocation, URL status checks, Nano account info, and YouTube transcript extraction. No signup, no API key — an unpaid HTTP call returns 402 with the exact Nano amount and payout address.",
+    "homepage": "https://extract.paypercall.dev",
+    "documentation": "https://extract.paypercall.dev/llms.txt",
+    "categories": [
+      "computing",
+      "other"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/api/v1/extract",
+        "method": "GET",
+        "description": "Extract clean text/markdown from a web page URL.",
+        "parameters": [
+          {
+            "name": "url",
+            "type": "string",
+            "required": true,
+            "description": "The web page URL to extract text from."
+          }
+        ],
+        "response_description": "JSON with title, text_content, markdown, and metadata."
+      },
+      {
+        "path": "/api/v1/check-link",
+        "method": "GET",
+        "description": "Check HTTP status, redirect chain, TLS validity, and response time.",
+        "parameters": [
+          {
+            "name": "url",
+            "type": "string",
+            "required": true,
+            "description": "The URL to check."
+          }
+        ],
+        "response_description": "JSON with final HTTP status, redirect chain, TLS days-to-expiry, response time."
+      },
+      {
+        "path": "/api/v1/batch-status",
+        "method": "GET",
+        "description": "Batch check HTTP status of up to 50 URLs in one call.",
+        "parameters": [
+          {
+            "name": "urls",
+            "type": "string",
+            "required": true,
+            "description": "Comma-separated list of URLs to health-check."
+          },
+          {
+            "name": "method",
+            "type": "string",
+            "required": false,
+            "description": "HEAD (fast, default) or GET."
+          }
+        ],
+        "response_description": "JSON with each URL's status_code, response_time_ms, final_url and error."
+      },
+      {
+        "path": "/api/v1/status",
+        "method": "GET",
+        "description": "One-call URL status: final HTTP status, redirect chain, TLS validity and days-to-expiry, response time, and body content-drift vs a previous hash.",
+        "parameters": [
+          {
+            "name": "url",
+            "type": "string",
+            "required": true,
+            "description": "The URL to check."
+          },
+          {
+            "name": "previous_hash",
+            "type": "string",
+            "required": false,
+            "description": "Hash of a previous body to detect content drift."
+          }
+        ],
+        "response_description": "JSON with final HTTP status, redirect chain, TLS days-to-expiry, response time, and whether the body changed."
+      },
+      {
+        "path": "/api/v1/domain-info",
+        "method": "GET",
+        "description": "Full domain intelligence: DNS, WHOIS, TLS certificate, HTTP headers.",
+        "parameters": [
+          {
+            "name": "domain",
+            "type": "string",
+            "required": true,
+            "description": "The domain to analyze (e.g., example.com)."
+          }
+        ],
+        "response_description": "JSON with DNS records, WHOIS data, TLS cert info, HTTP headers."
+      },
+      {
+        "path": "/api/v1/web-search",
+        "method": "GET",
+        "description": "Web search returning result titles, URLs, and snippets.",
+        "parameters": [
+          {
+            "name": "q",
+            "type": "string",
+            "required": true,
+            "description": "Search query string."
+          }
+        ],
+        "response_description": "JSON array of search results with title, URL, and snippet."
+      },
+      {
+        "path": "/api/v1/geoip",
+        "method": "GET",
+        "description": "IP geolocation: country, city, coordinates, ISP, ASN.",
+        "parameters": [
+          {
+            "name": "ip",
+            "type": "string",
+            "required": true,
+            "description": "IP address to locate."
+          }
+        ],
+        "response_description": "JSON with country, city, lat/lon, ISP, ASN, timezone."
+      },
+      {
+        "path": "/api/v1/nano-info",
+        "method": "GET",
+        "description": "Nano account info: balance, representative, weight, frontier, pending.",
+        "parameters": [
+          {
+            "name": "account",
+            "type": "string",
+            "required": true,
+            "description": "Nano account address (nano_... or xrb_...)."
+          }
+        ],
+        "response_description": "JSON with Nano account balance, representative, weight, frontier, pending."
+      },
+      {
+        "path": "/api/v1/youtube-transcript",
+        "method": "GET",
+        "description": "Extract captions and transcript from a YouTube video URL.",
+        "parameters": [
+          {
+            "name": "url",
+            "type": "string",
+            "required": true,
+            "description": "YouTube video URL (watch, youtu.be, embed or shorts format)."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Language code for the transcript (default 'en')."
+          }
+        ],
+        "response_description": "JSON with timestamped transcript segments and model-sized deep-linked chunks."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none"
+    },
+    "pricing": {
+      "model": "usage_based",
+      "free_tier": {
+        "queries_per_day": 5,
+        "notes": "5 free calls per IP per day across all endpoints."
+      },
+      "paid_tier": {
+        "amount_usd": 0.0001,
+        "unit": "request",
+        "description": "0.0001 XNO per request for standard endpoints; 0.0005 XNO for domain-info, nano-info, youtube-transcript."
+      }
+    },
+    "payment": {
+      "model": "per_request",
+      "currency": "x-XNO",
+      "rates": [
+        {
+          "unit": "request",
+          "price": "0.0001",
+          "description": "Standard endpoints: extract, check-link, web-search, geoip, status",
+          "tier": "standard",
+          "threshold": 0,
+          "cap": null
+        },
+        {
+          "unit": "request",
+          "price": "0.0005",
+          "description": "Premium endpoints: domain-info, nano-info, youtube-transcript, pdf-extract",
+          "tier": "premium",
+          "threshold": 0,
+          "cap": null
+        }
+      ],
+      "onboarding": {
+        "url": "https://extract.paypercall.dev/amp/onboard",
+        "method": "POST",
+        "accepts": [
+          "platform_token"
+        ],
+        "returns": {
+          "credential_type": "api_key",
+          "credential_field": "x402_instructions",
+          "instructions": "No API key needed. Call any endpoint without authentication; the server returns HTTP 402 with the Nano amount and payTo account. Settle on-chain and retry with X-PAYMENT header set to the block hash."
+        }
+      },
+      "settlement": {
+        "type": "real_time",
+        "provider_name": "Nano (XNO)",
+        "provider_url": "https://nano.org"
+      },
+      "budget_controls": {
+        "supports_spend_cap": false,
+        "supports_per_request_limit": false,
+        "supports_rate_limit": true,
+        "supports_alerting": false
+      },
+      "refund_policy": {
+        "type": "none",
+        "terms_url": null
+      }
+    },
+    "rate_limits": {
+      "requests_per_minute": 60,
+      "requests_per_day": 1000
+    },
+    "reliability": {
+      "uptime_percentage": 99.5,
+      "avg_response_time_ms": 1500
+    },
+    "agent_notes": "Pay-per-call API merchant settled in Nano (XNO) via x402 v2 protocol. Call any endpoint without an API key: the server returns HTTP 402 with X-402-Price, X-402-PayTo, and X-402-Network headers. Send the exact XNO amount to the payTo account, then present the block hash in X-PAYMENT on the same request to receive the result. Five free trial calls per IP per day. Prepaid balance also supported via X-BALANCE header after top-up. All endpoints return application/json.",
+    "contact": "vend@paypercall.dev",
+    "listing_requested": true,
+    "last_updated": "2026-09-23T20:16:54Z"
+  }
+}

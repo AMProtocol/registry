@@ -1,0 +1,15 @@
+id: resend
+openapi_url: https://raw.githubusercontent.com/resend/resend-openapi/main/resend.yaml
+name: Resend
+description: Resend is a modern email API for developers. Send transactional emails, manage domains, and track delivery. API key required; free tier for development.
+categories: [computing]
+primary_category: transactional
+pricing:
+  model: freemium
+endpoint_allowlist:
+  - sendEmail
+  - SendEmail
+representative_queries:
+  - send transactional email api
+  - resend email delivery
+  - developer email api

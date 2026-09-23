@@ -1,0 +1,158 @@
+{
+  "id": "cmpy14u69002epjtcnwnxrfx6",
+  "legacy_id": "cmpy14u69002epjtcnwnxrfx6",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-github-pages-api-gateway.vercel.app/",
+  "manifest_url": "https://packrift-github-pages-api-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-github-pages-api-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-github-pages-api-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T12:15:23.841Z",
+  "verified_at": "2026-06-03T12:15:23.840Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T12:15:23.840Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T12:14:31Z",
+    "snapshot": {
+      "name": "Packrift GitHub Pages API Directory Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-github-pages-api-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch GitHub Pages API Directory Gateway stats.",
+          "response_description": "Public JSON stats for source URL types, selected source route statuses, API records, host-meta links, research asset counts, and count boundaries."
+        },
+        {
+          "path": "/data/sample-github-pages-api-directory.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch bounded source route health and schema-summary rows.",
+          "response_description": "JSONL rows summarizing public source route status, route kind, JSON key counts, API counts, link counts, and count-boundary notes."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate GitHub Pages API Directory Gateway URLs.",
+          "response_description": "XML sitemap containing gateway home, rollup pages, manifests, data files, and support files."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Source rows describe public Packrift GitHub Pages API-directory and metadata resources. Referenced existing source URLs, prior source Wayback replays, and source subasset registry listings are not re-counted by this gateway. This is not a search ranking claim, third-party endorsement, referring-domain proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+      "description": "A compact no-auth Packrift gateway for GitHub Pages API-directory route health, APIs.json rollups, host-meta rollups, research-asset rollups, and count boundaries.",
+      "last_updated": "2026-06-03T12:14:31Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-github-pages-api-gateway.vercel.app/llms.txt",
+      "maintained_by": "organization",
+      "authentication": {
+        "type": "none",
+        "required": false
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Source rows describe public Packrift GitHub Pages API-directory and metadata resources. Referenced existing source URLs, prior source Wayback replays, and source subasset registry listings are not re-counted by this gateway. This is not a search ranking claim, third-party endorsement, referring-domain proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+    "authentication": {
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for GitHub Pages API-directory route health, APIs.json rollups, host-meta rollups, research-asset rollups, and count boundaries.",
+    "documentation": "https://packrift-github-pages-api-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch GitHub Pages API Directory Gateway stats.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for source URL types, selected source route statuses, API records, host-meta links, research asset counts, and count boundaries."
+      },
+      {
+        "description": "Fetch bounded source route health and schema-summary rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-github-pages-api-directory.jsonl",
+        "response_description": "JSONL rows summarizing public source route status, route kind, JSON key counts, API counts, link counts, and count-boundary notes."
+      },
+      {
+        "description": "Enumerate GitHub Pages API Directory Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, rollup pages, manifests, data files, and support files."
+      }
+    ],
+    "homepage": "https://packrift-github-pages-api-gateway.vercel.app/",
+    "last_updated": "2026-06-03T12:14:31Z",
+    "maintained_by": "organization",
+    "name": "Packrift GitHub Pages API Directory Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

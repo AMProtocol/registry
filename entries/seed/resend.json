@@ -1,0 +1,67 @@
+{
+  "id": "resend",
+  "legacy_id": null,
+  "status": "unverified",
+  "submitted_via": "import",
+  "url": "https://api.resend.com",
+  "manifest_url": null,
+  "publisher": {
+    "domain": "api.resend.com",
+    "group": "seed",
+    "contact": "https://api.resend.com"
+  },
+  "source": {
+    "type": "openapi",
+    "url": "https://raw.githubusercontent.com/resend/resend-openapi/main/resend.yaml",
+    "retrieved_at": "2026-09-23T20:42:04.509Z"
+  },
+  "representative_queries": [
+    "send transactional email api",
+    "resend email delivery",
+    "developer email api"
+  ],
+  "badges": [],
+  "created_at": "2026-09-23T20:42:04.509Z",
+  "verified_at": null,
+  "last_checked_at": "2026-09-23T20:42:04.509Z",
+  "consecutive_failures": 0,
+  "last_valid": null,
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Resend",
+    "version": "1.0.0",
+    "description": "Resend is a modern email API for developers. Send transactional emails, manage domains, and track delivery with a simple REST API.",
+    "homepage": "https://api.resend.com",
+    "categories": [
+      "computing"
+    ],
+    "primary_category": "transactional",
+    "endpoints": [
+      {
+        "path": "/emails",
+        "method": "POST",
+        "description": "Send a transactional email with HTML or text body.",
+        "parameters": [],
+        "response_description": "Returns email id and delivery status."
+      }
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": {
+        "queries_per_day": 100
+      },
+      "paid_tier": null
+    },
+    "payment": null,
+    "authentication": {
+      "required": true,
+      "type": "bearer",
+      "instructions": "Create an API key at resend.com; send Authorization: Bearer <key>."
+    },
+    "agent_notes": "Sign up at resend.com for an API key. Authentication uses Bearer token in the Authorization header. Pricing is freemium with a free tier for development; see resend.com/pricing for production limits.",
+    "contact": "https://resend.com",
+    "listing_requested": false,
+    "last_updated": "2026-09-23T20:42:04.509Z"
+  }
+}

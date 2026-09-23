@@ -1,0 +1,240 @@
+{
+  "id": "cmpu5ooht0002pjtcj56b15jr",
+  "legacy_id": "cmpu5ooht0002pjtcj56b15jr",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-dimensional-weight-atlas.vercel.app",
+  "manifest_url": "https://packrift-dimensional-weight-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-dimensional-weight-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-dimensional-weight-atlas.vercel.app",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-05-31T19:11:43.361Z",
+  "verified_at": "2026-05-31T19:11:43.360Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-05-31T19:11:43.360Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-05-31T19:03:16Z",
+    "snapshot": {
+      "name": "Packrift Dimensional Weight Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.1",
+      "homepage": "https://packrift-dimensional-weight-atlas.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable overview, source boundaries, and related Packrift resource links.",
+          "response_description": "Plain text guide covering canonical URLs, data files, safe-use notes, and related Packrift-owned resources."
+        },
+        {
+          "path": "/openapi.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the OpenAPI map for public dimensional-weight atlas resources.",
+          "response_description": "OpenAPI 3.1 document for read-only data, family, and SKU review routes."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable dimensional-weight atlas pages and metadata sidecars.",
+          "response_description": "XML sitemap with static public support paths, family pages, and SKU review pages."
+        },
+        {
+          "path": "/data/manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch counts, source date, owned URL count, and caveats for the atlas.",
+          "response_description": "JSON manifest with product, family, high-impact, and crawlable URL counts."
+        },
+        {
+          "path": "/data/products.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download AI-approved Packrift product dimensional-weight records.",
+          "response_description": "JSON array of Packrift SKU records with source dimensions, weights, density, DIM values, flags, and source URLs."
+        },
+        {
+          "path": "/data/high-dim-impact.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the highest dimensional-weight-impact records as newline-delimited JSON.",
+          "response_description": "JSONL records for the highest DIM-lift Packrift SKUs in the atlas."
+        },
+        {
+          "path": "/families/boxes/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative family dimensional-weight summary page.",
+          "response_description": "HTML family page summarizing Packrift box dimensional-weight review records."
+        },
+        {
+          "path": "/products/1066-10x6x6-ect-32-kraft-long-corrugated-boxes-25-bundle/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative SKU dimensional-weight review page.",
+          "response_description": "HTML SKU page with source dimensions, DIM weight, density, flags, Packrift product URL, and caveats."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Use this manifest as a read-only entry point for Packrift dimensional-weight review data across 2510 AI-approved SKU records and 9 product families. Access is free, and no account, credential, token, API key, payment, checkout, carrier account, or password is required for the public files listed here. Do not treat static dimensional-weight records as live carrier quotes, final freight decisions, substitute approvals, inventory promises, or checkout/order completion. Use Packrift.com and Packrift MCP for live price, inventory, freight, cart, and buyer-specific checks.",
+      "description": "Packrift Dimensional Weight Atlas is a free, no-auth public reference asset for SKU-level dimensional-weight, density, cube, length-plus-girth, and parcel-review calculations over AI-approved Packrift packaging product records. Agents can use it to inspect static review data and downloadable sidecars without treating the records as live carrier quotes, checkout promises, or substitute approvals.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-05-31T19:03:16Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-dimensional-weight-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Packrift Dimensional Weight Atlas",
+    "version": "1.0.1",
+    "description": "Packrift Dimensional Weight Atlas is a free, no-auth public reference asset for SKU-level dimensional-weight, density, cube, length-plus-girth, and parcel-review calculations over AI-approved Packrift packaging product records. Agents can use it to inspect static review data and downloadable sidecars without treating the records as live carrier quotes, checkout promises, or substitute approvals.",
+    "homepage": "https://packrift-dimensional-weight-atlas.vercel.app/",
+    "documentation": "https://packrift-dimensional-weight-atlas.vercel.app/llms.txt",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact agent-readable overview, source boundaries, and related Packrift resource links.",
+        "parameters": [],
+        "response_description": "Plain text guide covering canonical URLs, data files, safe-use notes, and related Packrift-owned resources."
+      },
+      {
+        "path": "/openapi.json",
+        "method": "GET",
+        "description": "Fetch the OpenAPI map for public dimensional-weight atlas resources.",
+        "parameters": [],
+        "response_description": "OpenAPI 3.1 document for read-only data, family, and SKU review routes."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate crawlable dimensional-weight atlas pages and metadata sidecars.",
+        "parameters": [],
+        "response_description": "XML sitemap with static public support paths, family pages, and SKU review pages."
+      },
+      {
+        "path": "/data/manifest.json",
+        "method": "GET",
+        "description": "Fetch counts, source date, owned URL count, and caveats for the atlas.",
+        "parameters": [],
+        "response_description": "JSON manifest with product, family, high-impact, and crawlable URL counts."
+      },
+      {
+        "path": "/data/products.json",
+        "method": "GET",
+        "description": "Download AI-approved Packrift product dimensional-weight records.",
+        "parameters": [],
+        "response_description": "JSON array of Packrift SKU records with source dimensions, weights, density, DIM values, flags, and source URLs."
+      },
+      {
+        "path": "/data/high-dim-impact.jsonl",
+        "method": "GET",
+        "description": "Download the highest dimensional-weight-impact records as newline-delimited JSON.",
+        "parameters": [],
+        "response_description": "JSONL records for the highest DIM-lift Packrift SKUs in the atlas."
+      },
+      {
+        "path": "/families/boxes/",
+        "method": "GET",
+        "description": "Read a representative family dimensional-weight summary page.",
+        "parameters": [],
+        "response_description": "HTML family page summarizing Packrift box dimensional-weight review records."
+      },
+      {
+        "path": "/products/1066-10x6x6-ect-32-kraft-long-corrugated-boxes-25-bundle/",
+        "method": "GET",
+        "description": "Read a representative SKU dimensional-weight review page.",
+        "parameters": [],
+        "response_description": "HTML SKU page with source dimensions, DIM weight, density, flags, Packrift product URL, and caveats."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "rate_limits": {
+      "requests_per_minute": null,
+      "requests_per_day": null
+    },
+    "reliability": {
+      "maintained_by": "organization",
+      "status_url": null,
+      "expected_uptime_pct": null
+    },
+    "agent_notes": "Use this manifest as a read-only entry point for Packrift dimensional-weight review data across 2510 AI-approved SKU records and 9 product families. Access is free, and no account, credential, token, API key, payment, checkout, carrier account, or password is required for the public files listed here. Do not treat static dimensional-weight records as live carrier quotes, final freight decisions, substitute approvals, inventory promises, or checkout/order completion. Use Packrift.com and Packrift MCP for live price, inventory, freight, cart, and buyer-specific checks.",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "support_url": "https://packrift.com/pages/contact",
+      "github": "https://github.com/Packrift"
+    },
+    "listing_requested": true,
+    "last_updated": "2026-05-31T19:03:16Z"
+  }
+}

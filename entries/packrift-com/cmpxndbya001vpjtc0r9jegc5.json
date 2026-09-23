@@ -1,0 +1,172 @@
+{
+  "id": "cmpxndbya001vpjtc0r9jegc5",
+  "legacy_id": "cmpxndbya001vpjtc0r9jegc5",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-public-offer-availability-gateway.vercel.app/",
+  "manifest_url": "https://packrift-public-offer-availability-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-public-offer-availability-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-public-offer-availability-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T05:50:05.506Z",
+  "verified_at": "2026-06-03T05:50:05.505Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T05:50:05.505Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T05:30:45Z",
+    "snapshot": {
+      "name": "Packrift Public Offer Availability Agent Gateway",
+      "tags": [
+        "packaging",
+        "ecommerce",
+        "offer-availability",
+        "catalog",
+        "agent-commerce"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-public-offer-availability-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch offer availability gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for offer-availability bands, merchant status, product-family rollups, product-type rollups, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-offer-availability.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift offer availability rows.",
+          "response_description": "Public-safe sample rows with SKU, product URL, family, product type, price band, inventory band, merchant status, availability, and catalog source status."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Public Offer Availability Gateway crawlable URLs.",
+          "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact rollup URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Public offer availability bands only; check live Packrift product pages and checkout before purchase. This is not a live checkout, shipping quote, delivery promise, inventory guarantee, certification, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability guarantee.",
+      "description": "A compact no-auth Packrift reference gateway for public offer availability bands, merchant-status rollups, product family summaries, and source boundaries.",
+      "last_updated": "2026-06-03T05:30:45Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-public-offer-availability-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Public offer availability bands only; check live Packrift product pages and checkout before purchase. This is not a live checkout, shipping quote, delivery promise, inventory guarantee, certification, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability guarantee.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift reference gateway for public offer availability bands, merchant-status rollups, product family summaries, and source boundaries.",
+    "documentation": "https://packrift-public-offer-availability-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch offer availability gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for offer-availability bands, merchant status, product-family rollups, product-type rollups, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift offer availability rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-offer-availability.jsonl",
+        "response_description": "Public-safe sample rows with SKU, product URL, family, product type, price band, inventory band, merchant status, availability, and catalog source status."
+      },
+      {
+        "description": "Enumerate Public Offer Availability Gateway crawlable URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact rollup URLs."
+      }
+    ],
+    "homepage": "https://packrift-public-offer-availability-gateway.vercel.app/",
+    "last_updated": "2026-06-03T05:30:45Z",
+    "name": "Packrift Public Offer Availability Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packaging",
+      "ecommerce",
+      "offer-availability",
+      "catalog",
+      "agent-commerce"
+    ],
+    "version": "1.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+id: coingecko
+openapi_url: https://api.coingecko.com/api/v3/swagger.json
+name: CoinGecko API
+description: CoinGecko provides cryptocurrency market data including prices, market cap, volume, and historical charts for thousands of coins. Widely used for crypto price lookups and portfolio tools.
+categories: [finance]
+primary_category: live
+pricing:
+  model: freemium
+representative_queries:
+  - bitcoin price today
+  - ethereum market cap
+  - crypto coin list

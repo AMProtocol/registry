@@ -1,0 +1,75 @@
+{
+  "id": "pokemon-tcg",
+  "legacy_id": null,
+  "status": "unverified",
+  "submitted_via": "import",
+  "url": "https://api.pokemontcg.io",
+  "manifest_url": null,
+  "publisher": {
+    "domain": "api.pokemontcg.io",
+    "group": "seed",
+    "contact": "https://api.pokemontcg.io"
+  },
+  "source": {
+    "type": "openapi",
+    "url": "https://api.pokemontcg.io/v2/swagger.json",
+    "retrieved_at": "2026-09-23T20:42:04.509Z"
+  },
+  "representative_queries": [
+    "find pokemon cards by name",
+    "pokemon tcg set list",
+    "charizard card details"
+  ],
+  "badges": [],
+  "created_at": "2026-09-23T20:42:04.509Z",
+  "verified_at": null,
+  "last_checked_at": "2026-09-23T20:42:04.509Z",
+  "consecutive_failures": 0,
+  "last_valid": null,
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Pokemon TCG API",
+    "version": "2.0.0",
+    "description": "The Pokemon TCG API provides card images, set data, and card details for the Pokemon Trading Card Game. API key required for production use; generous free tier.",
+    "homepage": "https://api.pokemontcg.io",
+    "categories": [
+      "commerce",
+      "other"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/v2/cards",
+        "method": "GET",
+        "description": "Search Pokemon TCG cards by name, set, or type.",
+        "parameters": [
+          {
+            "name": "q",
+            "type": "string",
+            "required": false,
+            "description": "Search query"
+          }
+        ],
+        "response_description": "Paginated card objects with images and set metadata."
+      }
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": {
+        "queries_per_day": 1000
+      },
+      "paid_tier": null
+    },
+    "payment": null,
+    "authentication": {
+      "required": true,
+      "type": "api_key",
+      "instructions": "Register at dev.pokemontcg.io for an API key; send X-Api-Key header."
+    },
+    "agent_notes": "Create a free account at dev.pokemontcg.io for an API key. Authentication uses the X-Api-Key header. Pricing is freemium with a free tier; see the developer portal for limits.",
+    "contact": "https://dev.pokemontcg.io",
+    "listing_requested": false,
+    "last_updated": "2026-09-23T20:42:04.509Z"
+  }
+}

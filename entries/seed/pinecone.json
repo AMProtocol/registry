@@ -1,0 +1,67 @@
+{
+  "id": "pinecone",
+  "legacy_id": null,
+  "status": "unverified",
+  "submitted_via": "import",
+  "url": "https://api.pinecone.io",
+  "manifest_url": null,
+  "publisher": {
+    "domain": "api.pinecone.io",
+    "group": "seed",
+    "contact": "https://api.pinecone.io"
+  },
+  "source": {
+    "type": "openapi",
+    "url": "https://raw.githubusercontent.com/pinecone-io/pinecone-api/main/2024-10/oas/2024-10.yaml",
+    "retrieved_at": "2026-09-23T20:42:04.509Z"
+  },
+  "representative_queries": [
+    "vector database semantic search",
+    "pinecone embedding query",
+    "rag vector store api"
+  ],
+  "badges": [],
+  "created_at": "2026-09-23T20:42:04.509Z",
+  "verified_at": null,
+  "last_checked_at": "2026-09-23T20:42:04.509Z",
+  "consecutive_failures": 0,
+  "last_valid": null,
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Pinecone",
+    "version": "1.0.0",
+    "description": "Pinecone is a managed vector database for semantic search and RAG. Upsert, query, and manage embeddings at scale with a hosted API.",
+    "homepage": "https://api.pinecone.io",
+    "categories": [
+      "computing"
+    ],
+    "primary_category": "computational",
+    "endpoints": [
+      {
+        "path": "/indexes/{index_name}/query",
+        "method": "POST",
+        "description": "Query a vector index for nearest neighbors.",
+        "parameters": [],
+        "response_description": "Matching vectors with scores and metadata."
+      }
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": {
+        "queries_per_month": null
+      },
+      "paid_tier": null
+    },
+    "payment": null,
+    "authentication": {
+      "required": true,
+      "type": "api_key",
+      "instructions": "Create a Pinecone account; use the Api-Key header from the console."
+    },
+    "agent_notes": "Create a Pinecone account for an API key. Authentication uses the Api-Key header. Pricing is freemium with a starter tier; check the console for usage limits and payment onboarding.",
+    "contact": "https://www.pinecone.io",
+    "listing_requested": false,
+    "last_updated": "2026-09-23T20:42:04.509Z"
+  }
+}

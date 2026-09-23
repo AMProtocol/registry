@@ -1,0 +1,172 @@
+{
+  "id": "cmpxncr7w001upjtchtxiegej",
+  "legacy_id": "cmpxncr7w001upjtchtxiegej",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-freight-readiness-gateway.vercel.app/",
+  "manifest_url": "https://packrift-freight-readiness-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-freight-readiness-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-freight-readiness-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T05:49:38.636Z",
+  "verified_at": "2026-06-03T05:49:38.635Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T05:49:38.635Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T05:30:45Z",
+    "snapshot": {
+      "name": "Packrift Freight Readiness Agent Gateway",
+      "tags": [
+        "packaging",
+        "ecommerce",
+        "freight-readiness",
+        "catalog",
+        "agent-commerce"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-freight-readiness-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch freight-readiness gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for freight bands, delivery buckets, origin/service rollups, route classes, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-freight-readiness-observations.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift freight-readiness rows.",
+          "response_description": "Public-safe sample rows with SKU, product URL, origin code, destination-zone band, service, freight band, delivery bucket, route class, and catalog source status."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Freight Readiness Gateway crawlable URLs.",
+          "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact rollup URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Banded freight-readiness evidence only; check live Packrift product pages and checkout before purchase. This is not a live checkout, shipping quote, delivery promise, carrier commitment, inventory promise, certification, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift reference gateway for public freight-readiness bands, route-class rollups, carrier-service summaries, and source boundaries.",
+      "last_updated": "2026-06-03T05:30:45Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-freight-readiness-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Banded freight-readiness evidence only; check live Packrift product pages and checkout before purchase. This is not a live checkout, shipping quote, delivery promise, carrier commitment, inventory promise, certification, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift reference gateway for public freight-readiness bands, route-class rollups, carrier-service summaries, and source boundaries.",
+    "documentation": "https://packrift-freight-readiness-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch freight-readiness gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for freight bands, delivery buckets, origin/service rollups, route classes, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift freight-readiness rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-freight-readiness-observations.jsonl",
+        "response_description": "Public-safe sample rows with SKU, product URL, origin code, destination-zone band, service, freight band, delivery bucket, route class, and catalog source status."
+      },
+      {
+        "description": "Enumerate Freight Readiness Gateway crawlable URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact rollup URLs."
+      }
+    ],
+    "homepage": "https://packrift-freight-readiness-gateway.vercel.app/",
+    "last_updated": "2026-06-03T05:30:45Z",
+    "name": "Packrift Freight Readiness Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packaging",
+      "ecommerce",
+      "freight-readiness",
+      "catalog",
+      "agent-commerce"
+    ],
+    "version": "1.0.0"
+  }
+}

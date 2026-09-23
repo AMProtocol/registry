@@ -1,0 +1,156 @@
+{
+  "id": "cmpx6iuso001apjtcbl54crx9",
+  "legacy_id": "cmpx6iuso001apjtcbl54crx9",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-catalog-provenance-gateway.vercel.app/",
+  "manifest_url": "https://packrift-catalog-provenance-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-catalog-provenance-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-catalog-provenance-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T21:58:29.737Z",
+  "verified_at": "2026-06-02T21:58:29.736Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T21:58:29.736Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T21:57:54Z",
+    "snapshot": {
+      "name": "Packrift Catalog Provenance Agent Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-catalog-provenance-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch catalog provenance gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for provenance bands, source releases, identifier statuses, catalog families, product types, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-catalog-provenance.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift catalog provenance rows.",
+          "response_description": "Public-safe sample SKUs with source release, hash-prefix, identifier status, product URL, and provenance-score fields."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Catalog Provenance Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full SKU pages live at the linked Packrift Catalog Source Provenance Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for public catalog source provenance signals mapped to public-safe catalog records.",
+      "last_updated": "2026-06-02T21:57:54Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-catalog-provenance-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full SKU pages live at the linked Packrift Catalog Source Provenance Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public catalog source provenance signals mapped to public-safe catalog records.",
+    "documentation": "https://packrift-catalog-provenance-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch catalog provenance gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for provenance bands, source releases, identifier statuses, catalog families, product types, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift catalog provenance rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-catalog-provenance.jsonl",
+        "response_description": "Public-safe sample SKUs with source release, hash-prefix, identifier status, product URL, and provenance-score fields."
+      },
+      {
+        "description": "Enumerate Catalog Provenance Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-catalog-provenance-gateway.vercel.app/",
+    "last_updated": "2026-06-02T21:57:54Z",
+    "name": "Packrift Catalog Provenance Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

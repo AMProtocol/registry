@@ -1,0 +1,190 @@
+{
+  "id": "cmpvnzyez000opjtcmuxcfad4",
+  "legacy_id": "cmpvnzyez000opjtcmuxcfad4",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-sku-comparison-atlas.vercel.app/",
+  "manifest_url": "https://packrift-sku-comparison-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-sku-comparison-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-sku-comparison-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T20:32:08.700Z",
+  "verified_at": "2026-06-01T20:32:08.699Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T20:32:08.699Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T20:30:32Z",
+    "snapshot": {
+      "api": {
+        "url": "https://packrift-sku-comparison-atlas.vercel.app/openapi.json",
+        "type": "openapi"
+      },
+      "name": "Packrift SKU Comparison Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-sku-comparison-atlas.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable guide.",
+          "response_description": "Plain-text guide with routes, data files, and claim boundaries."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable comparison atlas URLs.",
+          "response_description": "XML sitemap listing public comparison pages and data sidecars."
+        },
+        {
+          "path": "/data/sku-comparison-records.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download public SKU comparison records.",
+          "response_description": "JSON records with public SKU fields, review candidates, and Packrift product links."
+        },
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch release counts.",
+          "response_description": "JSON release counts, source labels, generated timestamp, and public site URL."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public SKU comparison atlas. Files are free to read, and no account, API key, payment, or credential is needed. Confirm fit, pack count, final price, inventory, and checkout availability on Packrift.com before purchase handoff.",
+      "description": "Public Packrift SKU comparison reference for approved in-stock catalog items, with same-product-type review candidates, dimension and volume proximity, price bands, inventory bands, and public Packrift links.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "last_updated": "2026-06-01T20:30:32Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-sku-comparison-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public SKU comparison atlas. Files are free to read, and no account, API key, payment, or credential is needed. Confirm fit, pack count, final price, inventory, and checkout availability on Packrift.com before purchase handoff.",
+    "api": {
+      "type": "openapi",
+      "url": "https://packrift-sku-comparison-atlas.vercel.app/openapi.json"
+    },
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Public Packrift SKU comparison reference for approved in-stock catalog items, with same-product-type review candidates, dimension and volume proximity, price bands, inventory bands, and public Packrift links.",
+    "documentation": "https://packrift-sku-comparison-atlas.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch the compact agent-readable guide.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/llms.txt",
+        "response_description": "Plain-text guide with routes, data files, and claim boundaries."
+      },
+      {
+        "description": "Enumerate crawlable comparison atlas URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap listing public comparison pages and data sidecars."
+      },
+      {
+        "description": "Download public SKU comparison records.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sku-comparison-records.json",
+        "response_description": "JSON records with public SKU fields, review candidates, and Packrift product links."
+      },
+      {
+        "description": "Fetch release counts.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "JSON release counts, source labels, generated timestamp, and public site URL."
+      }
+    ],
+    "homepage": "https://packrift-sku-comparison-atlas.vercel.app/",
+    "last_updated": "2026-06-01T20:30:32Z",
+    "listing_requested": true,
+    "name": "Packrift SKU Comparison Atlas",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "rate_limits": {
+      "requests_per_day": null,
+      "requests_per_minute": null
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

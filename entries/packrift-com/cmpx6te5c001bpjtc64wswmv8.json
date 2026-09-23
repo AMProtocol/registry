@@ -1,0 +1,156 @@
+{
+  "id": "cmpx6te5c001bpjtc64wswmv8",
+  "legacy_id": "cmpx6te5c001bpjtc64wswmv8",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-product-schema-gateway.vercel.app/",
+  "manifest_url": "https://packrift-product-schema-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-product-schema-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-product-schema-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T22:06:41.376Z",
+  "verified_at": "2026-06-02T22:06:41.375Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T22:06:41.375Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T22:06:00Z",
+    "snapshot": {
+      "name": "Packrift Product Schema Agent Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-product-schema-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch product schema gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for readiness bands, category status, image status, dimension sources, catalog families, product types, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-product-schema.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift product schema readiness rows.",
+          "response_description": "Public-safe sample SKUs with readiness band, schema score, product URL, category status, image status, and dimension source fields."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Product Schema Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full SKU pages live at the linked Packrift Product Schema Readiness Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for public Product structured-data readiness signals mapped to public-safe catalog records.",
+      "last_updated": "2026-06-02T22:06:00Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-product-schema-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required to read the public files. Full SKU pages live at the linked Packrift Product Schema Readiness Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public Product structured-data readiness signals mapped to public-safe catalog records.",
+    "documentation": "https://packrift-product-schema-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch product schema gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for readiness bands, category status, image status, dimension sources, catalog families, product types, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift product schema readiness rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-product-schema.jsonl",
+        "response_description": "Public-safe sample SKUs with readiness band, schema score, product URL, category status, image status, and dimension source fields."
+      },
+      {
+        "description": "Enumerate Product Schema Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-product-schema-gateway.vercel.app/",
+    "last_updated": "2026-06-02T22:06:00Z",
+    "name": "Packrift Product Schema Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

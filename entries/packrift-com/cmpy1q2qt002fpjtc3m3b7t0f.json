@@ -1,0 +1,158 @@
+{
+  "id": "cmpy1q2qt002fpjtc3m3b7t0f",
+  "legacy_id": "cmpy1q2qt002fpjtc3m3b7t0f",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-contribution-status-gateway.vercel.app/",
+  "manifest_url": "https://packrift-contribution-status-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-contribution-status-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-contribution-status-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T12:31:54.725Z",
+  "verified_at": "2026-06-03T12:31:54.724Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T12:31:54.724Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T12:30:49Z",
+    "snapshot": {
+      "name": "Packrift Contribution Status Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-contribution-status-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch contribution-status gateway stats.",
+          "response_description": "Public JSON stats for candidate counts, status rollups, promotion gates, and count treatment."
+        },
+        {
+          "path": "/data/pending-pr-readback.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public GitHub readback rows.",
+          "response_description": "JSONL rows for public pending PR and issue state, source URLs, merge state, and promotion status."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate contribution-status gateway URLs.",
+          "response_description": "XML sitemap containing gateway pages, data files, manifests, and support files."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Open GitHub PRs and issues remain pending; the gateway does not claim merged upstream acceptance, third-party endorsement, referring-domain proof, search ranking proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, or live purchase commitment.",
+      "description": "A compact no-auth Packrift gateway for public GitHub contribution-status readbacks, pending PR rollups, verification policy, and count boundaries.",
+      "last_updated": "2026-06-03T12:30:49Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-contribution-status-gateway.vercel.app/llms.txt",
+      "maintained_by": "organization",
+      "authentication": {
+        "type": "none",
+        "required": false
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Open GitHub PRs and issues remain pending; the gateway does not claim merged upstream acceptance, third-party endorsement, referring-domain proof, search ranking proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, or live purchase commitment.",
+    "authentication": {
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public GitHub contribution-status readbacks, pending PR rollups, verification policy, and count boundaries.",
+    "documentation": "https://packrift-contribution-status-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch contribution-status gateway stats.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for candidate counts, status rollups, promotion gates, and count treatment."
+      },
+      {
+        "description": "Fetch public GitHub readback rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/pending-pr-readback.jsonl",
+        "response_description": "JSONL rows for public pending PR and issue state, source URLs, merge state, and promotion status."
+      },
+      {
+        "description": "Enumerate contribution-status gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway pages, data files, manifests, and support files."
+      }
+    ],
+    "homepage": "https://packrift-contribution-status-gateway.vercel.app/",
+    "last_updated": "2026-06-03T12:30:49Z",
+    "maintained_by": "organization",
+    "name": "Packrift Contribution Status Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

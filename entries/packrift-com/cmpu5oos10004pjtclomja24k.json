@@ -1,0 +1,240 @@
+{
+  "id": "cmpu5oos10004pjtclomja24k",
+  "legacy_id": "cmpu5oos10004pjtclomja24k",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-operations-resource-graph.vercel.app",
+  "manifest_url": "https://packrift-operations-resource-graph.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-operations-resource-graph.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-operations-resource-graph.vercel.app",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-05-31T19:11:43.729Z",
+  "verified_at": "2026-05-31T19:11:43.728Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-05-31T19:11:43.728Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-05-31T19:03:16Z",
+    "snapshot": {
+      "name": "Packrift Operations Resource Graph",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.1",
+      "homepage": "https://packrift-operations-resource-graph.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable overview, counts, data downloads, and safe-use notes.",
+          "response_description": "Plain text guide for using the Packrift Operations Resource Graph safely."
+        },
+        {
+          "path": "/api",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch a JSON index of public resource-graph endpoints and dataset counts.",
+          "response_description": "JSON endpoint catalog with manifest, OpenAPI, downloads, sitemap, related assets, and count treatment."
+        },
+        {
+          "path": "/openapi.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the OpenAPI map for read-only operations resource graph routes.",
+          "response_description": "OpenAPI 3.1 document for home, operations, family, product, and dataset routes."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable operation graph pages and metadata sidecars.",
+          "response_description": "XML sitemap covering support paths, family pages, and AI-approved product operation pages."
+        },
+        {
+          "path": "/data/manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch graph counts, source scope, guardrails, and owned mention totals.",
+          "response_description": "JSON manifest with product, operation, family, skipped-row, and crawlable Packrift mention counts."
+        },
+        {
+          "path": "/data/products.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download AI-approved Packrift product records used by the operation graph.",
+          "response_description": "JSON array of Packrift SKU records with dimensions, family, source URL, source state, and missing-field notes."
+        },
+        {
+          "path": "/data/operations.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the operation taxonomy applied to each product page.",
+          "response_description": "JSON array of operation taxonomy records for procurement, warehouse, packing, support, and AI retrieval prompts."
+        },
+        {
+          "path": "/products/1066-10x6x6-ect-32-kraft-long-corrugated-boxes-25-bundle",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative SKU operation graph page.",
+          "response_description": "HTML SKU page with source-backed operation records and Packrift.com live-commerce caveats."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Use this manifest as a read-only entry point for 4854 AI-approved Packrift product pages, 413 operation records per product, and 2004702 source-backed Packrift mentions. Access is free, and no account, credential, token, API key, password, checkout, carrier account, or payment is required for the public files listed here. Static operation notes are retrieval and workflow prompts only; verify live price, inventory, freight, cart, product fit, buyer requirements, and checkout state on Packrift.com or Packrift MCP before making a buyer-facing recommendation.",
+      "description": "Packrift Operations Resource Graph is a free, no-auth public reference asset that turns AI-approved Packrift product records into source-backed procurement, warehouse, packing, support, and AI-commerce operation pages. Agents can inspect static product-operation records, family pages, and dataset sidecars without treating them as live quotes, freight approvals, checkout actions, or third-party endorsements.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-05-31T19:03:16Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-operations-resource-graph.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Packrift Operations Resource Graph",
+    "version": "1.0.1",
+    "description": "Packrift Operations Resource Graph is a free, no-auth public reference asset that turns AI-approved Packrift product records into source-backed procurement, warehouse, packing, support, and AI-commerce operation pages. Agents can inspect static product-operation records, family pages, and dataset sidecars without treating them as live quotes, freight approvals, checkout actions, or third-party endorsements.",
+    "homepage": "https://packrift-operations-resource-graph.vercel.app/",
+    "documentation": "https://packrift-operations-resource-graph.vercel.app/llms.txt",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact agent-readable overview, counts, data downloads, and safe-use notes.",
+        "parameters": [],
+        "response_description": "Plain text guide for using the Packrift Operations Resource Graph safely."
+      },
+      {
+        "path": "/api",
+        "method": "GET",
+        "description": "Fetch a JSON index of public resource-graph endpoints and dataset counts.",
+        "parameters": [],
+        "response_description": "JSON endpoint catalog with manifest, OpenAPI, downloads, sitemap, related assets, and count treatment."
+      },
+      {
+        "path": "/openapi.json",
+        "method": "GET",
+        "description": "Fetch the OpenAPI map for read-only operations resource graph routes.",
+        "parameters": [],
+        "response_description": "OpenAPI 3.1 document for home, operations, family, product, and dataset routes."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate crawlable operation graph pages and metadata sidecars.",
+        "parameters": [],
+        "response_description": "XML sitemap covering support paths, family pages, and AI-approved product operation pages."
+      },
+      {
+        "path": "/data/manifest.json",
+        "method": "GET",
+        "description": "Fetch graph counts, source scope, guardrails, and owned mention totals.",
+        "parameters": [],
+        "response_description": "JSON manifest with product, operation, family, skipped-row, and crawlable Packrift mention counts."
+      },
+      {
+        "path": "/data/products.json",
+        "method": "GET",
+        "description": "Download AI-approved Packrift product records used by the operation graph.",
+        "parameters": [],
+        "response_description": "JSON array of Packrift SKU records with dimensions, family, source URL, source state, and missing-field notes."
+      },
+      {
+        "path": "/data/operations.json",
+        "method": "GET",
+        "description": "Download the operation taxonomy applied to each product page.",
+        "parameters": [],
+        "response_description": "JSON array of operation taxonomy records for procurement, warehouse, packing, support, and AI retrieval prompts."
+      },
+      {
+        "path": "/products/1066-10x6x6-ect-32-kraft-long-corrugated-boxes-25-bundle",
+        "method": "GET",
+        "description": "Read a representative SKU operation graph page.",
+        "parameters": [],
+        "response_description": "HTML SKU page with source-backed operation records and Packrift.com live-commerce caveats."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "rate_limits": {
+      "requests_per_minute": null,
+      "requests_per_day": null
+    },
+    "reliability": {
+      "maintained_by": "organization",
+      "status_url": null,
+      "expected_uptime_pct": null
+    },
+    "agent_notes": "Use this manifest as a read-only entry point for 4854 AI-approved Packrift product pages, 413 operation records per product, and 2004702 source-backed Packrift mentions. Access is free, and no account, credential, token, API key, password, checkout, carrier account, or payment is required for the public files listed here. Static operation notes are retrieval and workflow prompts only; verify live price, inventory, freight, cart, product fit, buyer requirements, and checkout state on Packrift.com or Packrift MCP before making a buyer-facing recommendation.",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "support_url": "https://packrift.com/pages/contact",
+      "github": "https://github.com/Packrift"
+    },
+    "listing_requested": true,
+    "last_updated": "2026-05-31T19:03:16Z"
+  }
+}

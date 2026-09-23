@@ -1,0 +1,240 @@
+{
+  "id": "cmpxzum8b002bpjtc2ljyoquj",
+  "legacy_id": "cmpxzum8b002bpjtc2ljyoquj",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/",
+  "manifest_url": "https://packrift-technical-seo-discovery-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-technical-seo-discovery-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T11:39:27.371Z",
+  "verified_at": "2026-06-03T11:39:27.370Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T11:39:27.370Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T11:38:51Z",
+    "snapshot": {
+      "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/",
+      "name": "Packrift Technical SEO Discovery Gateway",
+      "tags": [
+        "packrift",
+        "technical-seo",
+        "robots",
+        "sitemap",
+        "agent-discovery"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch technical SEO discovery gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for robots status, robots category counts, sitemap child counts, sitemap type counts, public agent route counts, and count treatment."
+        },
+        {
+          "path": "/data/sample-technical-seo-discovery.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch bounded public Packrift technical SEO source rows.",
+          "response_description": "Public-safe sample rows with source document status, child sitemap references, agent route hints, robots category counts, and count-boundary notes."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Technical SEO Discovery Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "resources": [
+        {
+          "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/data/stats.json",
+          "name": "Stats JSON",
+          "type": "application/json"
+        },
+        {
+          "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/data/sample-technical-seo-discovery.jsonl",
+          "name": "Sample JSONL",
+          "type": "application/x-ndjson"
+        },
+        {
+          "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/methodology/",
+          "name": "Methodology",
+          "type": "text/html"
+        },
+        {
+          "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/sitemap-summary/",
+          "name": "Sitemap Summary",
+          "type": "text/html"
+        },
+        {
+          "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/robots-summary/",
+          "name": "Robots Summary",
+          "type": "text/html"
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "maintainer": {
+        "email": "farhan@packrift.com"
+      },
+      "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Source rows describe Packrift public technical SEO discovery resources. Referenced existing source URLs are not re-counted by this gateway. This is not a search ranking claim, third-party endorsement, referring-domain proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+      "description": "Read-only Packrift public gateway summarizing root robots, sitemap index, and public agent discovery route evidence.",
+      "capabilities": [
+        "Summarize Packrift public robots status and category counts",
+        "Summarize Packrift sitemap index child sitemap rollups",
+        "List public Packrift agent discovery route hints",
+        "Expose count-boundary notes for owned URL and discovery accounting"
+      ],
+      "last_updated": "2026-06-03T11:38:51Z",
+      "spec_version": "agentmanifest-0.3",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Source rows describe Packrift public technical SEO discovery resources. Referenced existing source URLs are not re-counted by this gateway. This is not a search ranking claim, third-party endorsement, referring-domain proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "capabilities": [
+      "Summarize Packrift public robots status and category counts",
+      "Summarize Packrift sitemap index child sitemap rollups",
+      "List public Packrift agent discovery route hints",
+      "Expose count-boundary notes for owned URL and discovery accounting"
+    ],
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Read-only Packrift public gateway summarizing root robots, sitemap index, and public agent discovery route evidence.",
+    "endpoints": [
+      {
+        "description": "Fetch technical SEO discovery gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for robots status, robots category counts, sitemap child counts, sitemap type counts, public agent route counts, and count treatment."
+      },
+      {
+        "description": "Fetch bounded public Packrift technical SEO source rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-technical-seo-discovery.jsonl",
+        "response_description": "Public-safe sample rows with source document status, child sitemap references, agent route hints, robots category counts, and count-boundary notes."
+      },
+      {
+        "description": "Enumerate Technical SEO Discovery Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "last_updated": "2026-06-03T11:38:51Z",
+    "maintainer": {
+      "email": "farhan@packrift.com"
+    },
+    "name": "Packrift Technical SEO Discovery Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "resources": [
+      {
+        "name": "Stats JSON",
+        "type": "application/json",
+        "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/data/stats.json"
+      },
+      {
+        "name": "Sample JSONL",
+        "type": "application/x-ndjson",
+        "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/data/sample-technical-seo-discovery.jsonl"
+      },
+      {
+        "name": "Methodology",
+        "type": "text/html",
+        "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/methodology/"
+      },
+      {
+        "name": "Sitemap Summary",
+        "type": "text/html",
+        "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/sitemap-summary/"
+      },
+      {
+        "name": "Robots Summary",
+        "type": "text/html",
+        "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/robots-summary/"
+      }
+    ],
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packrift",
+      "technical-seo",
+      "robots",
+      "sitemap",
+      "agent-discovery"
+    ],
+    "url": "https://packrift-technical-seo-discovery-gateway.vercel.app/",
+    "version": "1.0.0"
+  }
+}

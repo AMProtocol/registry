@@ -1,0 +1,180 @@
+{
+  "id": "cmpxolvk1001zpjtcgmgg9m10",
+  "legacy_id": "cmpxolvk1001zpjtcgmgg9m10",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-packaging-index-agent-gateway.vercel.app/",
+  "manifest_url": "https://packrift-packaging-index-agent-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-packaging-index-agent-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-packaging-index-agent-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T06:24:43.777Z",
+  "verified_at": "2026-06-03T06:24:43.776Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T06:24:43.776Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T06:20:00Z",
+    "snapshot": {
+      "name": "Packrift Packaging Index Agent Gateway",
+      "contact": {
+        "url": "https://packrift.com/pages/contact",
+        "email": "farhan@packrift.com"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-packaging-index-agent-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Open the Packrift Packaging Index Agent Gateway homepage.",
+          "response_description": "HTML overview of the gateway and links to the source Packaging Index corpus."
+        },
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact AI-readable map.",
+          "response_description": "Plain-text map of source corpus sections and machine-readable support files."
+        },
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public corpus counts and safety boundaries.",
+          "response_description": "JSON stats for the gateway, source corpus, and count-treatment boundaries."
+        },
+        {
+          "path": "/data/sample-pages.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch representative Packaging Index source URLs.",
+          "response_description": "JSON sample of source product-reference and use-case URLs with Packrift product links."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate gateway URLs.",
+          "response_description": "XML sitemap for the Packrift Packaging Index Agent Gateway."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. The underlying Packaging Index corpus lives at packrift-packaging-index.pages.dev, and Packrift.com remains the source of truth for current pricing, inventory, specifications, checkout, delivery, and customer-specific data. This static gateway is not a live checkout, freight quote, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or credential source.",
+      "description": "A public no-auth Packrift gateway for the existing Packaging Index corpus, with stats, sample page links, agent-readable files, sitemap coverage, and canonical links into Packrift-owned packaging references.",
+      "last_updated": "2026-06-03T06:20:00Z",
+      "spec_version": "agentmanifest-0.3",
+      "authentication": {
+        "type": "none",
+        "required": false
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0",
+    "name": "Packrift Packaging Index Agent Gateway",
+    "description": "A public no-auth Packrift gateway for the existing Packaging Index corpus, with stats, sample page links, agent-readable files, sitemap coverage, and canonical links into Packrift-owned packaging references.",
+    "homepage": "https://packrift-packaging-index-agent-gateway.vercel.app/",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "reference",
+    "authentication": {
+      "required": false,
+      "type": "none"
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "contact": {
+      "email": "farhan@packrift.com",
+      "url": "https://packrift.com/pages/contact"
+    },
+    "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. The underlying Packaging Index corpus lives at packrift-packaging-index.pages.dev, and Packrift.com remains the source of truth for current pricing, inventory, specifications, checkout, delivery, and customer-specific data. This static gateway is not a live checkout, freight quote, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or credential source.",
+    "endpoints": [
+      {
+        "path": "/",
+        "method": "GET",
+        "description": "Open the Packrift Packaging Index Agent Gateway homepage.",
+        "parameters": [],
+        "response_description": "HTML overview of the gateway and links to the source Packaging Index corpus."
+      },
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact AI-readable map.",
+        "parameters": [],
+        "response_description": "Plain-text map of source corpus sections and machine-readable support files."
+      },
+      {
+        "path": "/data/stats.json",
+        "method": "GET",
+        "description": "Fetch public corpus counts and safety boundaries.",
+        "parameters": [],
+        "response_description": "JSON stats for the gateway, source corpus, and count-treatment boundaries."
+      },
+      {
+        "path": "/data/sample-pages.json",
+        "method": "GET",
+        "description": "Fetch representative Packaging Index source URLs.",
+        "parameters": [],
+        "response_description": "JSON sample of source product-reference and use-case URLs with Packrift product links."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate gateway URLs.",
+        "parameters": [],
+        "response_description": "XML sitemap for the Packrift Packaging Index Agent Gateway."
+      }
+    ],
+    "last_updated": "2026-06-03T06:20:00Z"
+  }
+}

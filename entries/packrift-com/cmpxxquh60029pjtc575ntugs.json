@@ -1,0 +1,158 @@
+{
+  "id": "cmpxxquh60029pjtc575ntugs",
+  "legacy_id": "cmpxxquh60029pjtc575ntugs",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-exact-spec-size-gateway.vercel.app/",
+  "manifest_url": "https://packrift-exact-spec-size-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-exact-spec-size-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-exact-spec-size-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T10:40:32.203Z",
+  "verified_at": "2026-06-03T10:40:32.202Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T10:40:32.202Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T10:39:56Z",
+    "snapshot": {
+      "name": "Packrift Exact Spec Size Agent Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-exact-spec-size-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch exact-spec size gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for source records, source sitemap counts, hub counts, family counts, product-type counts, size bands, inventory bands, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-exact-spec-size.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift exact-spec size rows.",
+          "response_description": "Public-safe sample rows with SKU, public product URL, source directory record URL, family, product type, source hub, size band, inventory band, dimension source, source hash, and boundary note."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Exact Spec Size Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. Pricing is free for these public files. No account, login, API key, private credential, payment, or 2FA is required to read the public files. Full record pages live at the linked Packrift Exact-Spec Size Directory. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout, live availability source, exact current price source, exact stock count source, raw exact-dimension field source, candidate page liveness claim, non-public economics disclosure, non-public commerce system, private source path, private freight source, or live purchase commitment.",
+      "description": "A compact no-auth Packrift reference gateway for public exact-spec size bands, source rollups, product links, source hashes, and source-boundary metadata.",
+      "last_updated": "2026-06-03T10:39:56Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-exact-spec-size-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Pricing is free for these public files. No account, login, API key, private credential, payment, or 2FA is required to read the public files. Full record pages live at the linked Packrift Exact-Spec Size Directory. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout, live availability source, exact current price source, exact stock count source, raw exact-dimension field source, candidate page liveness claim, non-public economics disclosure, non-public commerce system, private source path, private freight source, or live purchase commitment.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift reference gateway for public exact-spec size bands, source rollups, product links, source hashes, and source-boundary metadata.",
+    "documentation": "https://packrift-exact-spec-size-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch exact-spec size gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for source records, source sitemap counts, hub counts, family counts, product-type counts, size bands, inventory bands, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift exact-spec size rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-exact-spec-size.jsonl",
+        "response_description": "Public-safe sample rows with SKU, public product URL, source directory record URL, family, product type, source hub, size band, inventory band, dimension source, source hash, and boundary note."
+      },
+      {
+        "description": "Enumerate Exact Spec Size Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-exact-spec-size-gateway.vercel.app/",
+    "last_updated": "2026-06-03T10:39:56Z",
+    "name": "Packrift Exact Spec Size Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

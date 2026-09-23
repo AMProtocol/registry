@@ -1,0 +1,156 @@
+{
+  "id": "cmpxcoy6l001mpjtcyto4d5cd",
+  "legacy_id": "cmpxcoy6l001mpjtcyto4d5cd",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-packaging-strength-gateway.vercel.app/",
+  "manifest_url": "https://packrift-packaging-strength-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-packaging-strength-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-packaging-strength-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T00:51:11.757Z",
+  "verified_at": "2026-06-03T00:51:11.756Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T00:51:11.756Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T00:50:33Z",
+    "snapshot": {
+      "name": "Packrift Packaging Strength Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-packaging-strength-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch packaging strength gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for strength signals, board families, materials, formats, dimension bands, product types, and boundary notes."
+        },
+        {
+          "path": "/data/sample-packaging-strength.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift packaging strength rows.",
+          "response_description": "Public-safe sample SKU rows with strength signals, board families, product URLs, and full-atlas links."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Packaging Strength Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full strength-evidence pages live at the linked Packrift Packaging Strength Evidence Atlas. This is not a certification claim, test-lab report, legal advice, compliance advice, live price, live inventory promise, checkout quote, delivery promise, freight promise, product substitution approval, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or credential source.",
+      "description": "A compact no-auth Packrift gateway for public packaging strength evidence signals, board families, material signals, format signals, and links into the full Packaging Strength Evidence Atlas.",
+      "last_updated": "2026-06-03T00:50:33Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-packaging-strength-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full strength-evidence pages live at the linked Packrift Packaging Strength Evidence Atlas. This is not a certification claim, test-lab report, legal advice, compliance advice, live price, live inventory promise, checkout quote, delivery promise, freight promise, product substitution approval, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or credential source.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public packaging strength evidence signals, board families, material signals, format signals, and links into the full Packaging Strength Evidence Atlas.",
+    "documentation": "https://packrift-packaging-strength-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch packaging strength gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for strength signals, board families, materials, formats, dimension bands, product types, and boundary notes."
+      },
+      {
+        "description": "Fetch sample public Packrift packaging strength rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-packaging-strength.jsonl",
+        "response_description": "Public-safe sample SKU rows with strength signals, board families, product URLs, and full-atlas links."
+      },
+      {
+        "description": "Enumerate Packaging Strength Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-packaging-strength-gateway.vercel.app/",
+    "last_updated": "2026-06-03T00:50:33Z",
+    "name": "Packrift Packaging Strength Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

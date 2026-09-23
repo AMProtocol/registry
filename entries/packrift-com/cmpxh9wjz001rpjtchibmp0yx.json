@@ -1,0 +1,172 @@
+{
+  "id": "cmpxh9wjz001rpjtchibmp0yx",
+  "legacy_id": "cmpxh9wjz001rpjtchibmp0yx",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-cartonization-constraint-gateway.vercel.app/",
+  "manifest_url": "https://packrift-cartonization-constraint-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-cartonization-constraint-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-cartonization-constraint-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T02:59:27.887Z",
+  "verified_at": "2026-06-03T02:59:27.886Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T02:59:27.886Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T02:56:42Z",
+    "snapshot": {
+      "name": "Packrift Cartonization Constraint Agent Gateway",
+      "tags": [
+        "packaging",
+        "cartonization",
+        "dimensions",
+        "catalog",
+        "agent-commerce"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-cartonization-constraint-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch cartonization constraint gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for dimensional-weight review bands, parcel bands, density bands, volume bands, represented SKUs, catalog families, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-cartonization-constraints.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift cartonization constraint rows.",
+          "response_description": "Public-safe sample rows with SKU, product URL, dimensions, cube, density, parcel band, dimensional-weight review band, and atlas evidence URL."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Cartonization Constraint Gateway crawlable URLs.",
+          "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, rollup, and sample SKU URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Use for public-safe Packrift cartonization constraint evidence only. This is not a checkout quote, freight quote, delivery promise, live inventory promise, customer/order/cart/payment system, vendor financial disclosure, margin report, private source path, private freight source, or substitution approval.",
+      "description": "A compact no-auth Packrift cartonization constraint gateway for source-backed dimensional review evidence.",
+      "last_updated": "2026-06-03T02:56:42Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-cartonization-constraint-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Use for public-safe Packrift cartonization constraint evidence only. This is not a checkout quote, freight quote, delivery promise, live inventory promise, customer/order/cart/payment system, vendor financial disclosure, margin report, private source path, private freight source, or substitution approval.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift cartonization constraint gateway for source-backed dimensional review evidence.",
+    "documentation": "https://packrift-cartonization-constraint-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch cartonization constraint gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for dimensional-weight review bands, parcel bands, density bands, volume bands, represented SKUs, catalog families, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift cartonization constraint rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-cartonization-constraints.jsonl",
+        "response_description": "Public-safe sample rows with SKU, product URL, dimensions, cube, density, parcel band, dimensional-weight review band, and atlas evidence URL."
+      },
+      {
+        "description": "Enumerate Cartonization Constraint Gateway crawlable URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, rollup, and sample SKU URLs."
+      }
+    ],
+    "homepage": "https://packrift-cartonization-constraint-gateway.vercel.app/",
+    "last_updated": "2026-06-03T02:56:42Z",
+    "name": "Packrift Cartonization Constraint Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packaging",
+      "cartonization",
+      "dimensions",
+      "catalog",
+      "agent-commerce"
+    ],
+    "version": "1.0.0"
+  }
+}

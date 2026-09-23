@@ -1,0 +1,240 @@
+{
+  "id": "cmpvd3d42000hpjtcqfq5h5k3",
+  "legacy_id": "cmpvd3d42000hpjtcqfq5h5k3",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-guide-to-sku-evidence-atla.vercel.app/",
+  "manifest_url": "https://packrift-guide-to-sku-evidence-atla.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-guide-to-sku-evidence-atla.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-guide-to-sku-evidence-atla.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T15:26:51.939Z",
+  "verified_at": "2026-06-01T15:26:51.938Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T15:26:51.938Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T15:25:39Z",
+    "snapshot": {
+      "name": "Packrift Guide-to-SKU Evidence Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-guide-to-sku-evidence-atla.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable guide to the Packrift guide-to-SKU evidence atlas, source boundaries, and public routes.",
+          "response_description": "Plain-text guide covering canonical URLs, data files, safe-use notes, and source boundaries."
+        },
+        {
+          "path": "/openapi.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the OpenAPI map for public guide-to-SKU evidence data routes.",
+          "response_description": "OpenAPI 3.1 document for read-only guide rows, guide-SKU edges, SKU coverage rows, and release statistics."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable guide evidence pages, SKU coverage pages, and machine-readable sidecars.",
+          "response_description": "XML sitemap with support paths, guide evidence pages, SKU coverage pages, and data sidecars."
+        },
+        {
+          "path": "/data/guides.csv",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download public Packrift guide evidence rows.",
+          "response_description": "CSV rows containing guide handle, guide title, canonical Packrift guide URL, source SKU count, and page evidence hash."
+        },
+        {
+          "path": "/data/guide-sku-edges.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download public guide-to-SKU evidence edges.",
+          "response_description": "JSONL rows connecting each public Packrift guide to source SKUs and canonical Packrift product URLs."
+        },
+        {
+          "path": "/data/sku-guide-coverage.csv",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download SKU coverage counts across public Packrift guides.",
+          "response_description": "CSV rows with SKU, product title, family, product type, canonical product URL, and guide count."
+        },
+        {
+          "path": "/guide/poly-mailers-buying-guide",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative Packrift guide evidence page.",
+          "response_description": "HTML guide evidence page listing source SKUs and canonical Packrift product links."
+        },
+        {
+          "path": "/sku/ll251wr-guide-coverage",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative Packrift SKU coverage page.",
+          "response_description": "HTML SKU coverage page listing the public Packrift guides that use the SKU as source evidence."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Use this manifest as a read-only entry point for Packrift guide-to-SKU evidence across public packaging buyer guides and catalog SKUs. Access is free, and no account, credential, token, API key, payment, checkout, carrier account, or password is required for the public files listed here. Do not treat static evidence rows as live inventory promises, freight quotes, supplier-cost disclosures, margin disclosures, customer records, or checkout/order completion. Use Packrift.com and Packrift MCP for live price, inventory, freight, cart, and buyer-specific checks.",
+      "description": "Public evidence map connecting live Packrift buyer guides to the Packrift SKUs used as source evidence, with SKU coverage pages, guide rollups, and machine-readable sidecars.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-06-01T15:25:39Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-guide-to-sku-evidence-atla.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Packrift Guide-to-SKU Evidence Atlas",
+    "version": "1.0.0",
+    "description": "Public evidence map connecting live Packrift buyer guides to the Packrift SKUs used as source evidence, with SKU coverage pages, guide rollups, and machine-readable sidecars.",
+    "homepage": "https://packrift-guide-to-sku-evidence-atla.vercel.app/",
+    "documentation": "https://packrift-guide-to-sku-evidence-atla.vercel.app/llms.txt",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact agent-readable guide to the Packrift guide-to-SKU evidence atlas, source boundaries, and public routes.",
+        "parameters": [],
+        "response_description": "Plain-text guide covering canonical URLs, data files, safe-use notes, and source boundaries."
+      },
+      {
+        "path": "/openapi.json",
+        "method": "GET",
+        "description": "Fetch the OpenAPI map for public guide-to-SKU evidence data routes.",
+        "parameters": [],
+        "response_description": "OpenAPI 3.1 document for read-only guide rows, guide-SKU edges, SKU coverage rows, and release statistics."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate crawlable guide evidence pages, SKU coverage pages, and machine-readable sidecars.",
+        "parameters": [],
+        "response_description": "XML sitemap with support paths, guide evidence pages, SKU coverage pages, and data sidecars."
+      },
+      {
+        "path": "/data/guides.csv",
+        "method": "GET",
+        "description": "Download public Packrift guide evidence rows.",
+        "parameters": [],
+        "response_description": "CSV rows containing guide handle, guide title, canonical Packrift guide URL, source SKU count, and page evidence hash."
+      },
+      {
+        "path": "/data/guide-sku-edges.jsonl",
+        "method": "GET",
+        "description": "Download public guide-to-SKU evidence edges.",
+        "parameters": [],
+        "response_description": "JSONL rows connecting each public Packrift guide to source SKUs and canonical Packrift product URLs."
+      },
+      {
+        "path": "/data/sku-guide-coverage.csv",
+        "method": "GET",
+        "description": "Download SKU coverage counts across public Packrift guides.",
+        "parameters": [],
+        "response_description": "CSV rows with SKU, product title, family, product type, canonical product URL, and guide count."
+      },
+      {
+        "path": "/guide/poly-mailers-buying-guide",
+        "method": "GET",
+        "description": "Read a representative Packrift guide evidence page.",
+        "parameters": [],
+        "response_description": "HTML guide evidence page listing source SKUs and canonical Packrift product links."
+      },
+      {
+        "path": "/sku/ll251wr-guide-coverage",
+        "method": "GET",
+        "description": "Read a representative Packrift SKU coverage page.",
+        "parameters": [],
+        "response_description": "HTML SKU coverage page listing the public Packrift guides that use the SKU as source evidence."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "rate_limits": {
+      "requests_per_minute": null,
+      "requests_per_day": null
+    },
+    "reliability": {
+      "maintained_by": "organization",
+      "status_url": null,
+      "expected_uptime_pct": null
+    },
+    "agent_notes": "Use this manifest as a read-only entry point for Packrift guide-to-SKU evidence across public packaging buyer guides and catalog SKUs. Access is free, and no account, credential, token, API key, payment, checkout, carrier account, or password is required for the public files listed here. Do not treat static evidence rows as live inventory promises, freight quotes, supplier-cost disclosures, margin disclosures, customer records, or checkout/order completion. Use Packrift.com and Packrift MCP for live price, inventory, freight, cart, and buyer-specific checks.",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "support_url": "https://packrift.com/pages/contact",
+      "github": "https://github.com/Packrift"
+    },
+    "listing_requested": true,
+    "last_updated": "2026-06-01T15:32:55Z"
+  }
+}

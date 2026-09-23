@@ -1,0 +1,146 @@
+{
+  "id": "cmpwsmln7000xpjtc52n30imq",
+  "legacy_id": "cmpwsmln7000xpjtc52n30imq",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-packaging-faq-corpus.vercel.app/",
+  "manifest_url": "https://packrift-packaging-faq-corpus.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-packaging-faq-corpus.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-packaging-faq-corpus.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T15:29:29.876Z",
+  "verified_at": "2026-06-02T15:29:29.875Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T15:29:29.875Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T15:21:00Z",
+    "snapshot": {
+      "name": "Packrift Packaging FAQ Corpus",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-packaging-faq-corpus.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/faqs.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public Packrift packaging FAQ records.",
+          "response_description": "FAQ IDs, questions, answers, topics, referenced SKUs, and public Packrift reference URLs."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Packaging FAQ Corpus URLs.",
+          "response_description": "XML sitemap containing all public Packaging FAQ Corpus URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public FAQ reference. No account, authentication, API key, credentials, supplier-cost, margin, customer, order, cart, payment, private freight, placeholder, reputation-management, or private-order data is exposed.",
+      "description": "A public Packrift packaging FAQ reference corpus with source-backed buyer questions, concise answer text, topic rollups, and machine-readable data sidecars for search and agent retrieval.",
+      "last_updated": "2026-06-02T15:21:00Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-packaging-faq-corpus.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public FAQ reference. No account, authentication, API key, credentials, supplier-cost, margin, customer, order, cart, payment, private freight, placeholder, reputation-management, or private-order data is exposed.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A public Packrift packaging FAQ reference corpus with source-backed buyer questions, concise answer text, topic rollups, and machine-readable data sidecars for search and agent retrieval.",
+    "documentation": "https://packrift-packaging-faq-corpus.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch public Packrift packaging FAQ records.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/faqs.json",
+        "response_description": "FAQ IDs, questions, answers, topics, referenced SKUs, and public Packrift reference URLs."
+      },
+      {
+        "description": "Enumerate Packaging FAQ Corpus URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing all public Packaging FAQ Corpus URLs."
+      }
+    ],
+    "homepage": "https://packrift-packaging-faq-corpus.vercel.app/",
+    "last_updated": "2026-06-02T15:21:00Z",
+    "listing_requested": true,
+    "name": "Packrift Packaging FAQ Corpus",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

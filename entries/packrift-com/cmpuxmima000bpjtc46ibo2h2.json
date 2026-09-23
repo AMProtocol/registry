@@ -1,0 +1,240 @@
+{
+  "id": "cmpuxmima000bpjtc46ibo2h2",
+  "legacy_id": "cmpuxmima000bpjtc46ibo2h2",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-sku-dimension-atlas.vercel.app/",
+  "manifest_url": "https://packrift-sku-dimension-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-sku-dimension-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-sku-dimension-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T08:13:51.683Z",
+  "verified_at": "2026-06-01T08:13:51.682Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T08:13:51.682Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T08:13:06Z",
+    "snapshot": {
+      "name": "Packrift SKU Dimension Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.1",
+      "homepage": "https://packrift-sku-dimension-atlas.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable guide to the atlas, source boundaries, and key public routes.",
+          "response_description": "Plain-text guide covering canonical URLs, data files, safe-use notes, and source boundaries."
+        },
+        {
+          "path": "/openapi.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the OpenAPI map for public SKU dimension data routes.",
+          "response_description": "OpenAPI 3.1 document for read-only SKU dimension rows and release statistics."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable SKU dimension pages and machine-readable sidecars.",
+          "response_description": "XML sitemap with support paths, SKU pages, product-type pages, family pages, and banded browse pages."
+        },
+        {
+          "path": "/data/sku-dimension-atlas.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download public Packrift SKU dimension rows.",
+          "response_description": "JSON rows containing public SKU, product URL, dimensions, shipping weight, product type, price band, and inventory band fields."
+        },
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch release counts for public rows, families, product types, and browse bands.",
+          "response_description": "JSON release statistics for the SKU Dimension Atlas."
+        },
+        {
+          "path": "/data/field-dictionary.csv",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download plain-English field definitions for the public dimension dataset.",
+          "response_description": "CSV field dictionary for SKU, family, product type, dimensions, shipping weight, price band, inventory band, and product URL fields."
+        },
+        {
+          "path": "/product-types/boxes-corrugated/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative product-type dimension index page.",
+          "response_description": "HTML product-type page listing Packrift public dimension rows for corrugated boxes."
+        },
+        {
+          "path": "/sku/binb212-12x2x4-5-white-corrugated-stackable-bin-boxes-space-saving-parts-storage-50-pack/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative SKU dimension page.",
+          "response_description": "HTML SKU page with dimensions, shipping weight, dimensional-weight reference, price band, inventory band, and canonical Packrift product link."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Use this manifest as a read-only entry point for Packrift SKU dimension, shipping-weight, price-band, and product-type reference data across public catalog-approved, in-stock packaging SKU pages. Access is free, and no account, credential, token, API key, payment, checkout, carrier account, or password is required for the public files listed here. Do not treat static dimension records as live inventory promises, freight quotes, supplier-cost disclosures, margin disclosures, or checkout/order completion. Use Packrift.com and Packrift MCP for live price, inventory, freight, cart, and buyer-specific checks.",
+      "description": "Public Packrift catalog-approved SKU dimension, weight, price-band, and product-type reference atlas.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-06-01T08:13:06Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-sku-dimension-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Packrift SKU Dimension Atlas",
+    "version": "1.0.1",
+    "description": "Public Packrift catalog-approved SKU dimension, weight, price-band, and product-type reference atlas.",
+    "homepage": "https://packrift-sku-dimension-atlas.vercel.app/",
+    "documentation": "https://packrift-sku-dimension-atlas.vercel.app/llms.txt",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact agent-readable guide to the atlas, source boundaries, and key public routes.",
+        "parameters": [],
+        "response_description": "Plain-text guide covering canonical URLs, data files, safe-use notes, and source boundaries."
+      },
+      {
+        "path": "/openapi.json",
+        "method": "GET",
+        "description": "Fetch the OpenAPI map for public SKU dimension data routes.",
+        "parameters": [],
+        "response_description": "OpenAPI 3.1 document for read-only SKU dimension rows and release statistics."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate crawlable SKU dimension pages and machine-readable sidecars.",
+        "parameters": [],
+        "response_description": "XML sitemap with support paths, SKU pages, product-type pages, family pages, and banded browse pages."
+      },
+      {
+        "path": "/data/sku-dimension-atlas.json",
+        "method": "GET",
+        "description": "Download public Packrift SKU dimension rows.",
+        "parameters": [],
+        "response_description": "JSON rows containing public SKU, product URL, dimensions, shipping weight, product type, price band, and inventory band fields."
+      },
+      {
+        "path": "/data/stats.json",
+        "method": "GET",
+        "description": "Fetch release counts for public rows, families, product types, and browse bands.",
+        "parameters": [],
+        "response_description": "JSON release statistics for the SKU Dimension Atlas."
+      },
+      {
+        "path": "/data/field-dictionary.csv",
+        "method": "GET",
+        "description": "Download plain-English field definitions for the public dimension dataset.",
+        "parameters": [],
+        "response_description": "CSV field dictionary for SKU, family, product type, dimensions, shipping weight, price band, inventory band, and product URL fields."
+      },
+      {
+        "path": "/product-types/boxes-corrugated/",
+        "method": "GET",
+        "description": "Read a representative product-type dimension index page.",
+        "parameters": [],
+        "response_description": "HTML product-type page listing Packrift public dimension rows for corrugated boxes."
+      },
+      {
+        "path": "/sku/binb212-12x2x4-5-white-corrugated-stackable-bin-boxes-space-saving-parts-storage-50-pack/",
+        "method": "GET",
+        "description": "Read a representative SKU dimension page.",
+        "parameters": [],
+        "response_description": "HTML SKU page with dimensions, shipping weight, dimensional-weight reference, price band, inventory band, and canonical Packrift product link."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "rate_limits": {
+      "requests_per_minute": null,
+      "requests_per_day": null
+    },
+    "reliability": {
+      "maintained_by": "organization",
+      "status_url": null,
+      "expected_uptime_pct": null
+    },
+    "agent_notes": "Use this manifest as a read-only entry point for Packrift SKU dimension, shipping-weight, price-band, and product-type reference data across public catalog-approved, in-stock packaging SKU pages. Access is free, and no account, credential, token, API key, payment, checkout, carrier account, or password is required for the public files listed here. Do not treat static dimension records as live inventory promises, freight quotes, supplier-cost disclosures, margin disclosures, or checkout/order completion. Use Packrift.com and Packrift MCP for live price, inventory, freight, cart, and buyer-specific checks.",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "support_url": "https://packrift.com/pages/contact",
+      "github": "https://github.com/Packrift"
+    },
+    "listing_requested": true,
+    "last_updated": "2026-06-01T08:13:06Z"
+  }
+}

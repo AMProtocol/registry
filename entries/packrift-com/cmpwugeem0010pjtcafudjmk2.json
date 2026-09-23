@@ -1,0 +1,146 @@
+{
+  "id": "cmpwugeem0010pjtcafudjmk2",
+  "legacy_id": "cmpwugeem0010pjtcafudjmk2",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-ai-shopping-family-coverage-atlas.vercel.app/",
+  "manifest_url": "https://packrift-ai-shopping-family-coverage-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-ai-shopping-family-coverage-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-ai-shopping-family-coverage-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T16:20:39.791Z",
+  "verified_at": "2026-06-02T16:20:39.790Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T16:20:39.790Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T16:18:20Z",
+    "snapshot": {
+      "name": "Packrift AI Shopping Family Coverage Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-ai-shopping-family-coverage-atlas.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/product-ai-shopping-family-coverage.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public Packrift AI shopping family coverage records.",
+          "response_description": "Public-safe SKU, product URL, structured-data field presence, coverage score, and rollup fields."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate ai-shopping-family-coverage atlas URLs.",
+          "response_description": "XML sitemap containing all public AI Shopping Family Coverage Atlas URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public ai-shopping-family-coverage reference. No account, authentication, API key, credentials, token, payment, password, supplier cost, margin, customer, order, cart, private freight, or live checkout data is exposed. Confirm live price, stock, shipping, and checkout availability on Packrift.com before purchase handoff.",
+      "description": "A public Packrift reference for AI shopping family coverage signals across approved in-stock catalog rows, including SKU pages, field-presence scores, rollups, data files, and Packrift product links.",
+      "last_updated": "2026-06-02T16:18:20Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-ai-shopping-family-coverage-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0",
+    "name": "Packrift AI Shopping Family Coverage Atlas",
+    "description": "A public Packrift reference for AI shopping family coverage signals across approved in-stock catalog rows, including SKU pages, field-presence scores, rollups, data files, and Packrift product links.",
+    "homepage": "https://packrift-ai-shopping-family-coverage-atlas.vercel.app/",
+    "documentation": "https://packrift-ai-shopping-family-coverage-atlas.vercel.app/llms.txt",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "primary_category": "reference",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "listing_requested": true,
+    "last_updated": "2026-06-02T16:18:20Z",
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/data/product-ai-shopping-family-coverage.jsonl",
+        "description": "Fetch public Packrift AI shopping family coverage records.",
+        "parameters": [],
+        "response_description": "Public-safe SKU, product URL, structured-data field presence, coverage score, and rollup fields."
+      },
+      {
+        "method": "GET",
+        "path": "/sitemap.xml",
+        "description": "Enumerate ai-shopping-family-coverage atlas URLs.",
+        "parameters": [],
+        "response_description": "XML sitemap containing all public AI Shopping Family Coverage Atlas URLs."
+      }
+    ],
+    "agent_notes": "Read-only public ai-shopping-family-coverage reference. No account, authentication, API key, credentials, token, payment, password, supplier cost, margin, customer, order, cart, private freight, or live checkout data is exposed. Confirm live price, stock, shipping, and checkout availability on Packrift.com before purchase handoff."
+  }
+}

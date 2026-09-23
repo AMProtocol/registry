@@ -1,0 +1,146 @@
+{
+  "id": "cmpwuytbo0011pjtc3en74w2f",
+  "legacy_id": "cmpwuytbo0011pjtc3en74w2f",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-catalog-source-provenance-atlas.vercel.app/",
+  "manifest_url": "https://packrift-catalog-source-provenance-atlas.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-catalog-source-provenance-atlas.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-catalog-source-provenance-atlas.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T16:34:58.932Z",
+  "verified_at": "2026-06-02T16:34:58.931Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T16:34:58.931Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T16:33:06Z",
+    "snapshot": {
+      "name": "Packrift Catalog Source Provenance Atlas",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-catalog-source-provenance-atlas.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/product-catalog-source-provenance.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public Packrift catalog source provenance records.",
+          "response_description": "Public-safe SKU, product URL, product ID, variant ID, offer ID, release ID, source row hash, provenance score, and rollup fields."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate catalog-source-provenance atlas URLs.",
+          "response_description": "XML sitemap containing all public Catalog Source Provenance Atlas URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public catalog-source-provenance reference. No account, authentication, API key, credentials, token, payment, password, supplier cost, margin, customer, order, cart, private freight, or live checkout data is exposed. Confirm live price, stock, shipping, and checkout availability on Packrift.com before purchase handoff.",
+      "description": "A public Packrift reference for catalog source provenance across approved in-stock catalog rows, including SKU pages, product IDs, variant IDs, offer IDs, release IDs, source row hashes, rollups, data files, and Packrift product links.",
+      "last_updated": "2026-06-02T16:33:06Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-catalog-source-provenance-atlas.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0",
+    "name": "Packrift Catalog Source Provenance Atlas",
+    "description": "A public Packrift reference for catalog source provenance across approved in-stock catalog rows, including SKU pages, product IDs, variant IDs, offer IDs, release IDs, source row hashes, rollups, data files, and Packrift product links.",
+    "homepage": "https://packrift-catalog-source-provenance-atlas.vercel.app/",
+    "documentation": "https://packrift-catalog-source-provenance-atlas.vercel.app/llms.txt",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "primary_category": "reference",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "listing_requested": true,
+    "last_updated": "2026-06-02T16:33:06Z",
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "endpoints": [
+      {
+        "method": "GET",
+        "path": "/data/product-catalog-source-provenance.jsonl",
+        "description": "Fetch public Packrift catalog source provenance records.",
+        "parameters": [],
+        "response_description": "Public-safe SKU, product URL, product ID, variant ID, offer ID, release ID, source row hash, provenance score, and rollup fields."
+      },
+      {
+        "method": "GET",
+        "path": "/sitemap.xml",
+        "description": "Enumerate catalog-source-provenance atlas URLs.",
+        "parameters": [],
+        "response_description": "XML sitemap containing all public Catalog Source Provenance Atlas URLs."
+      }
+    ],
+    "agent_notes": "Read-only public catalog-source-provenance reference. No account, authentication, API key, credentials, token, payment, password, supplier cost, margin, customer, order, cart, private freight, or live checkout data is exposed. Confirm live price, stock, shipping, and checkout availability on Packrift.com before purchase handoff."
+  }
+}

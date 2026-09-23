@@ -1,0 +1,240 @@
+{
+  "id": "cmpu5oom40003pjtci22kwh8k",
+  "legacy_id": "cmpu5oom40003pjtci22kwh8k",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-fit-substitution-matrix.vercel.app",
+  "manifest_url": "https://packrift-fit-substitution-matrix.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-fit-substitution-matrix.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-fit-substitution-matrix.vercel.app",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-05-31T19:11:43.516Z",
+  "verified_at": "2026-05-31T19:11:43.515Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-05-31T19:11:43.515Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-05-31T19:03:16Z",
+    "snapshot": {
+      "name": "Packrift SKU Fit + Substitution Matrix",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.1",
+      "homepage": "https://packrift-fit-substitution-matrix.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable overview, counts, data downloads, and safe-use notes.",
+          "response_description": "Plain text guide for using the Packrift fit matrix safely."
+        },
+        {
+          "path": "/api",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch a JSON index of public fit matrix endpoints and dataset counts.",
+          "response_description": "JSON endpoint catalog with manifest, OpenAPI, downloads, sitemap, related assets, and count treatment."
+        },
+        {
+          "path": "/openapi.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the OpenAPI map for read-only fit matrix resources.",
+          "response_description": "OpenAPI 3.1 document for home, methodology, family, product, and dataset routes."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable fit matrix pages and metadata sidecars.",
+          "response_description": "XML sitemap covering support paths, family pages, and complete AI-approved SKU pages."
+        },
+        {
+          "path": "/data/manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch matrix counts, source scope, guardrails, and owned URL totals.",
+          "response_description": "JSON manifest with source rows, complete approved products, pair-universe counts, top-K row counts, and caveats."
+        },
+        {
+          "path": "/data/products.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download complete AI-approved Packrift SKU records used by the matrix.",
+          "response_description": "JSON array of Packrift SKU records with dimensions, source price, family, and Packrift product URLs."
+        },
+        {
+          "path": "/data/top-fit-relationships.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download source-to-target same-family review candidates as JSONL.",
+          "response_description": "Newline-delimited records with source SKU, candidate SKU, fit score, deltas, and guardrails."
+        },
+        {
+          "path": "/products/1066-10x6x6-ect-32-kraft-long-corrugated-boxes-25-bundle",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative SKU fit-candidate page.",
+          "response_description": "HTML SKU page with source facts, candidate rows, and static review caveats."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Use this manifest as a read-only entry point for Packrift same-family SKU fit research across 2510 complete AI-approved SKU pages and 50092 published top-K review rows. Access is free, and no account, credential, token, API key, password, checkout, carrier account, or payment is required for the public files listed here. Do not present candidate rows as approved substitutes or exact replacements unless live Packrift.com product facts, material, pack count, buyer use case, price, inventory, freight, and checkout state are separately verified.",
+      "description": "Packrift SKU Fit + Substitution Matrix is a free, no-auth public reference asset for same-family packaging SKU fit research over AI-approved Packrift product records. Agents can inspect source-backed candidate rows, SKU pages, family summaries, and downloadable dataset sidecars without treating candidate rows as approved substitutes, live quotes, checkout actions, or third-party endorsements.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-05-31T19:03:16Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-fit-substitution-matrix.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Packrift SKU Fit + Substitution Matrix",
+    "version": "1.0.1",
+    "description": "Packrift SKU Fit + Substitution Matrix is a free, no-auth public reference asset for same-family packaging SKU fit research over AI-approved Packrift product records. Agents can inspect source-backed candidate rows, SKU pages, family summaries, and downloadable dataset sidecars without treating candidate rows as approved substitutes, live quotes, checkout actions, or third-party endorsements.",
+    "homepage": "https://packrift-fit-substitution-matrix.vercel.app/",
+    "documentation": "https://packrift-fit-substitution-matrix.vercel.app/llms.txt",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact agent-readable overview, counts, data downloads, and safe-use notes.",
+        "parameters": [],
+        "response_description": "Plain text guide for using the Packrift fit matrix safely."
+      },
+      {
+        "path": "/api",
+        "method": "GET",
+        "description": "Fetch a JSON index of public fit matrix endpoints and dataset counts.",
+        "parameters": [],
+        "response_description": "JSON endpoint catalog with manifest, OpenAPI, downloads, sitemap, related assets, and count treatment."
+      },
+      {
+        "path": "/openapi.json",
+        "method": "GET",
+        "description": "Fetch the OpenAPI map for read-only fit matrix resources.",
+        "parameters": [],
+        "response_description": "OpenAPI 3.1 document for home, methodology, family, product, and dataset routes."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate crawlable fit matrix pages and metadata sidecars.",
+        "parameters": [],
+        "response_description": "XML sitemap covering support paths, family pages, and complete AI-approved SKU pages."
+      },
+      {
+        "path": "/data/manifest.json",
+        "method": "GET",
+        "description": "Fetch matrix counts, source scope, guardrails, and owned URL totals.",
+        "parameters": [],
+        "response_description": "JSON manifest with source rows, complete approved products, pair-universe counts, top-K row counts, and caveats."
+      },
+      {
+        "path": "/data/products.json",
+        "method": "GET",
+        "description": "Download complete AI-approved Packrift SKU records used by the matrix.",
+        "parameters": [],
+        "response_description": "JSON array of Packrift SKU records with dimensions, source price, family, and Packrift product URLs."
+      },
+      {
+        "path": "/data/top-fit-relationships.jsonl",
+        "method": "GET",
+        "description": "Download source-to-target same-family review candidates as JSONL.",
+        "parameters": [],
+        "response_description": "Newline-delimited records with source SKU, candidate SKU, fit score, deltas, and guardrails."
+      },
+      {
+        "path": "/products/1066-10x6x6-ect-32-kraft-long-corrugated-boxes-25-bundle",
+        "method": "GET",
+        "description": "Read a representative SKU fit-candidate page.",
+        "parameters": [],
+        "response_description": "HTML SKU page with source facts, candidate rows, and static review caveats."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "rate_limits": {
+      "requests_per_minute": null,
+      "requests_per_day": null
+    },
+    "reliability": {
+      "maintained_by": "organization",
+      "status_url": null,
+      "expected_uptime_pct": null
+    },
+    "agent_notes": "Use this manifest as a read-only entry point for Packrift same-family SKU fit research across 2510 complete AI-approved SKU pages and 50092 published top-K review rows. Access is free, and no account, credential, token, API key, password, checkout, carrier account, or payment is required for the public files listed here. Do not present candidate rows as approved substitutes or exact replacements unless live Packrift.com product facts, material, pack count, buyer use case, price, inventory, freight, and checkout state are separately verified.",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "support_url": "https://packrift.com/pages/contact",
+      "github": "https://github.com/Packrift"
+    },
+    "listing_requested": true,
+    "last_updated": "2026-05-31T19:03:16Z"
+  }
+}

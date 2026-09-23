@@ -1,0 +1,220 @@
+{
+  "id": "cmpy05gb6002cpjtcloukyimj",
+  "legacy_id": "cmpy05gb6002cpjtcloukyimj",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-flex-fit-lab-gateway.vercel.app/",
+  "manifest_url": "https://packrift-flex-fit-lab-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-flex-fit-lab-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-flex-fit-lab-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T11:47:52.915Z",
+  "verified_at": "2026-06-03T11:47:52.914Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T11:47:52.914Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T11:47:02Z",
+    "snapshot": {
+      "url": "https://packrift-flex-fit-lab-gateway.vercel.app/",
+      "name": "Packrift Flex Fit Lab Gateway",
+      "tags": [
+        "packrift",
+        "packaging",
+        "flex-fit",
+        "dimensional-weight",
+        "scenario-corpus"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch Flex Fit Lab gateway stats and count boundaries.",
+          "response_description": "Public JSON stats for source URL types, source scenario counts, segment rollups, recommendation rollups, and bands."
+        },
+        {
+          "path": "/data/sample-flex-fit-lab.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch bounded public Flex Fit Lab sample rows.",
+          "response_description": "Public-safe JSONL rows with source document status, source sidecars, and banded scenario samples."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Flex Fit Lab Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "resources": [
+        {
+          "url": "https://packrift-flex-fit-lab-gateway.vercel.app/data/stats.json",
+          "name": "Stats JSON",
+          "type": "application/json"
+        },
+        {
+          "url": "https://packrift-flex-fit-lab-gateway.vercel.app/data/sample-flex-fit-lab.jsonl",
+          "name": "Sample JSONL",
+          "type": "application/x-ndjson"
+        },
+        {
+          "url": "https://packrift-flex-fit-lab-gateway.vercel.app/methodology/",
+          "name": "Methodology",
+          "type": "text/html"
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "maintainer": {
+        "email": "farhan@packrift.com"
+      },
+      "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Source rows describe Packrift public Flex Lab resources. Referenced existing source URLs are not re-counted by this gateway. This is not a search ranking claim, third-party endorsement, referring-domain proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+      "description": "Read-only Packrift public gateway summarizing Flex Packaging Fit Lab source URL rollups, public scenario bands, and count boundaries.",
+      "capabilities": [
+        "Summarize Flex Lab source URL types",
+        "Summarize scenario segments and recommendation rollups",
+        "Expose bounded sample scenario rows",
+        "Expose count-boundary notes"
+      ],
+      "last_updated": "2026-06-03T11:47:02Z",
+      "spec_version": "agentmanifest-0.3",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Pricing is free for these public files. Authentication is none. No account required and no API key or credentials are needed to read the public files. Source rows describe Packrift public Flex Lab resources. Referenced existing source URLs are not re-counted by this gateway. This is not a search ranking claim, third-party endorsement, referring-domain proof, shipping proof, pricing proof, inventory proof, non-public commerce data disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "capabilities": [
+      "Summarize Flex Lab source URL types",
+      "Summarize scenario segments and recommendation rollups",
+      "Expose bounded sample scenario rows",
+      "Expose count-boundary notes"
+    ],
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Read-only Packrift public gateway summarizing Flex Packaging Fit Lab source URL rollups, public scenario bands, and count boundaries.",
+    "endpoints": [
+      {
+        "description": "Fetch Flex Fit Lab gateway stats and count boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for source URL types, source scenario counts, segment rollups, recommendation rollups, and bands."
+      },
+      {
+        "description": "Fetch bounded public Flex Fit Lab sample rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-flex-fit-lab.jsonl",
+        "response_description": "Public-safe JSONL rows with source document status, source sidecars, and banded scenario samples."
+      },
+      {
+        "description": "Enumerate Flex Fit Lab Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "last_updated": "2026-06-03T11:47:02Z",
+    "maintainer": {
+      "email": "farhan@packrift.com"
+    },
+    "name": "Packrift Flex Fit Lab Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "resources": [
+      {
+        "name": "Stats JSON",
+        "type": "application/json",
+        "url": "https://packrift-flex-fit-lab-gateway.vercel.app/data/stats.json"
+      },
+      {
+        "name": "Sample JSONL",
+        "type": "application/x-ndjson",
+        "url": "https://packrift-flex-fit-lab-gateway.vercel.app/data/sample-flex-fit-lab.jsonl"
+      },
+      {
+        "name": "Methodology",
+        "type": "text/html",
+        "url": "https://packrift-flex-fit-lab-gateway.vercel.app/methodology/"
+      }
+    ],
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packrift",
+      "packaging",
+      "flex-fit",
+      "dimensional-weight",
+      "scenario-corpus"
+    ],
+    "url": "https://packrift-flex-fit-lab-gateway.vercel.app/",
+    "version": "1.0.0"
+  }
+}

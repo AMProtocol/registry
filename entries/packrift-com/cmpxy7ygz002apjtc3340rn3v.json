@@ -1,0 +1,158 @@
+{
+  "id": "cmpxy7ygz002apjtc3340rn3v",
+  "legacy_id": "cmpxy7ygz002apjtc3340rn3v",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-public-resource-registry-gateway.vercel.app/",
+  "manifest_url": "https://packrift-public-resource-registry-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-public-resource-registry-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-public-resource-registry-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T10:53:50.531Z",
+  "verified_at": "2026-06-03T10:53:50.530Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T10:53:50.530Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T10:53:03Z",
+    "snapshot": {
+      "name": "Packrift Public Resource Registry Agent Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-public-resource-registry-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public resource registry gateway counts and boundaries.",
+          "response_description": "Public JSON stats for source asset count, source host count, referenced existing sitemap URL count, source registry sitemap count, sample counts, and count treatment."
+        },
+        {
+          "path": "/data/sample-resource-registry.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift resource registry asset and host rows.",
+          "response_description": "Public-safe sample rows with asset title, site, host, asset type, registry role, sampled public endpoints, host rollups, and count-boundary notes."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Public Resource Registry Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. Pricing is free for these public files. No account, login, API key, private credential, payment, or 2FA is required to read the public files. Source rows describe owned Packrift public resources. Referenced existing URLs are not re-counted by this gateway. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, referring-domain proof, live checkout, shipping proof, pricing proof, inventory proof, non-public commerce-record disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+      "description": "A compact no-auth Packrift gateway for public resource registry rollups, host coverage, sampled public endpoints, linkset coverage, and strict count-boundary notes.",
+      "last_updated": "2026-06-03T10:53:03Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-public-resource-registry-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Pricing is free for these public files. No account, login, API key, private credential, payment, or 2FA is required to read the public files. Source rows describe owned Packrift public resources. Referenced existing URLs are not re-counted by this gateway. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, referring-domain proof, live checkout, shipping proof, pricing proof, inventory proof, non-public commerce-record disclosure, non-public economics disclosure, private source path, or live purchase commitment.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public resource registry rollups, host coverage, sampled public endpoints, linkset coverage, and strict count-boundary notes.",
+    "documentation": "https://packrift-public-resource-registry-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch public resource registry gateway counts and boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for source asset count, source host count, referenced existing sitemap URL count, source registry sitemap count, sample counts, and count treatment."
+      },
+      {
+        "description": "Fetch sample public Packrift resource registry asset and host rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-resource-registry.jsonl",
+        "response_description": "Public-safe sample rows with asset title, site, host, asset type, registry role, sampled public endpoints, host rollups, and count-boundary notes."
+      },
+      {
+        "description": "Enumerate Public Resource Registry Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-public-resource-registry-gateway.vercel.app/",
+    "last_updated": "2026-06-03T10:53:03Z",
+    "name": "Packrift Public Resource Registry Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

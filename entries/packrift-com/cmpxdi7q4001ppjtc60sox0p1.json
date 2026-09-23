@@ -1,0 +1,156 @@
+{
+  "id": "cmpxdi7q4001ppjtc60sox0p1",
+  "legacy_id": "cmpxdi7q4001ppjtc60sox0p1",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-cube-efficiency-gateway.vercel.app/",
+  "manifest_url": "https://packrift-cube-efficiency-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-cube-efficiency-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-cube-efficiency-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T01:13:57.148Z",
+  "verified_at": "2026-06-03T01:13:57.147Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T01:13:57.147Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T01:12:20Z",
+    "snapshot": {
+      "name": "Packrift Cube Efficiency Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-cube-efficiency-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch cube efficiency gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for cube-band, family, product-type, dimensional-weight, density, and price-per-cubic-foot rollups."
+        },
+        {
+          "path": "/data/sample-cube-efficiency.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift cube efficiency rows.",
+          "response_description": "Public-safe sample SKU rows with cube fields, product URLs, and full-atlas links."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Cube Efficiency Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full cube-efficiency pages live at the linked Packrift Cube Efficiency Atlas. This is not a live price source, live inventory promise, checkout quote, delivery promise, freight quote, freight promise, carrier invoice, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private feed export, private freight source, substitute recommendation, or credential source.",
+      "description": "A compact no-auth Packrift gateway for public cube-efficiency rollups, families, product types, cube bands, dimensional-weight bands, density bands, price-per-cubic-foot bands, and links into the full Cube Efficiency Atlas.",
+      "last_updated": "2026-06-03T01:12:20Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-cube-efficiency-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full cube-efficiency pages live at the linked Packrift Cube Efficiency Atlas. This is not a live price source, live inventory promise, checkout quote, delivery promise, freight quote, freight promise, carrier invoice, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private feed export, private freight source, substitute recommendation, or credential source.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public cube-efficiency rollups, families, product types, cube bands, dimensional-weight bands, density bands, price-per-cubic-foot bands, and links into the full Cube Efficiency Atlas.",
+    "documentation": "https://packrift-cube-efficiency-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch cube efficiency gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for cube-band, family, product-type, dimensional-weight, density, and price-per-cubic-foot rollups."
+      },
+      {
+        "description": "Fetch sample public Packrift cube efficiency rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-cube-efficiency.jsonl",
+        "response_description": "Public-safe sample SKU rows with cube fields, product URLs, and full-atlas links."
+      },
+      {
+        "description": "Enumerate Cube Efficiency Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-cube-efficiency-gateway.vercel.app/",
+    "last_updated": "2026-06-03T01:12:20Z",
+    "name": "Packrift Cube Efficiency Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

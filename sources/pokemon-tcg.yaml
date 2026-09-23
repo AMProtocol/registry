@@ -1,0 +1,12 @@
+id: pokemon-tcg
+openapi_url: https://api.pokemontcg.io/v2/swagger.json
+name: Pokemon TCG API
+description: The Pokemon TCG API provides card data, sets, and types for the Pokemon Trading Card Game. Free tier available with rate limits for developers and agents building card lookup tools.
+categories: [other, commerce]
+primary_category: reference
+pricing:
+  model: freemium
+representative_queries:
+  - find pokemon cards by name
+  - pokemon tcg set list
+  - charizard card details

@@ -1,0 +1,182 @@
+{
+  "id": "cmpxvuwdx0026pjtck5810uqy",
+  "legacy_id": "cmpxvuwdx0026pjtck5810uqy",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-price-size-benchmark-gateway.vercel.app/",
+  "manifest_url": "https://packrift-price-size-benchmark-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-price-size-benchmark-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-price-size-benchmark-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T09:47:42.069Z",
+  "verified_at": "2026-06-03T09:47:42.068Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T09:47:42.068Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T09:45:24Z",
+    "snapshot": {
+      "api": {
+        "url": "https://packrift-price-size-benchmark-gateway.vercel.app/openapi.json",
+        "type": "openapi"
+      },
+      "name": "Packrift Packaging Price Size Benchmark Gateway",
+      "tags": [
+        "Packrift",
+        "packaging benchmark",
+        "price-size benchmark",
+        "catalog evidence",
+        "public catalog"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-price-size-benchmark-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch gateway and source benchmark coverage statistics.",
+          "response_description": "JSON stats for the compact gateway and source benchmark coverage."
+        },
+        {
+          "path": "/data/sample-price-size-benchmark-rows.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch bounded sample benchmark rows.",
+          "response_description": "JSONL rows with public benchmark card links, product URLs, families, product types, and static bands."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate gateway URLs.",
+          "response_description": "XML sitemap listing compact gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. Authentication is not required; no API key, credential, payment, account login, or access credential is needed. Pricing is free for this static reference gateway. Use these files for discovery and metadata only, and verify live product fit, price, stock, shipping, and checkout on Packrift.com before purchase decisions.",
+      "description": "Compact public Packrift gateway for packaging price-size benchmark source coverage, band rollups, sample benchmark rows, and agent-readable metadata.",
+      "last_updated": "2026-06-03T09:45:24Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-price-size-benchmark-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. Authentication is not required; no API key, credential, payment, account login, or access credential is needed. Pricing is free for this static reference gateway. Use these files for discovery and metadata only, and verify live product fit, price, stock, shipping, and checkout on Packrift.com before purchase decisions.",
+    "api": {
+      "type": "openapi",
+      "url": "https://packrift-price-size-benchmark-gateway.vercel.app/openapi.json"
+    },
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Compact public Packrift gateway for packaging price-size benchmark source coverage, band rollups, sample benchmark rows, and agent-readable metadata.",
+    "documentation": "https://packrift-price-size-benchmark-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch gateway and source benchmark coverage statistics.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "JSON stats for the compact gateway and source benchmark coverage."
+      },
+      {
+        "description": "Fetch bounded sample benchmark rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-price-size-benchmark-rows.jsonl",
+        "response_description": "JSONL rows with public benchmark card links, product URLs, families, product types, and static bands."
+      },
+      {
+        "description": "Enumerate gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap listing compact gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-price-size-benchmark-gateway.vercel.app/",
+    "last_updated": "2026-06-03T09:45:24Z",
+    "listing_requested": true,
+    "name": "Packrift Packaging Price Size Benchmark Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "Packrift",
+      "packaging benchmark",
+      "price-size benchmark",
+      "catalog evidence",
+      "public catalog"
+    ],
+    "version": "1.0.0"
+  }
+}

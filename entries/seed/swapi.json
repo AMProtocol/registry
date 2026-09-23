@@ -1,0 +1,73 @@
+{
+  "id": "swapi",
+  "legacy_id": null,
+  "status": "unverified",
+  "submitted_via": "import",
+  "url": "https://swapi.dev",
+  "manifest_url": null,
+  "publisher": {
+    "domain": "swapi.dev",
+    "group": "seed",
+    "contact": "https://swapi.dev"
+  },
+  "source": {
+    "type": "openapi",
+    "url": "https://swapi.dev/api",
+    "retrieved_at": "2026-09-23T20:42:04.509Z"
+  },
+  "representative_queries": [
+    "how fast does the millennium falcon go",
+    "star wars starship speeds",
+    "list star wars characters"
+  ],
+  "badges": [],
+  "created_at": "2026-09-23T20:42:04.509Z",
+  "verified_at": null,
+  "last_checked_at": "2026-09-23T20:42:04.509Z",
+  "consecutive_failures": 0,
+  "last_valid": null,
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "SWAPI",
+    "version": "1.0.0",
+    "description": "The Star Wars API (SWAPI) is a free, read-only REST API for Star Wars data: people, starships, planets, films, and species. No authentication required.",
+    "homepage": "https://swapi.dev",
+    "categories": [
+      "other"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/api/starships/10",
+        "method": "GET",
+        "description": "Retrieve a starship by ID — includes max_atmosphering_speed for the Millennium Falcon.",
+        "parameters": [],
+        "response_description": "JSON starship object with name, model, manufacturer, and speed fields."
+      },
+      {
+        "path": "/api/people",
+        "method": "GET",
+        "description": "List Star Wars characters with pagination.",
+        "parameters": [],
+        "response_description": "Paginated JSON list of people resources."
+      }
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null
+      },
+      "paid_tier": null
+    },
+    "payment": null,
+    "authentication": {
+      "required": false,
+      "type": "none"
+    },
+    "agent_notes": "No account or authentication. Pricing is free. Use GET endpoints only. Pagination uses next/previous URLs in the response. For starship speed questions, fetch /api/starships/10 (Millennium Falcon).",
+    "contact": "https://swapi.dev",
+    "listing_requested": false,
+    "last_updated": "2026-09-23T20:42:04.509Z"
+  }
+}

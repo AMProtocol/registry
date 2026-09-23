@@ -1,0 +1,198 @@
+{
+  "id": "cmpvpvbux000ppjtcno8stae8",
+  "legacy_id": "cmpvpvbux000ppjtcno8stae8",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-catalog-knowledge-graph.vercel.app/",
+  "manifest_url": "https://packrift-catalog-knowledge-graph.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-catalog-knowledge-graph.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-catalog-knowledge-graph.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T21:24:32.074Z",
+  "verified_at": "2026-06-01T21:24:32.073Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T21:24:32.073Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T21:23:15Z",
+    "snapshot": {
+      "api": {
+        "url": "https://packrift-catalog-knowledge-graph.vercel.app/openapi.json",
+        "type": "openapi"
+      },
+      "name": "Packrift Catalog Knowledge Graph",
+      "tags": [
+        "Packrift",
+        "schema.org",
+        "JSON-LD",
+        "RDF",
+        "Turtle",
+        "public catalog"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-catalog-knowledge-graph.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/graph.jsonld",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the schema.org JSON-LD graph for approved in-stock Packrift catalog nodes.",
+          "response_description": "JSON-LD graph with Dataset, Product, Offer, and grouping records."
+        },
+        {
+          "path": "/data/graph.ttl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the RDF/Turtle graph for approved in-stock Packrift catalog nodes.",
+          "response_description": "Turtle graph with Product, category, URL, and dataset triples."
+        },
+        {
+          "path": "/data/catalog-nodes.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch public Packrift catalog node records as JSON.",
+          "response_description": "Public-safe SKU rows with node URLs, Packrift product URLs, dimensions, price snapshots, and inventory snapshots."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate the crawlable Packrift catalog knowledge-graph URLs.",
+          "response_description": "XML sitemap listing public graph, data, group, and SKU-node URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public catalog linked-data release. Authentication is not required; no API key, credentials, payment, account, password, or token is needed. Pricing for this reference corpus is free. Use these files for discovery and metadata only, and verify live product fit, price, stock, shipping, and checkout on Packrift.com before purchase decisions.",
+      "description": "Public linked-data release for approved in-stock Packrift catalog nodes, with schema.org Product records, RDF/Turtle, JSON-LD, CSVW, SHACL, sitemap, and agent-readable metadata.",
+      "last_updated": "2026-06-01T21:23:15Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-catalog-knowledge-graph.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public catalog linked-data release. Authentication is not required; no API key, credentials, payment, account, password, or token is needed. Pricing for this reference corpus is free. Use these files for discovery and metadata only, and verify live product fit, price, stock, shipping, and checkout on Packrift.com before purchase decisions.",
+    "api": {
+      "type": "openapi",
+      "url": "https://packrift-catalog-knowledge-graph.vercel.app/openapi.json"
+    },
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "Public linked-data release for approved in-stock Packrift catalog nodes, with schema.org Product records, RDF/Turtle, JSON-LD, CSVW, SHACL, sitemap, and agent-readable metadata.",
+    "documentation": "https://packrift-catalog-knowledge-graph.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch the schema.org JSON-LD graph for approved in-stock Packrift catalog nodes.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/graph.jsonld",
+        "response_description": "JSON-LD graph with Dataset, Product, Offer, and grouping records."
+      },
+      {
+        "description": "Fetch the RDF/Turtle graph for approved in-stock Packrift catalog nodes.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/graph.ttl",
+        "response_description": "Turtle graph with Product, category, URL, and dataset triples."
+      },
+      {
+        "description": "Fetch public Packrift catalog node records as JSON.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/catalog-nodes.json",
+        "response_description": "Public-safe SKU rows with node URLs, Packrift product URLs, dimensions, price snapshots, and inventory snapshots."
+      },
+      {
+        "description": "Enumerate the crawlable Packrift catalog knowledge-graph URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap listing public graph, data, group, and SKU-node URLs."
+      }
+    ],
+    "homepage": "https://packrift-catalog-knowledge-graph.vercel.app/",
+    "last_updated": "2026-06-01T21:23:15Z",
+    "listing_requested": true,
+    "name": "Packrift Catalog Knowledge Graph",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "Packrift",
+      "schema.org",
+      "JSON-LD",
+      "RDF",
+      "Turtle",
+      "public catalog"
+    ],
+    "version": "1.0.0"
+  }
+}

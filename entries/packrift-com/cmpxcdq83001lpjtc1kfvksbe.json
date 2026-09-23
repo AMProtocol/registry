@@ -1,0 +1,156 @@
+{
+  "id": "cmpxcdq83001lpjtc1kfvksbe",
+  "legacy_id": "cmpxcdq83001lpjtc1kfvksbe",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-case-pack-quantity-gateway.vercel.app/",
+  "manifest_url": "https://packrift-case-pack-quantity-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-case-pack-quantity-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-case-pack-quantity-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T00:42:28.227Z",
+  "verified_at": "2026-06-03T00:42:28.226Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T00:42:28.226Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T00:41:46Z",
+    "snapshot": {
+      "name": "Packrift Case Pack Quantity Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-case-pack-quantity-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch case-pack quantity gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for quantity bands, unit-price bands, families, product types, parse statuses, and boundary notes."
+        },
+        {
+          "path": "/data/sample-case-pack-quantities.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift case-pack quantity rows.",
+          "response_description": "Public-safe sample SKU rows with pack quantities, quantity bands, product URLs, and full-atlas links."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Case Pack Quantity Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full case-pack pages live at the linked Packrift Case Pack Quantity Atlas. This is not a live price, live inventory promise, checkout quote, delivery promise, freight promise, product substitution approval, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or credential source.",
+      "description": "A compact no-auth Packrift gateway for public case-pack quantity bands, parsed pack quantities, product family rollups, product-type rollups, and links into the full Case Pack Quantity Atlas.",
+      "last_updated": "2026-06-03T00:41:46Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-case-pack-quantity-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, authentication, login, API key, token, password, passkey, payment, credentials, or 2FA is required. Full case-pack pages live at the linked Packrift Case Pack Quantity Atlas. This is not a live price, live inventory promise, checkout quote, delivery promise, freight promise, product substitution approval, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or credential source.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public case-pack quantity bands, parsed pack quantities, product family rollups, product-type rollups, and links into the full Case Pack Quantity Atlas.",
+    "documentation": "https://packrift-case-pack-quantity-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch case-pack quantity gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for quantity bands, unit-price bands, families, product types, parse statuses, and boundary notes."
+      },
+      {
+        "description": "Fetch sample public Packrift case-pack quantity rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-case-pack-quantities.jsonl",
+        "response_description": "Public-safe sample SKU rows with pack quantities, quantity bands, product URLs, and full-atlas links."
+      },
+      {
+        "description": "Enumerate Case Pack Quantity Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-case-pack-quantity-gateway.vercel.app/",
+    "last_updated": "2026-06-03T00:41:46Z",
+    "name": "Packrift Case Pack Quantity Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

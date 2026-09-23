@@ -1,0 +1,186 @@
+{
+  "id": "cmpxh9u93001qpjtchrzt8ogv",
+  "legacy_id": "cmpxh9u93001qpjtchrzt8ogv",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-item-fitment-gateway.vercel.app/",
+  "manifest_url": "https://packrift-item-fitment-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-item-fitment-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-item-fitment-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T02:59:24.903Z",
+  "verified_at": "2026-06-03T02:59:24.902Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T02:59:24.902Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T02:56:41Z",
+    "snapshot": {
+      "name": "Packrift Item Fitment Agent Gateway",
+      "tags": [
+        "packaging",
+        "ecommerce",
+        "item-fitment",
+        "catalog",
+        "agent-commerce"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-item-fitment-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch item fitment gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for source-backed item types, fit records, product-family rollups, product-type rollups, dimension bands, slack bands, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-item-fitment.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift item-fitment rows.",
+          "response_description": "Public-safe sample rows with source item dimensions, candidate Packrift SKU, product URL, family, product type, volume ratio, slack band, and atlas evidence URL."
+        },
+        {
+          "path": "/data/source-items.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch source item rollups for the fitment gateway.",
+          "response_description": "Public source item records with source labels, fit record counts, tight candidate counts, and gateway item URLs."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Item Fitment Gateway crawlable URLs.",
+          "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and source item URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Candidate fit evidence only; measure the packed item, cushioning, closure, and live product page before purchase. This is not a fit guarantee, product-substitution approval, live checkout, shipping quote, delivery promise, certification, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for source-backed item-fitment evidence and public-safe packaging dimension candidates.",
+      "last_updated": "2026-06-03T02:56:41Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-item-fitment-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Candidate fit evidence only; measure the packed item, cushioning, closure, and live product page before purchase. This is not a fit guarantee, product-substitution approval, live checkout, shipping quote, delivery promise, certification, vendor financial disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for source-backed item-fitment evidence and public-safe packaging dimension candidates.",
+    "documentation": "https://packrift-item-fitment-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch item fitment gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for source-backed item types, fit records, product-family rollups, product-type rollups, dimension bands, slack bands, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift item-fitment rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-item-fitment.jsonl",
+        "response_description": "Public-safe sample rows with source item dimensions, candidate Packrift SKU, product URL, family, product type, volume ratio, slack band, and atlas evidence URL."
+      },
+      {
+        "description": "Fetch source item rollups for the fitment gateway.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/source-items.json",
+        "response_description": "Public source item records with source labels, fit record counts, tight candidate counts, and gateway item URLs."
+      },
+      {
+        "description": "Enumerate Item Fitment Gateway crawlable URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and source item URLs."
+      }
+    ],
+    "homepage": "https://packrift-item-fitment-gateway.vercel.app/",
+    "last_updated": "2026-06-03T02:56:41Z",
+    "name": "Packrift Item Fitment Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packaging",
+      "ecommerce",
+      "item-fitment",
+      "catalog",
+      "agent-commerce"
+    ],
+    "version": "1.0.0"
+  }
+}

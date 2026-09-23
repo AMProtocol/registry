@@ -1,0 +1,13 @@
+id: swapi
+openapi_url: https://swapi.dev/api
+name: SWAPI
+description: The Star Wars API — starships, people, planets, films, and more. A free, read-only JSON API for Star Wars data, widely used as a teaching and demo API.
+categories: [other]
+primary_category: reference
+pricing:
+  model: free
+contact: https://swapi.dev
+representative_queries:
+  - how fast does the millennium falcon go
+  - star wars starship speeds
+  - list star wars characters

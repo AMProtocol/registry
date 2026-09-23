@@ -1,0 +1,156 @@
+{
+  "id": "cmpx9wmye001hpjtco7m78d5r",
+  "legacy_id": "cmpx9wmye001hpjtco7m78d5r",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-product-media-evidence-gateway.vercel.app/",
+  "manifest_url": "https://packrift-product-media-evidence-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-product-media-evidence-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-product-media-evidence-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-02T23:33:11.607Z",
+  "verified_at": "2026-06-02T23:33:11.606Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-02T23:33:11.606Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-02T23:22:38Z",
+    "snapshot": {
+      "name": "Packrift Product Media Evidence Gateway",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-product-media-evidence-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch product media evidence gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for image status, image host, image extension, families, product types, price bands, inventory bands, and weight bands."
+        },
+        {
+          "path": "/data/sample-product-media-evidence.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift product media evidence rows.",
+          "response_description": "Public-safe sample SKUs with compact image status, image host, and public atlas links."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Product Media Evidence Gateway URLs.",
+          "response_description": "XML sitemap containing crawlable gateway URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required. Full product media evidence pages live at the linked Packrift Product Media Evidence Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout rate, delivery promise, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+      "description": "A compact no-auth Packrift gateway for public product media evidence, image status, image host, and catalog media rollups.",
+      "last_updated": "2026-06-02T23:22:38Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-product-media-evidence-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, token, password, passkey, payment, or 2FA is required. Full product media evidence pages live at the linked Packrift Product Media Evidence Atlas. This is not a ChatGPT placement claim, search ranking claim, third-party endorsement, live checkout rate, delivery promise, real-time inventory source, rich-result eligibility claim, supplier-cost disclosure, margin report, customer/order/cart/payment system, private source path, private freight source, or live availability claim.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift gateway for public product media evidence, image status, image host, and catalog media rollups.",
+    "documentation": "https://packrift-product-media-evidence-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch product media evidence gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for image status, image host, image extension, families, product types, price bands, inventory bands, and weight bands."
+      },
+      {
+        "description": "Fetch sample public Packrift product media evidence rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-product-media-evidence.jsonl",
+        "response_description": "Public-safe sample SKUs with compact image status, image host, and public atlas links."
+      },
+      {
+        "description": "Enumerate Product Media Evidence Gateway URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing crawlable gateway URLs."
+      }
+    ],
+    "homepage": "https://packrift-product-media-evidence-gateway.vercel.app/",
+    "last_updated": "2026-06-02T23:22:38Z",
+    "name": "Packrift Product Media Evidence Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "version": "1.0.0"
+  }
+}

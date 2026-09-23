@@ -1,0 +1,172 @@
+{
+  "id": "cmpxneut3001ypjtc0wmrns6v",
+  "legacy_id": "cmpxneut3001ypjtc0wmrns6v",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-packingsolver-constraint-gateway.vercel.app/",
+  "manifest_url": "https://packrift-packingsolver-constraint-gateway.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-packingsolver-constraint-gateway.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-packingsolver-constraint-gateway.vercel.app/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-03T05:51:16.600Z",
+  "verified_at": "2026-06-03T05:51:16.599Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-03T05:51:16.599Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-03T05:30:45Z",
+    "snapshot": {
+      "name": "Packrift Packingsolver Constraint Agent Gateway",
+      "tags": [
+        "packaging",
+        "ecommerce",
+        "packingsolver",
+        "constraint-review",
+        "agent-commerce"
+      ],
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.0",
+      "homepage": "https://packrift-packingsolver-constraint-gateway.vercel.app/",
+      "provider": {
+        "url": "https://packrift.com/",
+        "name": "Packrift LLC"
+      },
+      "endpoints": [
+        {
+          "path": "/data/stats.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch packingsolver constraint gateway counts and source boundaries.",
+          "response_description": "Public JSON stats for family rollups, fill-band rollups, carton rollups, and source asset URLs."
+        },
+        {
+          "path": "/data/sample-constraint-segments.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch sample public Packrift generated-fixture constraint segment rows.",
+          "response_description": "Public-safe sample rows with family, fill band, scenario count, cube aggregate, line-count aggregate, and upstream segment page."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Packingsolver Constraint Gateway crawlable URLs.",
+          "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact rollup URLs."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Generated fixture review aggregates only; scenario fixtures are not real customer orders, and cube-utilization bands are not proof that a carton is optimal. This is not a live checkout, shipping quote, delivery promise, inventory guarantee, certification, endorsement, customer record, cart system, payment system, or private freight source.",
+      "description": "A compact no-auth Packrift reference gateway for public generated-fixture packingsolver constraint review bands, carton fill summaries, family rollups, and source boundaries.",
+      "last_updated": "2026-06-03T05:30:45Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-packingsolver-constraint-gateway.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "schema_version": "agentmanifest-0.3",
+      "primary_category": "reference"
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "agent_notes": "Read-only public gateway. No account, login, API key, private credential, payment, or 2FA is required. Pricing for this reference corpus is free. Generated fixture review aggregates only; scenario fixtures are not real customer orders, and cube-utilization bands are not proof that a carton is optimal. This is not a live checkout, shipping quote, delivery promise, inventory guarantee, certification, endorsement, customer record, cart system, payment system, or private freight source.",
+    "authentication": {
+      "instructions": null,
+      "required": false,
+      "type": "none"
+    },
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "contact": {
+      "email": "farhan@packrift.com",
+      "github": "https://github.com/Packrift",
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "description": "A compact no-auth Packrift reference gateway for public generated-fixture packingsolver constraint review bands, carton fill summaries, family rollups, and source boundaries.",
+    "documentation": "https://packrift-packingsolver-constraint-gateway.vercel.app/llms.txt",
+    "endpoints": [
+      {
+        "description": "Fetch packingsolver constraint gateway counts and source boundaries.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/stats.json",
+        "response_description": "Public JSON stats for family rollups, fill-band rollups, carton rollups, and source asset URLs."
+      },
+      {
+        "description": "Fetch sample public Packrift generated-fixture constraint segment rows.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/data/sample-constraint-segments.jsonl",
+        "response_description": "Public-safe sample rows with family, fill band, scenario count, cube aggregate, line-count aggregate, and upstream segment page."
+      },
+      {
+        "description": "Enumerate Packingsolver Constraint Gateway crawlable URLs.",
+        "method": "GET",
+        "parameters": [],
+        "path": "/sitemap.xml",
+        "response_description": "XML sitemap containing gateway home, manifest, OpenAPI, data, methodology, and compact rollup URLs."
+      }
+    ],
+    "homepage": "https://packrift-packingsolver-constraint-gateway.vercel.app/",
+    "last_updated": "2026-06-03T05:30:45Z",
+    "name": "Packrift Packingsolver Constraint Agent Gateway",
+    "pricing": {
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "model": "free",
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "primary_category": "reference",
+    "provider": {
+      "name": "Packrift LLC",
+      "url": "https://packrift.com/"
+    },
+    "schema_version": "agentmanifest-0.3",
+    "spec_version": "agentmanifest-0.3",
+    "tags": [
+      "packaging",
+      "ecommerce",
+      "packingsolver",
+      "constraint-review",
+      "agent-commerce"
+    ],
+    "version": "1.0.0"
+  }
+}

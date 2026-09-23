@@ -1,0 +1,254 @@
+{
+  "id": "cmpuqp4e10008pjtcf77v6olh",
+  "legacy_id": "cmpuqp4e10008pjtcf77v6olh",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift-agent-discovery-hub.vercel.app",
+  "manifest_url": "https://packrift-agent-discovery-hub.vercel.app/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift-agent-discovery-hub.vercel.app",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift-agent-discovery-hub.vercel.app",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T04:59:55.897Z",
+  "verified_at": "2026-06-01T04:59:55.896Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T04:59:55.896Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T04:56:00Z",
+    "snapshot": {
+      "name": "Packrift A2A Packaging Procurement Router",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift/packrift-mcp",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "0.3.1",
+      "homepage": "https://packrift-agent-discovery-hub.vercel.app/",
+      "endpoints": [
+        {
+          "path": "/api/a2a",
+          "method": "POST",
+          "parameters": [
+            {
+              "name": "jsonrpc_request",
+              "type": "object",
+              "required": true,
+              "description": "A2A JSON-RPC request body, typically using message/send with a packaging procurement query."
+            }
+          ],
+          "description": "Call the Packrift A2A JSON-RPC endpoint for stateless procurement routing, exact-match policy, and Packrift MCP/data endpoint guidance.",
+          "response_description": "A2A task response containing Packrift procurement-routing guidance, MCP endpoints, public product-corpus URLs, and no-order policy."
+        },
+        {
+          "path": "/api/a2a",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch a compact machine-readable status and method summary for the Packrift A2A endpoint.",
+          "response_description": "JSON summary with supported A2A methods, agent-card URL, MCP endpoint, and order-safety flags."
+        },
+        {
+          "path": "/.well-known/agent-card.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the public A2A agent card for the Packrift Packaging Procurement Router.",
+          "response_description": "A2A agent card describing the JSON-RPC transport, skills, MCP interface, and no-order policy."
+        },
+        {
+          "path": "/.well-known/agent.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the Agent Web Protocol style manifest for Packrift agent and MCP discovery.",
+          "response_description": "JSON manifest with Packrift action, protocol, entity, and safety metadata."
+        },
+        {
+          "path": "/.well-known/capability-card.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the capability card that maps Packrift packaging procurement jobs to public MCP and A2A routes.",
+          "response_description": "JSON capability card for Packrift exact-spec SKU search, public SKU lookup, and guarded cart-handoff routing."
+        },
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact text reading map for Packrift agent discovery, MCP endpoints, and public data resources.",
+          "response_description": "Plain-text guide covering Packrift A2A, MCP, public product data, and safe-use boundaries."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate crawlable Packrift agent-discovery hub URLs.",
+          "response_description": "XML sitemap with the hub root, A2A endpoint, Agent Manifest, agent card, agent.json, capability card, llms.txt, robots.txt, and IndexNow key file."
+        },
+        {
+          "path": "/agent-manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the root alias for the Packrift Agent Manifest Protocol document.",
+          "response_description": "Same Agent Manifest Protocol JSON as the well-known endpoint."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "Use this manifest as a public read-only entry point for Packrift A2A and MCP discovery. No Packrift account, authentication, API key, credentials, token, password, payment method, or buyer secret is required to read this manifest, call the public A2A routing endpoint, inspect the agent card, or read the linked public Packrift discovery files. The discovery routes listed here are free public discovery and routing surfaces; there is no pricing, cost, paid tier, checkout, subscription, or billing step for reading this manifest or calling the public A2A routing endpoint. The A2A endpoint routes packaging procurement requests to Packrift MCP and public product data while preserving exact-match and no-order policies. It does not place orders, collect payment details, store buyer secrets, or replace Shopify checkout. Treat dimensions, material, color, count, family, closure, grade, printer type, and SKU as binding fields; do not invent substitutions. Use Packrift MCP or Shopify checkout for live price, inventory, shipping-sensitive facts, cart eligibility, and buyer-specific confirmation before presenting commercial guidance.",
+      "description": "Packrift A2A Packaging Procurement Router is a free, no-auth public agent-discovery surface for routing exact-spec packaging procurement requests to Packrift MCP and crawler-safe Packrift product data. Agents can use it to find the Packrift A2A JSON-RPC endpoint, Packrift MCP endpoint, public SKU records, no-substitution policy, and guarded cart-handoff rules without placing orders or handling buyer secrets.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": 60
+      },
+      "reliability": {
+        "status_url": "https://packrift-agent-discovery-hub.vercel.app/api/a2a",
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-06-01T04:56:00Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift-agent-discovery-hub.vercel.app/llms.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "live",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Packrift A2A Packaging Procurement Router",
+    "version": "0.3.1",
+    "description": "Packrift A2A Packaging Procurement Router is a free, no-auth public agent-discovery surface for routing exact-spec packaging procurement requests to Packrift MCP and crawler-safe Packrift product data. Agents can use it to find the Packrift A2A JSON-RPC endpoint, Packrift MCP endpoint, public SKU records, no-substitution policy, and guarded cart-handoff rules without placing orders or handling buyer secrets.",
+    "homepage": "https://packrift-agent-discovery-hub.vercel.app/",
+    "documentation": "https://packrift-agent-discovery-hub.vercel.app/llms.txt",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "live",
+    "endpoints": [
+      {
+        "path": "/api/a2a",
+        "method": "POST",
+        "description": "Call the Packrift A2A JSON-RPC endpoint for stateless procurement routing, exact-match policy, and Packrift MCP/data endpoint guidance.",
+        "parameters": [
+          {
+            "name": "jsonrpc_request",
+            "type": "object",
+            "required": true,
+            "description": "A2A JSON-RPC request body, typically using message/send with a packaging procurement query."
+          }
+        ],
+        "response_description": "A2A task response containing Packrift procurement-routing guidance, MCP endpoints, public product-corpus URLs, and no-order policy."
+      },
+      {
+        "path": "/api/a2a",
+        "method": "GET",
+        "description": "Fetch a compact machine-readable status and method summary for the Packrift A2A endpoint.",
+        "parameters": [],
+        "response_description": "JSON summary with supported A2A methods, agent-card URL, MCP endpoint, and order-safety flags."
+      },
+      {
+        "path": "/.well-known/agent-card.json",
+        "method": "GET",
+        "description": "Fetch the public A2A agent card for the Packrift Packaging Procurement Router.",
+        "parameters": [],
+        "response_description": "A2A agent card describing the JSON-RPC transport, skills, MCP interface, and no-order policy."
+      },
+      {
+        "path": "/.well-known/agent.json",
+        "method": "GET",
+        "description": "Fetch the Agent Web Protocol style manifest for Packrift agent and MCP discovery.",
+        "parameters": [],
+        "response_description": "JSON manifest with Packrift action, protocol, entity, and safety metadata."
+      },
+      {
+        "path": "/.well-known/capability-card.json",
+        "method": "GET",
+        "description": "Fetch the capability card that maps Packrift packaging procurement jobs to public MCP and A2A routes.",
+        "parameters": [],
+        "response_description": "JSON capability card for Packrift exact-spec SKU search, public SKU lookup, and guarded cart-handoff routing."
+      },
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact text reading map for Packrift agent discovery, MCP endpoints, and public data resources.",
+        "parameters": [],
+        "response_description": "Plain-text guide covering Packrift A2A, MCP, public product data, and safe-use boundaries."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate crawlable Packrift agent-discovery hub URLs.",
+        "parameters": [],
+        "response_description": "XML sitemap with the hub root, A2A endpoint, Agent Manifest, agent card, agent.json, capability card, llms.txt, robots.txt, and IndexNow key file."
+      },
+      {
+        "path": "/agent-manifest.json",
+        "method": "GET",
+        "description": "Fetch the root alias for the Packrift Agent Manifest Protocol document.",
+        "parameters": [],
+        "response_description": "Same Agent Manifest Protocol JSON as the well-known endpoint."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "rate_limits": {
+      "requests_per_minute": 60,
+      "requests_per_day": null
+    },
+    "reliability": {
+      "maintained_by": "organization",
+      "status_url": "https://packrift-agent-discovery-hub.vercel.app/api/a2a",
+      "expected_uptime_pct": null
+    },
+    "agent_notes": "Use this manifest as a public read-only entry point for Packrift A2A and MCP discovery. No Packrift account, authentication, API key, credentials, token, password, payment method, or buyer secret is required to read this manifest, call the public A2A routing endpoint, inspect the agent card, or read the linked public Packrift discovery files. The discovery routes listed here are free public discovery and routing surfaces; there is no pricing, cost, paid tier, checkout, subscription, or billing step for reading this manifest or calling the public A2A routing endpoint. The A2A endpoint routes packaging procurement requests to Packrift MCP and public product data while preserving exact-match and no-order policies. It does not place orders, collect payment details, store buyer secrets, or replace Shopify checkout. Treat dimensions, material, color, count, family, closure, grade, printer type, and SKU as binding fields; do not invent substitutions. Use Packrift MCP or Shopify checkout for live price, inventory, shipping-sensitive facts, cart eligibility, and buyer-specific confirmation before presenting commercial guidance.",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "support_url": "https://packrift.com/pages/contact",
+      "github": "https://github.com/Packrift/packrift-mcp"
+    },
+    "listing_requested": true,
+    "last_updated": "2026-06-01T04:56:00Z"
+  }
+}

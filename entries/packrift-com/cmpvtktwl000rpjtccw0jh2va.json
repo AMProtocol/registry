@@ -1,0 +1,464 @@
+{
+  "id": "cmpvtktwl000rpjtccw0jh2va",
+  "legacy_id": "cmpvtktwl000rpjtccw0jh2va",
+  "status": "verified",
+  "submitted_via": "migration",
+  "url": "https://packrift.github.io/catalog-trust-ledger/",
+  "manifest_url": "https://packrift.github.io/.well-known/agent-manifest.json",
+  "publisher": {
+    "domain": "packrift.github.io",
+    "group": "packrift-com",
+    "contact": "farhan@packrift.com"
+  },
+  "source": {
+    "type": "migration",
+    "url": "https://packrift.github.io/catalog-trust-ledger/",
+    "retrieved_at": "2026-09-23T20:16:53.232Z"
+  },
+  "representative_queries": [],
+  "badges": [],
+  "created_at": "2026-06-01T23:08:20.710Z",
+  "verified_at": "2026-06-01T23:08:20.708Z",
+  "last_checked_at": "2026-09-23T20:16:53.232Z",
+  "consecutive_failures": 0,
+  "last_valid": {
+    "validated_at": "2026-06-01T23:08:20.708Z",
+    "spec_version": "agentmanifest-0.3",
+    "manifest_last_updated": "2026-06-01T17:51:55Z",
+    "snapshot": {
+      "name": "Packrift GitHub Pages Packaging Resource Corpus",
+      "contact": {
+        "email": "farhan@packrift.com",
+        "github": "https://github.com/Packrift",
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "payment": null,
+      "pricing": {
+        "model": "free",
+        "free_tier": {
+          "queries_per_day": null,
+          "queries_per_month": null
+        },
+        "paid_tier": null,
+        "support_url": "https://packrift.com/pages/contact"
+      },
+      "version": "1.0.7",
+      "homepage": "https://packrift.github.io/",
+      "endpoints": [
+        {
+          "path": "/llms.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the compact agent-readable overview for the Packrift GitHub Pages resource corpus.",
+          "response_description": "Plain text guide covering root corpus routes, sub-asset sitemaps, safe-use notes, and public data files."
+        },
+        {
+          "path": "/llms-full.txt",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the full agent-readable context for the Packrift GitHub Pages resource corpus.",
+          "response_description": "Plain text full-context guide covering corpus scope, public data assets, representative routes, safe-use boundaries, and contact details."
+        },
+        {
+          "path": "/research-assets/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read the canonical public cross-asset index for Packrift research resources.",
+          "response_description": "HTML index linking Packrift public research assets, dataset sidecars, solver fixture packages, and safe-use boundaries."
+        },
+        {
+          "path": "/research-assets/asset-index.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the machine-readable Packrift public research asset index.",
+          "response_description": "JSON crosswalk of Packrift public research assets, sitemaps, llms files, data files, metadata files, and allowed-use boundaries."
+        },
+        {
+          "path": "/research-assets/asset-index.jsonld",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the schema.org DataCatalog view of the Packrift public research asset index.",
+          "response_description": "JSON-LD DataCatalog linking Packrift public datasets and data downloads."
+        },
+        {
+          "path": "/apis.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the root APIs.json catalog for Packrift public API descriptors, MCP endpoints, dataset sidecars, and research assets.",
+          "response_description": "APIs.json catalog with Packrift MCP, OpenAPI, static resource corpus, benchmark, dimensional-weight, fit-matrix, and operations graph descriptors."
+        },
+        {
+          "path": "/.well-known/apis.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the well-known mirror of the Packrift public APIs.json catalog.",
+          "response_description": "APIs.json catalog mirror for API directory and agent-discovery crawlers that inspect .well-known routes."
+        },
+        {
+          "path": "/.well-known/api-catalog",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the extensionless agent-native API catalog linkset for Packrift public API descriptors and data assets.",
+          "response_description": "JSON linkset with service-desc, service-doc, and describedby links for Packrift MCP, GitHub Pages corpus, Benchmark Navigator, Dimensional Weight Atlas, Fit Matrix, and Operations Resource Graph."
+        },
+        {
+          "path": "/.well-known/api-catalog.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the JSON-extension mirror of the Packrift agent-native API catalog linkset.",
+          "response_description": "JSON linkset mirror for tools that prefer extension-bearing URLs."
+        },
+        {
+          "path": "/openapi.yaml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the YAML OpenAPI descriptor for the static Packrift GitHub Pages packaging resource corpus.",
+          "response_description": "OpenAPI 3.1 YAML descriptor for no-auth public Packrift resource corpus routes, dataset sidecars, and safe-use boundaries."
+        },
+        {
+          "path": "/.well-known/openapi.yaml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the well-known YAML OpenAPI mirror for the static Packrift GitHub Pages packaging resource corpus.",
+          "response_description": "Well-known OpenAPI 3.1 YAML mirror for API directories and agent crawlers that inspect .well-known routes."
+        },
+        {
+          "path": "/.well-known/host-meta",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the XRD host-meta document for Packrift public API, catalog, and dataset discovery links.",
+          "response_description": "XRD host-meta document linking Packrift OpenAPI, APIs.json, API catalog, llms, research asset, RO-Crate, and DCAT resources."
+        },
+        {
+          "path": "/.well-known/host-meta.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download the JSON Resource Descriptor host-meta mirror for Packrift public API, catalog, and dataset discovery links.",
+          "response_description": "JRD host-meta mirror linking Packrift OpenAPI, APIs.json, API catalog, llms, research asset, RO-Crate, and DCAT resources."
+        },
+        {
+          "path": "/api-directory/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read the human-facing Packrift API directory and data catalog.",
+          "response_description": "HTML index for Packrift public OpenAPI, MCP, APIs.json, dataset, research, and agent-discovery endpoints."
+        },
+        {
+          "path": "/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate the root Packrift pack-count and unit-signal atlas pages.",
+          "response_description": "XML sitemap for the root Packrift GitHub Pages packaging unit-signal asset."
+        },
+        {
+          "path": "/procurement-readiness-index/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate procurement-readiness pages and sidecars for public Packrift SKU records.",
+          "response_description": "XML sitemap with public SKU readiness pages, data files, product-type pages, price-band pages, and manifest URLs."
+        },
+        {
+          "path": "/procurement-readiness-index/.well-known/agent-manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the sub-asset Agent Manifest for the Packrift Procurement Readiness Index.",
+          "response_description": "AgentManifest v0.3 descriptor for the procurement-readiness public data asset."
+        },
+        {
+          "path": "/sku-evidence-cards/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate SKU evidence-card pages and sidecars for public Packrift product records.",
+          "response_description": "XML sitemap with public SKU evidence cards, data files, family pages, status pages, price-band pages, and manifest URLs."
+        },
+        {
+          "path": "/sku-evidence-cards/.well-known/agent-manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the sub-asset Agent Manifest for Packrift SKU Evidence Cards.",
+          "response_description": "AgentManifest v0.3 descriptor for the SKU evidence-card public data asset."
+        },
+        {
+          "path": "/data/unit-signals.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download root Packrift unit-signal records for pack-count and unit economics review.",
+          "response_description": "JSON records with public Packrift pack-count, unit-price, unit-weight, unit-cube, family, product-type, inventory, and canonical product-route signals."
+        },
+        {
+          "path": "/products/212c-8x6x12-eps-foam-insulated-shipping-kit-200-white-corrugated-case-of-1/",
+          "method": "GET",
+          "parameters": [],
+          "description": "Read a representative root Packrift unit-signal product page.",
+          "response_description": "HTML product signal page with public Packrift pack-count, unit, family, inventory, and product-route fields."
+        },
+        {
+          "path": "/packrift-cube-efficiency-atlas/sitemap.xml",
+          "method": "GET",
+          "parameters": [],
+          "description": "Enumerate Packrift Catalog Cube Efficiency Atlas pages and sidecars.",
+          "response_description": "XML sitemap containing cube-efficiency SKU pages, rollup pages, and public data sidecars."
+        },
+        {
+          "path": "/packrift-cube-efficiency-atlas/.well-known/agent-manifest.json",
+          "method": "GET",
+          "parameters": [],
+          "description": "Fetch the sub-asset Agent Manifest for the Packrift Catalog Cube Efficiency Atlas.",
+          "response_description": "Agent Manifest descriptor for the public cube, density, and reference dimensional-weight atlas."
+        },
+        {
+          "path": "/packrift-cube-efficiency-atlas/data/cube-efficiency.jsonl",
+          "method": "GET",
+          "parameters": [],
+          "description": "Download line-delimited cube-efficiency rows for dimension-backed Packrift catalog SKUs.",
+          "response_description": "JSONL records with catalog dimensions, cube, reference DIM weight, density, and public-safe snapshot fields."
+        }
+      ],
+      "categories": [
+        "commerce",
+        "logistics",
+        "engineering",
+        "computing"
+      ],
+      "agent_notes": "This root corpus and listed sub-assets are read-only public references. No account, login, API key, token, payment, or password is required to read the public files. The corpus now includes the Packrift Catalog Cube Efficiency Atlas at https://packrift.github.io/packrift-cube-efficiency-atlas/ for dimension-backed cube, density, and reference dimensional-weight inspection. Static files are not live quotes, inventory promises, carrier invoices, supplier-cost disclosures, margin disclosures, customer records, checkout commitments, or substitute approvals. Use Packrift.com checkout and Packrift MCP for live price, inventory, shipping, cart, and order decisions.",
+      "description": "Packrift GitHub Pages Packaging Resource Corpus is a free, no-auth public resource collection for packaging SKU evidence, pack-count signals, unit-price and unit-weight bands, catalog cube-efficiency data, procurement readiness, public research asset discovery, and machine-readable Packrift data sidecars. Agents can use it to discover static public Packrift catalog resources without treating the files as live freight quotes, supplier-cost data, inventory guarantees, substitute approvals, or checkout commitments.",
+      "rate_limits": {
+        "requests_per_day": null,
+        "requests_per_minute": null
+      },
+      "reliability": {
+        "status_url": null,
+        "maintained_by": "organization",
+        "expected_uptime_pct": null
+      },
+      "last_updated": "2026-06-01T17:51:55Z",
+      "spec_version": "agentmanifest-0.3",
+      "documentation": "https://packrift.github.io/llms-full.txt",
+      "authentication": {
+        "type": "none",
+        "required": false,
+        "instructions": null
+      },
+      "primary_category": "reference",
+      "listing_requested": true
+    }
+  },
+  "current_errors": [],
+  "manifest": {
+    "spec_version": "agentmanifest-0.3",
+    "name": "Packrift GitHub Pages Packaging Resource Corpus",
+    "version": "1.0.7",
+    "description": "Packrift GitHub Pages Packaging Resource Corpus is a free, no-auth public resource collection for packaging SKU evidence, pack-count signals, unit-price and unit-weight bands, catalog cube-efficiency data, procurement readiness, public research asset discovery, and machine-readable Packrift data sidecars. Agents can use it to discover static public Packrift catalog resources without treating the files as live freight quotes, supplier-cost data, inventory guarantees, substitute approvals, or checkout commitments.",
+    "homepage": "https://packrift.github.io/",
+    "documentation": "https://packrift.github.io/llms-full.txt",
+    "categories": [
+      "commerce",
+      "logistics",
+      "engineering",
+      "computing"
+    ],
+    "primary_category": "reference",
+    "endpoints": [
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "description": "Fetch the compact agent-readable overview for the Packrift GitHub Pages resource corpus.",
+        "parameters": [],
+        "response_description": "Plain text guide covering root corpus routes, sub-asset sitemaps, safe-use notes, and public data files."
+      },
+      {
+        "path": "/llms-full.txt",
+        "method": "GET",
+        "description": "Fetch the full agent-readable context for the Packrift GitHub Pages resource corpus.",
+        "parameters": [],
+        "response_description": "Plain text full-context guide covering corpus scope, public data assets, representative routes, safe-use boundaries, and contact details."
+      },
+      {
+        "path": "/research-assets/",
+        "method": "GET",
+        "description": "Read the canonical public cross-asset index for Packrift research resources.",
+        "parameters": [],
+        "response_description": "HTML index linking Packrift public research assets, dataset sidecars, solver fixture packages, and safe-use boundaries."
+      },
+      {
+        "path": "/research-assets/asset-index.json",
+        "method": "GET",
+        "description": "Download the machine-readable Packrift public research asset index.",
+        "parameters": [],
+        "response_description": "JSON crosswalk of Packrift public research assets, sitemaps, llms files, data files, metadata files, and allowed-use boundaries."
+      },
+      {
+        "path": "/research-assets/asset-index.jsonld",
+        "method": "GET",
+        "description": "Download the schema.org DataCatalog view of the Packrift public research asset index.",
+        "parameters": [],
+        "response_description": "JSON-LD DataCatalog linking Packrift public datasets and data downloads."
+      },
+      {
+        "path": "/apis.json",
+        "method": "GET",
+        "description": "Download the root APIs.json catalog for Packrift public API descriptors, MCP endpoints, dataset sidecars, and research assets.",
+        "parameters": [],
+        "response_description": "APIs.json catalog with Packrift MCP, OpenAPI, static resource corpus, benchmark, dimensional-weight, fit-matrix, and operations graph descriptors."
+      },
+      {
+        "path": "/.well-known/apis.json",
+        "method": "GET",
+        "description": "Download the well-known mirror of the Packrift public APIs.json catalog.",
+        "parameters": [],
+        "response_description": "APIs.json catalog mirror for API directory and agent-discovery crawlers that inspect .well-known routes."
+      },
+      {
+        "path": "/.well-known/api-catalog",
+        "method": "GET",
+        "description": "Download the extensionless agent-native API catalog linkset for Packrift public API descriptors and data assets.",
+        "parameters": [],
+        "response_description": "JSON linkset with service-desc, service-doc, and describedby links for Packrift MCP, GitHub Pages corpus, Benchmark Navigator, Dimensional Weight Atlas, Fit Matrix, and Operations Resource Graph."
+      },
+      {
+        "path": "/.well-known/api-catalog.json",
+        "method": "GET",
+        "description": "Download the JSON-extension mirror of the Packrift agent-native API catalog linkset.",
+        "parameters": [],
+        "response_description": "JSON linkset mirror for tools that prefer extension-bearing URLs."
+      },
+      {
+        "path": "/openapi.yaml",
+        "method": "GET",
+        "description": "Download the YAML OpenAPI descriptor for the static Packrift GitHub Pages packaging resource corpus.",
+        "parameters": [],
+        "response_description": "OpenAPI 3.1 YAML descriptor for no-auth public Packrift resource corpus routes, dataset sidecars, and safe-use boundaries."
+      },
+      {
+        "path": "/.well-known/openapi.yaml",
+        "method": "GET",
+        "description": "Download the well-known YAML OpenAPI mirror for the static Packrift GitHub Pages packaging resource corpus.",
+        "parameters": [],
+        "response_description": "Well-known OpenAPI 3.1 YAML mirror for API directories and agent crawlers that inspect .well-known routes."
+      },
+      {
+        "path": "/.well-known/host-meta",
+        "method": "GET",
+        "description": "Download the XRD host-meta document for Packrift public API, catalog, and dataset discovery links.",
+        "parameters": [],
+        "response_description": "XRD host-meta document linking Packrift OpenAPI, APIs.json, API catalog, llms, research asset, RO-Crate, and DCAT resources."
+      },
+      {
+        "path": "/.well-known/host-meta.json",
+        "method": "GET",
+        "description": "Download the JSON Resource Descriptor host-meta mirror for Packrift public API, catalog, and dataset discovery links.",
+        "parameters": [],
+        "response_description": "JRD host-meta mirror linking Packrift OpenAPI, APIs.json, API catalog, llms, research asset, RO-Crate, and DCAT resources."
+      },
+      {
+        "path": "/api-directory/",
+        "method": "GET",
+        "description": "Read the human-facing Packrift API directory and data catalog.",
+        "parameters": [],
+        "response_description": "HTML index for Packrift public OpenAPI, MCP, APIs.json, dataset, research, and agent-discovery endpoints."
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate the root Packrift pack-count and unit-signal atlas pages.",
+        "parameters": [],
+        "response_description": "XML sitemap for the root Packrift GitHub Pages packaging unit-signal asset."
+      },
+      {
+        "path": "/procurement-readiness-index/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate procurement-readiness pages and sidecars for public Packrift SKU records.",
+        "parameters": [],
+        "response_description": "XML sitemap with public SKU readiness pages, data files, product-type pages, price-band pages, and manifest URLs."
+      },
+      {
+        "path": "/procurement-readiness-index/.well-known/agent-manifest.json",
+        "method": "GET",
+        "description": "Fetch the sub-asset Agent Manifest for the Packrift Procurement Readiness Index.",
+        "parameters": [],
+        "response_description": "AgentManifest v0.3 descriptor for the procurement-readiness public data asset."
+      },
+      {
+        "path": "/sku-evidence-cards/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate SKU evidence-card pages and sidecars for public Packrift product records.",
+        "parameters": [],
+        "response_description": "XML sitemap with public SKU evidence cards, data files, family pages, status pages, price-band pages, and manifest URLs."
+      },
+      {
+        "path": "/sku-evidence-cards/.well-known/agent-manifest.json",
+        "method": "GET",
+        "description": "Fetch the sub-asset Agent Manifest for Packrift SKU Evidence Cards.",
+        "parameters": [],
+        "response_description": "AgentManifest v0.3 descriptor for the SKU evidence-card public data asset."
+      },
+      {
+        "path": "/data/unit-signals.json",
+        "method": "GET",
+        "description": "Download root Packrift unit-signal records for pack-count and unit economics review.",
+        "parameters": [],
+        "response_description": "JSON records with public Packrift pack-count, unit-price, unit-weight, unit-cube, family, product-type, inventory, and canonical product-route signals."
+      },
+      {
+        "path": "/products/212c-8x6x12-eps-foam-insulated-shipping-kit-200-white-corrugated-case-of-1/",
+        "method": "GET",
+        "description": "Read a representative root Packrift unit-signal product page.",
+        "parameters": [],
+        "response_description": "HTML product signal page with public Packrift pack-count, unit, family, inventory, and product-route fields."
+      },
+      {
+        "path": "/packrift-cube-efficiency-atlas/sitemap.xml",
+        "method": "GET",
+        "description": "Enumerate Packrift Catalog Cube Efficiency Atlas pages and sidecars.",
+        "parameters": [],
+        "response_description": "XML sitemap containing cube-efficiency SKU pages, rollup pages, and public data sidecars."
+      },
+      {
+        "path": "/packrift-cube-efficiency-atlas/.well-known/agent-manifest.json",
+        "method": "GET",
+        "description": "Fetch the sub-asset Agent Manifest for the Packrift Catalog Cube Efficiency Atlas.",
+        "parameters": [],
+        "response_description": "Agent Manifest descriptor for the public cube, density, and reference dimensional-weight atlas."
+      },
+      {
+        "path": "/packrift-cube-efficiency-atlas/data/cube-efficiency.jsonl",
+        "method": "GET",
+        "description": "Download line-delimited cube-efficiency rows for dimension-backed Packrift catalog SKUs.",
+        "parameters": [],
+        "response_description": "JSONL records with catalog dimensions, cube, reference DIM weight, density, and public-safe snapshot fields."
+      }
+    ],
+    "authentication": {
+      "required": false,
+      "type": "none",
+      "instructions": null
+    },
+    "pricing": {
+      "model": "free",
+      "free_tier": {
+        "queries_per_day": null,
+        "queries_per_month": null
+      },
+      "paid_tier": null,
+      "support_url": "https://packrift.com/pages/contact"
+    },
+    "payment": null,
+    "rate_limits": {
+      "requests_per_minute": null,
+      "requests_per_day": null
+    },
+    "reliability": {
+      "maintained_by": "organization",
+      "status_url": null,
+      "expected_uptime_pct": null
+    },
+    "agent_notes": "This root corpus and listed sub-assets are read-only public references. No account, login, API key, token, payment, or password is required to read the public files. The corpus now includes the Packrift Catalog Cube Efficiency Atlas at https://packrift.github.io/packrift-cube-efficiency-atlas/ for dimension-backed cube, density, and reference dimensional-weight inspection. Static files are not live quotes, inventory promises, carrier invoices, supplier-cost disclosures, margin disclosures, customer records, checkout commitments, or substitute approvals. Use Packrift.com checkout and Packrift MCP for live price, inventory, shipping, cart, and order decisions.",
+    "contact": {
+      "email": "farhan@packrift.com",
+      "support_url": "https://packrift.com/pages/contact",
+      "github": "https://github.com/Packrift"
+    },
+    "listing_requested": true,
+    "last_updated": "2026-06-01T17:51:55Z"
+  }
+}
