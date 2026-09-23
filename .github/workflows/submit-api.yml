@@ -26,9 +26,13 @@ jobs:
         with:
           script: |
             const body = context.payload.issue.body || '';
-            const urlMatch = body.match(/\*\*API URL\*\*\s*\n\s*([^\n]+)/i) ||
+            const urlMatch =
+              body.match(/### API URL\s*\n+([^\n]+)/i) ||
+              body.match(/\*\*API URL\*\*\s*\n\s*([^\n]+)/i) ||
               body.match(/API URL[:\s]+(https?:\/\/[^\s]+)/i);
-            const contactMatch = body.match(/\*\*Contact email\*\*\s*\n\s*([^\n]+)/i);
+            const contactMatch =
+              body.match(/### Contact email\s*\n+([^\n]+)/i) ||
+              body.match(/\*\*Contact email\*\*\s*\n\s*([^\n]+)/i);
             const apiUrl = urlMatch?.[1]?.trim();
             if (!apiUrl) {
               core.setFailed('Could not parse API URL from issue body');
