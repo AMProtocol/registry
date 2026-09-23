@@ -2,26 +2,30 @@
 
 ## Release
 
-- [ ] `npm publish` `@agentmanifest/validator@0.3.0` (requires npm login)
-- [ ] `npm publish` `@agentmanifest/cli@0.3.0`
-- [ ] Tag `AMP` repo `v0.3.1` and push `launch/v0.3.1`
-- [ ] Push `AMProtocol/registry` and enable Pages + Worker
+- [x] `npm publish` `@agentmanifest/cli@0.3.1` (single package — no separate validator on npm)
+- [ ] Tag `AMP` repo `v0.3.1` and merge `launch/v0.3.1` → `main`
+- [ ] Push `AMProtocol/registry` with Worker + Pages workflows
+- [ ] Set GitHub secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
+- [ ] Set Cloudflare Worker secret: `wrangler secret put JWT_SECRET` (for validation tokens)
+
+## Staging
+
+1. Deploy Worker to `api-next.agent-manifest.com` (custom domain in Cloudflare).
+2. Run `npm run contract-test -- --base https://api-next.agent-manifest.com`.
+3. Fix any diffs (see `CUTOVER.md`).
 
 ## Demo
 
-Record Millennium Falcon demo:
-
 ```bash
+npm install -g @agentmanifest/cli
 amp find "how fast does the millennium falcon go"
 ```
 
-(Requires SWAPI seed entry in registry.)
+(Requires SWAPI seed entry live on the new API.)
 
-## Optional outreach
+## Cutover
 
-- Packrift (Farhan) — design partner
-- Vend — x402 field validation in production
-- D.O.A.I. — `freemium` now supported
+See `CUTOVER.md` — DNS swap, docs, pause Railway.
 
 ## Measure
 

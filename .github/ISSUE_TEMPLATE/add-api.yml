@@ -1,0 +1,33 @@
+name: Add API to registry
+description: Submit an AMP-compliant API for listing in the public registry
+title: "Add API: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Your API must serve `/.well-known/agent-manifest.json` and pass validation at [validator.agent-manifest.com](https://validator.agent-manifest.com).
+        Validate first: `amp validate` or `POST https://validator.agent-manifest.com/validate` with `{"url":"your-api-url"}`.
+  - type: input
+    id: api_url
+    attributes:
+      label: API URL
+      description: Base URL where your manifest is hosted (HTTPS)
+      placeholder: https://api.example.com
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+      description: For registry maintenance (not published in listing if you prefer GitHub only)
+      placeholder: you@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else we should know
+    validations:
+      required: false

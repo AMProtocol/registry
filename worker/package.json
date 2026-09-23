@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "node ../scripts/build-index.mjs",
+    "sync-validator": "node ../scripts/sync-validator.mjs",
+    "build": "node ../scripts/build-index.mjs && npm run sync-validator",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy",
+    "deploy": "npm run build && wrangler deploy",
     "test": "vitest run"
+  },
+  "dependencies": {
+    "@agentmanifest/validator": "file:./vendor/validator"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250214.0",

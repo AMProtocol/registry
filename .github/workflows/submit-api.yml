@@ -1,0 +1,92 @@
+name: Submit API from issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  create-pr:
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Parse issue body
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const urlMatch = body.match(/\*\*API URL\*\*\s*\n\s*([^\n]+)/i) ||
+              body.match(/API URL[:\s]+(https?:\/\/[^\s]+)/i);
+            const contactMatch = body.match(/\*\*Contact email\*\*\s*\n\s*([^\n]+)/i);
+            const apiUrl = urlMatch?.[1]?.trim();
+            if (!apiUrl) {
+              core.setFailed('Could not parse API URL from issue body');
+              return;
+            }
+            core.setOutput('api_url', apiUrl);
+            core.setOutput('contact', contactMatch?.[1]?.trim() || '');
+
+      - name: Checkout AMP validator
+        uses: actions/checkout@v4
+        with:
+          repository: AMProtocol/AMP
+          ref: launch/v0.3.1
+          path: amp
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate API
+        id: validate
+        run: |
+          API_URL="${{ steps.parse.outputs.api_url }}"
+          RESULT=$(curl -sf -X POST https://validator.agent-manifest.com/validate \
+            -H 'Content-Type: application/json' \
+            -d "{\"url\":\"$API_URL\"}")
+          echo "$RESULT" > /tmp/validation.json
+          PASSED=$(node -e "console.log(JSON.parse(require('fs').readFileSync('/tmp/validation.json','utf8')).passed)")
+          echo "passed=$PASSED" >> "$GITHUB_OUTPUT"
+          if [ "$PASSED" != "true" ]; then
+            echo "Validation failed"
+            cat /tmp/validation.json
+            exit 1
+          fi
+
+      - name: Build registry entry
+        run: |
+          npm install
+          node scripts/import-from-url.mjs "${{ steps.parse.outputs.api_url }}" "${{ steps.parse.outputs.contact }}"
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: submit/issue-${{ github.event.issue.number }}
+          title: "Add API from issue #${{ github.event.issue.number }}"
+          body: |
+            Closes submission from issue #${{ github.event.issue.number }}
+
+            API URL: ${{ steps.parse.outputs.api_url }}
+
+            Automated validation passed via validator.agent-manifest.com.
+          labels: submission
+
+      - name: Comment on issue
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: 'Validation passed. A pull request has been opened to add this API to the registry.'
+            });

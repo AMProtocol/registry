@@ -8,6 +8,8 @@
     "migrate": "node scripts/migrate-from-backup.mjs",
     "import-seeds": "node scripts/write-seed-entries.mjs",
     "build": "node scripts/build-index.mjs && node scripts/build-site.mjs",
+    "build:worker": "node scripts/build-index.mjs && node scripts/sync-validator.mjs",
+    "contract-test": "node scripts/contract-test.mjs",
     "verify": "node scripts/verify-entries.mjs",
     "rules:test": "node --test rules/rules.test.mjs"
   },

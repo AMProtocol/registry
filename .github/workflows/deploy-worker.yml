@@ -1,0 +1,53 @@
+name: Deploy Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'entries/**'
+      - 'worker/**'
+      - 'scripts/build-index.mjs'
+      - 'scripts/sync-validator.mjs'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: AMProtocol/AMP
+          ref: launch/v0.3.1
+          path: amp
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install registry deps
+        run: npm install
+
+      - name: Build validator
+        run: |
+          cd amp/agentmanifest/validator
+          npm ci
+          npm run build
+
+      - name: Build worker bundle
+        env:
+          AMP_VALIDATOR_PATH: ${{ github.workspace }}/amp/agentmanifest/validator
+        run: |
+          npm run build
+          cd worker
+          npm install
+
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker
+          command: deploy

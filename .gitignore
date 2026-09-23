@@ -1,5 +1,6 @@
 node_modules/
 public/
 worker/data/
+worker/vendor/
 .DS_Store
 .env
