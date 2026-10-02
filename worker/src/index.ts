@@ -57,10 +57,33 @@ function json(data: unknown, status = 200, contentType = 'application/json') {
   });
 }
 
+/** List rows match legacy Railway shape (grandfathered; no extra index fields). */
+function toPublicListRow(l: ListingRow) {
+  return {
+    id: l.id,
+    name: l.name,
+    url: l.url,
+    description: l.description,
+    primary_category: l.primary_category,
+    categories: l.categories,
+    pricing_model: l.pricing_model,
+    payment_model: l.payment_model,
+    payment_currency: l.payment_currency,
+    settlement_type: l.settlement_type,
+    supports_spend_cap: l.supports_spend_cap,
+    auth_required: l.auth_required,
+    maintained_by: l.maintained_by,
+    badges: l.badges ?? [],
+    verified_at: l.verified_at,
+    last_checked_at: l.last_checked_at,
+  };
+}
+
 function filterListings(params: URLSearchParams): ListingRow[] {
-  let out = listings.filter((l) => l.status !== 'lapsed' || params.has('include_lapsed'));
-  if (!params.has('include_lapsed')) {
-    out = out.filter((l) => l.status === 'verified' || l.status === 'unverified' || !l.status);
+  // Grandfather: default list includes verified, unverified, and lapsed (same as live Railway today).
+  let out = listings;
+  if (params.get('active_only') === 'true') {
+    out = out.filter((l) => l.status !== 'lapsed');
   }
 
   const cat = params.get('category');
@@ -167,7 +190,7 @@ async function handleApiRequest(request: Request, path: string, url: URL): Promi
     const filtered = filterListings(url.searchParams);
     return json({
       meta: { spec_version: 'agentmanifest-0.3', endpoint_description: 'Verified and imported APIs' },
-      data: { count: filtered.length, listings: filtered },
+      data: { count: filtered.length, listings: filtered.map(toPublicListRow) },
     });
   }
 

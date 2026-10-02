@@ -46,9 +46,11 @@ function toListingRow(record) {
     badges: record.badges ?? [],
     status: record.status,
     verified_at: record.verified_at,
-    last_checked_at: record.last_checked_at,
-    last_valid: record.last_valid,
-    listing_url: `https://agent-manifest.com/apis/${record.id}/`,
+    // Grandfather migrated listings: list timestamps match original Railway export.
+    last_checked_at:
+      record.submitted_via === 'migration'
+        ? (record.verified_at ?? record.last_checked_at)
+        : (record.last_checked_at ?? record.verified_at),
   };
 }
 

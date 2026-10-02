@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # Custom domains (zone agent-manifest.com must be on this Cloudflare account).
 # Staging first; switch api.agent-manifest.com here after contract-test passes.
 [[routes]]
-pattern = "api-next.agent-manifest.com"
+pattern = "api.agent-manifest.com"
 custom_domain = true
 
 [vars]
