@@ -1,4 +1,8 @@
-# Cutover checklist (manual — do not run until Worker contract tests pass)
+# Cutover checklist (optional / staging only)
+
+**Production (2026-10-02):** `api.agent-manifest.com` points at **Railway registry** (list + submit + Postgres). Validator stays on `validator.agent-manifest.com` (Railway). Worker + git index remain available on `api-next` if needed.
+
+# Original Worker cutover plan (not applied to production api hostname)
 
 ## Staging
 

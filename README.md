@@ -1,14 +1,14 @@
 # AMProtocol/registry
 
-Public GitHub repo that is the **single source of truth** for the AMP registry index (read path on Cloudflare Worker).
+Public GitHub repo for the AMP registry **git index** (used for Pages / optional Worker staging). **Production API** (`api.agent-manifest.com`) is the Railway registry service.
 
 - `entries/<group>/<id>.json` — one registry record per listing
 - `sources/<id>.yaml` — hand-written overrides for OpenAPI imports
 - `rules/` — shared validation (PR checks)
 - `scripts/` — migrate, build index, build static site
-- `worker/` — Cloudflare Worker (`api.agent-manifest.com` listings read API)
+- `worker/` — Cloudflare Worker (optional staging: `api-next.agent-manifest.com`; production API is Railway)
 
-**Submit / Postgres:** `POST /listings/submit` is proxied to the **Railway registry** service (`REGISTRY_UPSTREAM` Worker variable). **Validate:** `validator.agent-manifest.com` on Railway.
+**List + submit:** `api.agent-manifest.com` on **Railway** (Postgres). **Validate:** `validator.agent-manifest.com` on Railway.
 
 ## Commands
 
@@ -26,4 +26,4 @@ npm run verify           # re-validate all verified entries
 2. `POST https://api.agent-manifest.com/listings/submit` with `{"url":"https://your-api.com"}`  
    or `amp publish`
 
-Set **REGISTRY_UPSTREAM** on the Worker to your Railway registry public URL.
+No Cloudflare Worker env vars required for production — same hostname as before the cutover experiment.

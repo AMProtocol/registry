@@ -1,32 +1,23 @@
-# Launch checklist
+# Launch checklist (Railway production)
 
-## Release
+## Release — done
 
-- [x] `npm publish` `@agentmanifest/cli@0.3.1` (single package — no separate validator on npm)
-- [ ] Tag `AMP` repo `v0.3.1` and merge `launch/v0.3.1` → `main`
-- [ ] Push `AMProtocol/registry` with Worker + Pages workflows
-- [ ] Set GitHub secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
-- [ ] Set Cloudflare Worker secret: `wrangler secret put JWT_SECRET` (for validation tokens)
+- [x] `@agentmanifest/cli@0.3.1` on npm (remote validate only)
+- [x] AMP repo tag `v0.3.1` on `main`
+- [x] `api.agent-manifest.com` + `validator.agent-manifest.com` → Railway
+- [x] Worker staging hostname removed; no Worker deploy workflow
 
-## Staging
+## Optional
 
-1. Deploy Worker to `api-next.agent-manifest.com` (custom domain in Cloudflare).
-2. Run `npm run contract-test -- --base https://api-next.agent-manifest.com`.
-3. Fix any diffs (see `CUTOVER.md`).
+- [ ] GitHub Pages (`Deploy Pages` workflow) — static browse mirror only
+- [ ] `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` — Pages only, not API
 
 ## Demo
 
 ```bash
-npm install -g @agentmanifest/cli
-amp find "how fast does the millennium falcon go"
+npm install -g @agentmanifest/cli@0.3.1
+amp validate https://bakebase.agent-manifest.com
+amp find "baking ingredients"
 ```
 
-(Requires SWAPI seed entry live on the new API.)
-
-## Cutover
-
-See `CUTOVER.md` — DNS swap, docs, pause Railway.
-
-## Measure
-
-Cloudflare bot analytics baseline for `agent-manifest.com` (GPTBot, ClaudeBot, PerplexityBot).
+See `PRODUCTION.md` for smoke tests and architecture.
