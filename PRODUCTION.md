@@ -10,11 +10,7 @@
 
 **Spec / release:** revision **0.3.1** (`agentmanifest-0.3`). CLI: `@agentmanifest/cli@0.3.1` on npm.
 
-**Not in the user path**
-
-- `registry/worker/` — archived experiment (git-sourced read API). No custom domain; no deploy workflow.
-- GitHub Pages (`amprotocol.github.io/registry`) — static mirror of entries; optional browse only.
-- `CLOUDFLARE_API_TOKEN` — only needed if you keep **Deploy Pages**; not for API traffic.
+**Not in the user path:** `worker/` in this repo (archived experiment; not deployed).
 
 **Smoke test**
 

@@ -1,12 +1,12 @@
 # AMProtocol/registry
 
-Public GitHub repo for the AMP registry **git index** (used for Pages / optional Worker staging). **Production API** (`api.agent-manifest.com`) is the Railway registry service.
+Public GitHub repo for the AMP registry **git index** (exports, PR checks, backups). **Production API** (`api.agent-manifest.com`) is the Railway registry service.
 
 - `entries/<group>/<id>.json` — one registry record per listing
 - `sources/<id>.yaml` — hand-written overrides for OpenAPI imports
 - `rules/` — shared validation (PR checks)
 - `scripts/` — migrate, build index, build static site
-- `worker/` — Cloudflare Worker (optional staging: `api-next.agent-manifest.com`; production API is Railway)
+- `worker/` — archived Cloudflare experiment (not deployed)
 
 **List + submit:** `api.agent-manifest.com` on **Railway** (Postgres). **Validate:** `validator.agent-manifest.com` on Railway.
 
