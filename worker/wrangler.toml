@@ -5,9 +5,7 @@ compatibility_flags = ["nodejs_compat"]
 
 # Custom domains (zone agent-manifest.com must be on this Cloudflare account).
 # Staging first; switch api.agent-manifest.com here after contract-test passes.
-[[routes]]
-pattern = "api.agent-manifest.com"
-custom_domain = true
+# Production domain api.agent-manifest.com is attached via Cloudflare dashboard/API (not wrangler.toml) to avoid CI failures when DNS still points at Railway.
 
 [vars]
 REGISTRY_ORIGIN = "https://agent-manifest.com"
