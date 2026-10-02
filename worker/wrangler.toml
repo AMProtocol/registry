@@ -3,10 +3,11 @@ main = "src/index.ts"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 
-# Attach as Custom Domains in Cloudflare dashboard:
-#   api.agent-manifest.com
-#   validator.agent-manifest.com
-# Staging: api-next.agent-manifest.com
+# Custom domains (zone agent-manifest.com must be on this Cloudflare account).
+# Staging first; switch api.agent-manifest.com here after contract-test passes.
+[[routes]]
+pattern = "api-next.agent-manifest.com"
+custom_domain = true
 
 [vars]
 REGISTRY_ORIGIN = "https://agent-manifest.com"
