@@ -9,3 +9,5 @@ compatibility_flags = ["nodejs_compat"]
 
 [vars]
 REGISTRY_ORIGIN = "https://agent-manifest.com"
+# REGISTRY_UPSTREAM: set in Cloudflare dashboard (Worker → Settings → Variables).
+# Public Railway URL for the registry service, e.g. https://….up.railway.app

@@ -43,7 +43,7 @@ ${record.status === 'lapsed' && record.last_valid ? `<p>Last valid under ${recor
 ${record.status === 'unverified' ? `<p><em>Auto-generated from public docs, not endorsed by ${record.publisher?.domain ?? 'the provider'}.</em></p>` : ''}
 <p>${m.description ?? ''}</p>
 <h2>Claim this API</h2>
-<p>Publish <code>/.well-known/agent-manifest.json</code> on your domain and <a href="https://github.com/AMProtocol/registry/issues/new?template=add-api.yml">submit via GitHub</a> or run <code>amp publish</code>.</p>
+<p>Publish <code>/.well-known/agent-manifest.json</code> on your domain, validate at validator.agent-manifest.com, then run <code>amp publish</code>.</p>
 <h2>Correct or remove</h2>
 <p><a href="https://github.com/AMProtocol/registry/issues/new?template=correct-listing.yml">Open an issue</a> to correct or request removal.</p>
 <pre>${JSON.stringify(record.manifest, null, 2)}</pre>

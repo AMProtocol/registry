@@ -17,9 +17,8 @@ export const REGISTRY_AGENTS = {
     },
     listing_your_api: {
       step_1: 'Serve a valid manifest at /.well-known/agent-manifest.json on your API',
-      step_2:
-        'Open a GitHub issue: https://github.com/AMProtocol/registry/issues/new?template=add-api.yml',
-      step_3: 'A maintainer or bot will validate and merge a PR with your listing',
+      step_2: 'Validate at https://validator.agent-manifest.com',
+      step_3: 'POST /listings/submit with {"url": "your-api-url"} or run amp publish',
     },
     related_services: {
       validator: 'https://validator.agent-manifest.com',
@@ -40,8 +39,8 @@ export const REGISTRY_LLMS_TXT = `# AgentManifest Registry
 
 ## List Your API
 
-- [Submit via GitHub](https://github.com/AMProtocol/registry/issues/new?template=add-api.yml): Open an issue with your API URL after validating at validator.agent-manifest.com
-- [Validate first](https://validator.agent-manifest.com/agents): Check AMP compliance before submitting
+- Validate at https://validator.agent-manifest.com
+- Submit with POST /listings/submit or \`amp publish\`
 
 ## Optional
 

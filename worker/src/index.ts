@@ -5,9 +5,11 @@
 import indexData from '../data/index.json';
 import { handleValidatorRequest } from './validatorRoutes';
 import { REGISTRY_AGENTS, REGISTRY_LLMS_TXT } from './registryAgents';
-import { proxyValidateUrl } from './validateProxy';
+import { proxyRegistrySubmit, type RegistryEnv } from './registryUpstream';
 
-const ISSUE_URL = 'https://github.com/AMProtocol/registry/issues/new?template=add-api.yml';
+export interface Env extends RegistryEnv {
+  REGISTRY_ORIGIN?: string;
+}
 
 interface ListingRow {
   id: string;
@@ -34,20 +36,9 @@ interface ListingRow {
 
 const listings: ListingRow[] = (indexData as { listings: ListingRow[] }).listings ?? [];
 const entriesById = new Map<string, Record<string, unknown>>();
-const entriesByUrl = new Map<string, Record<string, unknown>>();
 for (const e of (indexData as { entries: Record<string, unknown>[] }).entries ?? []) {
   entriesById.set(e.id as string, e);
   if (e.legacy_id) entriesById.set(e.legacy_id as string, e);
-  if (typeof e.url === 'string') entriesByUrl.set(normalizeUrl(e.url), e);
-}
-
-function normalizeUrl(u: string) {
-  try {
-    const parsed = new URL(u.startsWith('http') ? u : `https://${u}`);
-    return parsed.origin + parsed.pathname.replace(/\/$/, '');
-  } catch {
-    return u.replace(/\/$/, '');
-  }
 }
 
 function json(data: unknown, status = 200, contentType = 'application/json') {
@@ -141,12 +132,19 @@ function filterListings(params: URLSearchParams): ListingRow[] {
   return out.slice(offset, offset + limit);
 }
 
-const submissions = new Map<
-  string,
-  { status: string; url: string; listing_id?: string; error?: string; created_at: string }
->();
-
-async function handleApiRequest(request: Request, path: string, url: URL): Promise<Response> {
+async function handleApiRequest(
+  request: Request,
+  path: string,
+  url: URL,
+  env: Env
+): Promise<Response> {
+  if (path === '/listings/submit' && request.method === 'POST') {
+    return proxyRegistrySubmit(request, path, env);
+  }
+  const statusMatchEarly = path.match(/^\/listings\/submit\/([^/]+)\/status$/);
+  if (statusMatchEarly && request.method === 'GET') {
+    return proxyRegistrySubmit(request, path, env);
+  }
   if (request.method === 'OPTIONS') {
     return new Response(null, {
       headers: {
@@ -233,95 +231,6 @@ async function handleApiRequest(request: Request, path: string, url: URL): Promi
     });
   }
 
-  if (path === '/listings/submit' && request.method === 'POST') {
-    try {
-      const body = (await request.json()) as { url?: string };
-      if (!body.url) {
-        return json({ error: 'URL is required', message: 'Request body must include "url" field' }, 400);
-      }
-      const normalized = normalizeUrl(body.url);
-      const existing = entriesByUrl.get(normalized);
-      if (existing) {
-        return json(
-          {
-            error: 'Already listed',
-            message: 'This API is already in the registry',
-            listing_id: existing.id,
-          },
-          409
-        );
-      }
-
-      const submissionId = `sub_${Date.now()}`;
-      submissions.set(submissionId, {
-        status: 'validating',
-        url: body.url,
-        created_at: new Date().toISOString(),
-      });
-
-      const validation = await proxyValidateUrl(body.url);
-      const sub = submissions.get(submissionId)!;
-      if (!validation.passed) {
-        sub.status = 'failed';
-        sub.error = validation.checks
-          .filter((c) => !c.passed && c.severity === 'error')
-          .map((c) => c.message)
-          .join('; ');
-        return json(
-          {
-            meta: { spec_version: 'agentmanifest-0.3' },
-            data: {
-              submission_id: submissionId,
-              status: 'failed',
-              status_url: `/listings/submit/${submissionId}/status`,
-              message: sub.error,
-              issue_url: ISSUE_URL,
-            },
-          },
-          422
-        );
-      }
-
-      sub.status = 'pending_pr';
-      return json(
-        {
-          meta: { spec_version: 'agentmanifest-0.3' },
-          data: {
-            submission_id: submissionId,
-            status: 'pending_pr',
-            status_url: `/listings/submit/${submissionId}/status`,
-            message:
-              'Validation passed. Open a GitHub issue to add this API to the registry (or use amp publish --pr).',
-            issue_url: ISSUE_URL,
-            badges: validation.badges,
-          },
-        },
-        202
-      );
-    } catch (error) {
-      return json({ error: 'Internal server error', message: (error as Error).message }, 500);
-    }
-  }
-
-  const statusMatch = path.match(/^\/listings\/submit\/([^/]+)\/status$/);
-  if (statusMatch) {
-    const sub = submissions.get(statusMatch[1]);
-    if (!sub) return json({ error: 'Not found' }, 404);
-    return json({
-      meta: { spec_version: 'agentmanifest-0.3' },
-      data: {
-        submission_id: statusMatch[1],
-        url: sub.url,
-        status: sub.status,
-        listing_id: sub.listing_id,
-        listing_url: sub.listing_id ? `/listings/${sub.listing_id}` : undefined,
-        error: sub.error,
-        issue_url: ISSUE_URL,
-        created_at: sub.created_at,
-      },
-    });
-  }
-
   if (path === '/categories') {
     const counts = new Map<string, number>();
     for (const l of listings) {
@@ -339,7 +248,7 @@ async function handleApiRequest(request: Request, path: string, url: URL): Promi
 }
 
 export default {
-  async fetch(request: Request): Promise<Response> {
+  async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
     const path = url.pathname;
     const isValidator =
@@ -352,6 +261,6 @@ export default {
       return handleValidatorRequest(request, path, url.searchParams);
     }
 
-    return handleApiRequest(request, path, url);
+    return handleApiRequest(request, path, url, env);
   },
 };
