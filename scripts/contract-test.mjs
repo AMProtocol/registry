@@ -60,7 +60,7 @@ const health = await fetchJson(`${base}/health`);
 assert('health.status', health.status === 'healthy');
 assert('health.service', health.service === 'agentmanifest-api');
 
-// Listings count — worker may have more (seeds); require live ⊆ worker field parity for overlap
+// Listings count — worker index should match live API when both are in use
 const liveListings = await fetchJson(`${liveBase}/listings?limit=500`);
 const stagingListings = await fetchJson(`${base}/listings?limit=500`);
 assert('listings.meta.spec_version', stagingListings.meta?.spec_version === 'agentmanifest-0.3');

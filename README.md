@@ -2,9 +2,7 @@
 
 Public GitHub repo for the AMP registry **git index** (exports, PR checks, backups). **Production API** (`api.agent-manifest.com`) is the Railway registry service.
 
-- `entries/<group>/<id>.json` — registry records in git (backup / CI)
-- `entries/seed/` — **reference-only** example manifests ([readme](entries/seed/README.md)); **not** served by `api.agent-manifest.com`
-- `sources/<id>.yaml` — hand-written overrides for OpenAPI imports
+- `entries/<group>/<id>.json` — registry records in git (backup / CI). **Reference API:** [BakeBase](https://bakebase.agent-manifest.com) (live manifest, not stored as a seed here).
 - `rules/` — shared validation (PR checks)
 - `scripts/` — migrate, build index, build static site
 - `worker/` — archived Cloudflare experiment (not deployed)
@@ -16,8 +14,7 @@ Public GitHub repo for the AMP registry **git index** (exports, PR checks, backu
 ```bash
 npm install
 npm run migrate          # from ../backups/registry-2026-09-23
-npm run import-seeds     # regenerate entries/seed/ (illustrative, not production API)
-npm run build            # public/registry/index.json + worker bundle
+npm run build            # public/registry/index.json + static site artifacts
 npm run verify           # re-validate all verified entries
 ```
 
